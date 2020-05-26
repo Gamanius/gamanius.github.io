@@ -1,8 +1,21 @@
 var searchData=
 [
-  ['hdc_38',['hdc',['../_window_8cpp.html#acc6792141787aadc4d90abe018db1e02',1,'Window.cpp']]],
-  ['height_39',['height',['../struct_g_general_1_1_dimension.html#a3ba673fcea13dcbc22163cab66fd5bbd',1,'GGeneral::Dimension']]],
-  ['hidden_40',['HIDDEN',['../namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a347e628a8f72626a0611ef842fe9d304',1,'GWindow']]],
-  ['hinstance_41',['hInstance',['../_window_8cpp.html#a74029128723095e7bf00a71d46af8b24',1,'Window.cpp']]],
-  ['hwnd_42',['hWnd',['../_window_8cpp.html#afec4341c234519e145bac6f0e5edaa51',1,'Window.cpp']]]
+  ['g_70',['G',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00adfcf28d0734569a6a693bc8194de62bf',1,'GWindow']]],
+  ['genumstring_71',['GEnumString',['../namespace_g_enum_string.html',1,'']]],
+  ['getamountofmonitors_72',['getAmountOfMonitors',['../namespace_g_window_1_1_monitor.html#a9f6ad81716b9c24e2b47eb1de76405db',1,'GWindow::Monitor']]],
+  ['getcloserequest_73',['getCloseRequest',['../class_g_window_1_1_window.html#a0c1bc9b3ac6ae438883d042f212775b4',1,'GWindow::Window']]],
+  ['getcurrentwindowstate_74',['getCurrentWindowState',['../class_g_window_1_1_window.html#a68a5829bef0d4416810500fc8b1419bc',1,'GWindow::Window']]],
+  ['getmonitorinformation_75',['getMonitorInformation',['../namespace_g_window_1_1_monitor.html#a0fde7decdfbf751ae074f0340184f0e1',1,'GWindow::Monitor']]],
+  ['getprimarymonitorindex_76',['getPrimaryMonitorIndex',['../namespace_g_window_1_1_monitor.html#a97b36343c25a0d1743f97ac3c2901440',1,'GWindow::Monitor']]],
+  ['getprimarymonitorinformation_77',['getPrimaryMonitorInformation',['../namespace_g_window_1_1_monitor.html#aec851c877ae8e977d256158db9d5fff9',1,'GWindow::Monitor']]],
+  ['getseverityfilter_78',['getSeverityFilter',['../namespace_g_general_1_1_logger.html#a9eef9cb5ed0a522d9034bafa1310fb89',1,'GGeneral::Logger']]],
+  ['getsystemtime_79',['getSystemTime',['../_logger_8cpp.html#aa161283497578df553a28c8eb192aa99',1,'Logger.cpp']]],
+  ['ggeneral_80',['GGeneral',['../namespace_g_general.html',1,'']]],
+  ['grenderer_81',['GRenderer',['../namespace_g_renderer.html',1,'']]],
+  ['grenderer_2eh_82',['GRenderer.h',['../_g_renderer_8h.html',1,'']]],
+  ['gwindow_83',['GWindow',['../namespace_g_window.html',1,'']]],
+  ['gwindowcallback_84',['GWindowCallback',['../_g_renderer_8h.html#af4e7d58bd10d0de036985a67b1e13648',1,'GRenderer.h']]],
+  ['logger_85',['Logger',['../namespace_g_general_1_1_logger.html',1,'GGeneral']]],
+  ['monitor_86',['Monitor',['../namespace_g_window_1_1_monitor.html',1,'GWindow']]],
+  ['os_87',['OS',['../namespace_g_window_1_1_o_s.html',1,'GWindow']]]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['t_5fprocess_593',['t_process',['../_logger_8cpp.html#a5556008768e4fdcd30dcad3e63faa36b',1,'Logger.cpp']]],
-  ['terminatethread_594',['terminateThread',['../namespace_g_general_1_1_logger.html#a07a7330c321094ccdcb99eaa8f16d9ec',1,'GGeneral::Logger']]],
-  ['tostring_595',['toString',['../struct_g_general_1_1_dimension.html#a604e99b231b48e687543fa8fb539c55c',1,'GGeneral::Dimension::toString()'],['../struct_g_general_1_1_dimension3_d.html#a87d6abdfd0fce04a915612f195d9f253',1,'GGeneral::Dimension3D::toString()'],['../struct_g_general_1_1_point.html#a5b5a0160ec910054b9f375d198438632',1,'GGeneral::Point::toString()'],['../struct_g_general_1_1_point3_d.html#adbaa7180fc221b09ba1d29f26e90b5d9',1,'GGeneral::Point3D::toString()'],['../struct_g_window_1_1_monitor_1_1_screen.html#a422c845c6ea1ef6ed3357fccc4d18710',1,'GWindow::Monitor::Screen::toString()']]]
+  ['screen_749',['Screen',['../struct_g_window_1_1_monitor_1_1_screen.html#a8f25ad383200f5dd2ea5862eae43c7b4',1,'GWindow::Monitor::Screen']]],
+  ['setcapturemousemode_750',['setCaptureMouseMode',['../class_g_window_1_1_window.html#adae91005026094c2368a57ceafd06a40',1,'GWindow::Window']]],
+  ['setopenglcontextactive_751',['setOpenGLContextActive',['../class_g_window_1_1_window.html#a390f00070c9a2909d8a8a6bf0e7957ab',1,'GWindow::Window']]],
+  ['setseverityfilter_752',['setSeverityFilter',['../namespace_g_general_1_1_logger.html#af87680823b7730e926c8bd8b24586f8f',1,'GGeneral::Logger']]],
+  ['setstate_753',['setState',['../class_g_window_1_1_window.html#a347c0f4a6f1f313924f1a54417f9f30c',1,'GWindow::Window']]]
 ];

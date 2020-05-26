@@ -72,6 +72,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -112,6 +113,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_window_1_1_monitor"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_monitor.html">GWindow::Monitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_g_window_1_1_o_s"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_o_s.html">GWindow::OS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_enum_string"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_enum_string.html">GEnumString</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -141,6 +144,13 @@ Macros</h2></td></tr>
 <tr class="separator:aa34cb11f8b0d5bc30db5e7e2112af51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b97465521290dd9f528477feddaa51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#ae8b97465521290dd9f528477feddaa51">ULOGF</a>(x,  y)&#160;&#160;&#160;<a class="el" href="namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2">GGeneral::Logger::printMessage</a>(x, <a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7ac90b5a22c7659cc99e7a6d919a14b660">GGeneral::Logger::Severity::S_FATAL</a>, y);</td></tr>
 <tr class="separator:ae8b97465521290dd9f528477feddaa51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce2c79990d046ac62b54432f94beeb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#adce2c79990d046ac62b54432f94beeb6">CHECK_ENUM</a>(x)&#160;&#160;&#160;typeid(decltype(GEnum)) == typeid(x)</td></tr>
+<tr class="separator:adce2c79990d046ac62b54432f94beeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:af4e7d58bd10d0de036985a67b1e13648"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#af4e7d58bd10d0de036985a67b1e13648">GWindowCallback</a>) (int)</td></tr>
+<tr class="separator:af4e7d58bd10d0de036985a67b1e13648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -161,6 +171,184 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a1e23852820b9154316c7c06e2b7ba051">GWindow::WindowState::NORMAL</a>
  }</td></tr>
 <tr class="separator:a1ba040cbf3f091efdd3517cf6ae8af65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ed4da6cfee5e2a8b07617754f3de00"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00">GWindow::VK</a> { <br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ac38eb3f29e12044685ad31f4767f0dd4">GWindow::VK::LEFT_MB</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aa6de5845db857bbad1b916ce36a9b88a">GWindow::VK::RIGHT_MB</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a2027c027133e22c8929e2874dc44dd36">GWindow::VK::CANCEL</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a87b1f20874ede712a341ddeddef2f8de">GWindow::VK::MIDDLE_MB</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aa257004d7049ab5fa1a9bb4f4d9288b2">GWindow::VK::X1_MB</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a540387da77b2e77d64113880dec65769">GWindow::VK::X2_MB</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab6c7e6204e97690efd79d6f513ed5613">GWindow::VK::LEFT_SHIFT</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a63a707029860972efa1c44ac6016e098">GWindow::VK::RIGHT_SHIFT</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00addf133566f544b297f2f84874c283589">GWindow::VK::LEFT_CONTROL</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a80cdb34a10d276950f8b20b6814c9194">GWindow::VK::RIGHT_CONTROL</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6f5d8e41084b4d3d47fa621c459eede1">GWindow::VK::BACKSPACE</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00af684bf05fa3e81528c84d1d281d839f1">GWindow::VK::TAB</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a331b3100a485d8cacff1d3df8e9b0c13">GWindow::VK::ENTER</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00adfbfc9cc7a235560f04cb1a5faf1ec3e">GWindow::VK::ALT</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a291554596c183e837f0a6bec3767c891">GWindow::VK::PAUSE</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6f306354deb2a5e21ba787d683290004">GWindow::VK::CAPSLOCK</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00adaaedac409335b869929ea43fa44be5d">GWindow::VK::ESCAPE</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6506ae39fdca9845e3a6de3865183e57">GWindow::VK::SPACE</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae791d936f894ce58dd18bf603edcb9b4">GWindow::VK::PAGE_UP</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae9a23c5ce3d34b40123d65ca14b2e88f">GWindow::VK::PAGE_DOWN</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab1a326c06d88bf042f73d70f50197905">GWindow::VK::END</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a710533dd879dd1202e5c73b27705bf02">GWindow::VK::HOME</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a498ff174aaf3c050242f870fefa96d0d">GWindow::VK::LEFTARROW</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aea9ee97cd0363676fcb45ce67a5b0930">GWindow::VK::UPARROW</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a45bbccf026893bca7220853a204cae6c">GWindow::VK::RIGHTARROW</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a18dd93eb6c08001b171ce91d2cf8f3f3">GWindow::VK::DOWNARROW</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a63225f19fccb18e7c709f1fa11bc738e">GWindow::VK::SELECT</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00af96eee4e48ee90430f17fb3a8388507b">GWindow::VK::PRINT</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a5d76688e2261e6805ee36ad961b3fa7a">GWindow::VK::EXECUTE</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a853f8ded7a96b5a765704974e6a3ca96">GWindow::VK::PRINT_SCREEN</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a61ee777e7f71dc466c3b2c685d8d313b">GWindow::VK::INSERT</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a2bbe23c0e8b3f638f0f5aed4b6864513">GWindow::VK::DEL</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a4fc963e213bba362778f5c175eb4d5ff">GWindow::VK::HELP</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a8350baa5fded880538b27097753a9ce8">GWindow::VK::KEY_0</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a43f1c1b2bb217aa04013aa12fb9695a8">GWindow::VK::KEY_1</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a20032871e1dec9155433946ecbfbcf61">GWindow::VK::KEY_2</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab53b75d7f6543b71273a9e4f58d54046">GWindow::VK::KEY_3</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a954e8b825fe85b083fbc2b64edad125e">GWindow::VK::KEY_4</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a5117a084c57c2ab875e0bfe86c4a638d">GWindow::VK::KEY_5</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a318bd217f20261f6eec3f4afbf965f9c">GWindow::VK::KEY_6</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a56ee05d27060b80811d25784a5cce206">GWindow::VK::KEY_7</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a85de2b5ecd586b46d5cea0015a15afac">GWindow::VK::KEY_8</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aa4a7bcce597644128fbeb7cdebbeb666">GWindow::VK::KEY_9</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a7fc56270e7a70fa81a5935b72eacbe29">GWindow::VK::A</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9d5ed678fe57bcca610140957afab571">GWindow::VK::B</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a0d61f8370cad1d412f80b84d143e1257">GWindow::VK::C</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00af623e75af30e62bbd73d6df5b50bb7b5">GWindow::VK::D</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a3a3ea00cfc35332cedf6e5e9a32e94da">GWindow::VK::E</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a800618943025315f869e4e1f09471012">GWindow::VK::F</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00adfcf28d0734569a6a693bc8194de62bf">GWindow::VK::G</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ac1d9f50f86825a1a2302ec2449c17196">GWindow::VK::H</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00add7536794b63bf90eccfd37f9b147d7f">GWindow::VK::I</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aff44570aca8241914870afbc310cdb85">GWindow::VK::J</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aa5f3c6a11b03839d46af9fb43c97c188">GWindow::VK::K</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ad20caec3b48a1eef164cb4ca81ba2587">GWindow::VK::L</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a69691c7bdcc3ce6d5d8a1361f22d04ac">GWindow::VK::M</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a8d9c307cb7f3c4a32822a51922d1ceaa">GWindow::VK::N</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00af186217753c37b9b9f958d906208506e">GWindow::VK::O</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a44c29edb103a2872f519ad0c9a0fdaaa">GWindow::VK::P</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00af09564c9ca56850d4cd6b3319e541aee">GWindow::VK::Q</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae1e1d3d40573127e9ee0480caf1283d6">GWindow::VK::R</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a5dbc98dcc983a70728bd082d1a47546e">GWindow::VK::S</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab9ece18c950afbfa6b0fdbfa4ff731d3">GWindow::VK::T</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a4c614360da93c0a041b22e537de151eb">GWindow::VK::U</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a5206560a306a2e085a437fd258eb57ce">GWindow::VK::V</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a61e9c06ea9a85a5088a499df6458d276">GWindow::VK::W</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a02129bb861061d1a052c592e2dc6b383">GWindow::VK::X</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a57cec4137b614c87cb4e24a3d003a3e0">GWindow::VK::Y</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a21c2e59531c8710156d34a3c30ac81d5">GWindow::VK::Z</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a4b6466bb5595f786381df507399295e8">GWindow::VK::LEFT_WINDOWS</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a478687f19754453c600b08232a7a074c">GWindow::VK::RIGHT_WINDOWS</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a0ec0a3f8aade8993f11fedcbaa0d8db6">GWindow::VK::APPLICATION</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab32bd403b93dc6deffdab7af55e82596">GWindow::VK::SLEEP</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a324bf1f059b99e2882bc1d567080d8ed">GWindow::VK::SCROLL_LOCK</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00af4e01bd659332a7a7373ccfc9fb2a9e7">GWindow::VK::LEFT_MENU</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a178d554615453154bf1198aa8efc8034">GWindow::VK::RIGHT_MENU</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00af4b6a6c38a1a1be2f1d3ab73d7b06552">GWindow::VK::VOLUME_MUTE</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab51dc9db6e5110cf7e1bdc44b218ad66">GWindow::VK::VOLUME_DOWN</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6749145ac295af704786a39516c5bf40">GWindow::VK::VOLUME_UP</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9e183bc419fd50887cfa8f29139f6ab3">GWindow::VK::MEDIA_NEXT</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00acb0deeacc82f0e78bdc3d0e1b0b76277">GWindow::VK::MEDIA_LAST</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ac0b5dbeb733e6653d4bda740b14b0429">GWindow::VK::MEDIA_STOP</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9ef9c6dff07300fccd32e9cfab4975d7">GWindow::VK::MEDIA_PLAY_PAUSE</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae91938057eb9d9a998fb0c34e759cce3">GWindow::VK::OEM_1</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a162a5ad4411bb4afc35aa059cfd9ebbf">GWindow::VK::OEM_2</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae3755e95125ee8953e36af77261a51a1">GWindow::VK::OEM_3</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9bc809e39ba8b36b7b0a2acbf071228e">GWindow::VK::OEM_4</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00accac03142e511444812e4c81a7502625">GWindow::VK::OEM_5</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9faadd3700669319a02bdd54098c7d5c">GWindow::VK::OEM_6</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a1e6ab2bcef5e704ea5c213c6360bdc90">GWindow::VK::OEM_7</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a5c0e0a1c94c86141c47e9ae4553dadc0">GWindow::VK::OEM_8</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a3f29c1e75a8cf7ee4857bb142816c104">GWindow::VK::OEM_CLEAR</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a56c34d73a7493ffce83b574976029b33">GWindow::VK::OEM_PLUS</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a82b25846b12e783db11ea65cb00b6165">GWindow::VK::OEM_COMMA</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a394d7ff659ae0eb05e57cba3dade96e0">GWindow::VK::OEM_MINUS</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9925b2afdc472eb4c262c66028163f63">GWindow::VK::OEM_PERIOD</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9bb4dd0ba40ffc2fa1ec50d08db691fe">GWindow::VK::NUMPAD_0</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a1c2930203f9db620f021a0057bce1083">GWindow::VK::NUMPAD_1</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ad4e2ef4b35fc73b57c948a6ff185db03">GWindow::VK::NUMPAD_2</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ac803fe2d547f6ebb4790f7b3d7db8416">GWindow::VK::NUMPAD_3</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a58309d94a4fb2cf5ba149b424b15ee37">GWindow::VK::NUMPAD_4</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae458fd1f37a6455c64cffef80002c7b9">GWindow::VK::NUMPAD_5</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a8db887e1428df089de45bcadaf50120b">GWindow::VK::NUMPAD_6</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a33a277bfd7cd8357e1c6fe453cd356a6">GWindow::VK::NUMPAD_7</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae8d32efc60c71e13cda5be345ebd62be">GWindow::VK::NUMPAD_8</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a4d6126c6fb698368c66aacc9811623dc">GWindow::VK::NUMPAD_9</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a69bae40b93604092bd6a43cef45ec66b">GWindow::VK::NUMPAD_MULTIPLY</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a5c79f2084a2971d263f938dc41957587">GWindow::VK::NUMPAD_ADD</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a3478ce6bdb7af078452ed8a6345df3bf">GWindow::VK::NUMPAD_SEPERATOR</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aee8e0a7fb5edc798ca0bbaedfbdeff19">GWindow::VK::NUMPAD_SUBTRACT</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a87abb2a3677a82b02651ec9b06ca57f8">GWindow::VK::NUMPAD_COMMA</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9c9856462e4fe2240b18f8c39ed013f8">GWindow::VK::NUMPAD_DIVIDE</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a2bf4d851a6f56d2f3fcb401e456dd65d">GWindow::VK::NUMPAD_LOCK</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae1dffc8709f31a4987c8a88334107e89">GWindow::VK::F1</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00afe5c3684dce76cdd9f7f42430868aa74">GWindow::VK::F2</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a4b6bf4b531770872d4328ce69bef5627">GWindow::VK::F3</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae7e0e72401a9f2718ed0f39f2861d702">GWindow::VK::F4</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a37f438df6a6d5ba4c17ef8ca58562f00">GWindow::VK::F5</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a1faf42f2823f184eb2c9f0dffe5d73f2">GWindow::VK::F6</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a47489eb597b7db34caa24b1fc78fc839">GWindow::VK::F7</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a4787509ad9f9d747a81a30e9dde3d4a7">GWindow::VK::F8</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a892a245e287c163080b23db737d3c4c9">GWindow::VK::F9</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab213ce22ca6ad4eda8db82966b9b6e5a">GWindow::VK::F10</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a643b0662422d1d0dffa3fca2e2bf28a8">GWindow::VK::F11</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae902674982fc99aa343cdd94da7476c3">GWindow::VK::F12</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a95dfde4807d4d6a9eec499203b3c24a0">GWindow::VK::F13</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a2468649b6215c4cdd2aef5095b3f5932">GWindow::VK::F14</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ae53b55851b9ff4979f2c3ff434a4a138">GWindow::VK::F15</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a56d8353718e6fdc78b8d69078a2cdb94">GWindow::VK::F16</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00affa5882d1ddcf903bf0d0dbc30bfc604">GWindow::VK::F17</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a810b30cdfc07fd7fff553a94b828ff78">GWindow::VK::F18</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00acd7c2a221ef5d0a34acc0bcd679b2054">GWindow::VK::F19</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00afc335adb3d69d3d8270769e1923ea4dc">GWindow::VK::F20</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a77e9eee7c579eef5f3731ecf1053c02e">GWindow::VK::F21</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a7fa06ead699fcbd63132370ffe13335a">GWindow::VK::F22</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a889645d530078147e7dc69a9caadc31e">GWindow::VK::F23</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00aebd7820c520d05eca2d775c37d141273">GWindow::VK::F24</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6a216efc529825c60a4a4c0bc99ad77f">GWindow::VK::PLAY</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a66f276916d5a97cbb3b0008213bda1c3">GWindow::VK::ZOOM</a>, 
+<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a10ab574f447437bb6e935313c814157a">GWindow::VK::UNKWON</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad1ed4da6cfee5e2a8b07617754f3de00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -193,6 +381,8 @@ Functions</h2></td></tr>
 <tr class="separator:a97b36343c25a0d1743f97ac3c2901440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fde7decdfbf751ae074f0340184f0e1"><td class="memItemLeft" align="right" valign="top">Screen const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_monitor.html#a0fde7decdfbf751ae074f0340184f0e1">GWindow::Monitor::getMonitorInformation</a> (unsigned int i)</td></tr>
 <tr class="separator:a0fde7decdfbf751ae074f0340184f0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc29feda8c53279846fe4d393aeaa3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_o_s.html#a4dc29feda8c53279846fe4d393aeaa3f">GWindow::OS::moveMouse</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos)</td></tr>
+<tr class="separator:a4dc29feda8c53279846fe4d393aeaa3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a734d98e3e87224bf7b7679912745490d"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
 <tr class="memitem:a734d98e3e87224bf7b7679912745490d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_enum_string.html#a734d98e3e87224bf7b7679912745490d">GEnumString::enumToString</a> (E GEnum)</td></tr>
 <tr class="separator:a734d98e3e87224bf7b7679912745490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +396,24 @@ Functions</h2></td></tr>
 <tr class="separator:a0d4d480ae01d5b6db26210d01870b1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="adce2c79990d046ac62b54432f94beeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce2c79990d046ac62b54432f94beeb6">&#9670;&nbsp;</a></span>CHECK_ENUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_ENUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;typeid(decltype(GEnum)) == typeid(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af855c94dc540e943632089ce7496faac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af855c94dc540e943632089ce7496faac">&#9670;&nbsp;</a></span>LOG</h2>
 
@@ -476,6 +684,21 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;<a class="el" href="namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2">GGeneral::Logger::printMessage</a>(x, <a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7a4aee6034ce9dbc2b5c36f27c80abe021">GGeneral::Logger::Severity::S_WARNING</a>, y);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="af4e7d58bd10d0de036985a67b1e13648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e7d58bd10d0de036985a67b1e13648">&#9670;&nbsp;</a></span>GWindowCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* GWindowCallback) (int)</td>
         </tr>
       </table>
 </div><div class="memdoc">

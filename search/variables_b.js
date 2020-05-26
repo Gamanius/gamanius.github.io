@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usernames_626',['userNames',['../_logger_8cpp.html#a689502f36d5d7fda990097ac7c43ab71',1,'Logger.cpp']]]
+  ['usernames_789',['userNames',['../_logger_8cpp.html#a689502f36d5d7fda990097ac7c43ab71',1,'Logger.cpp']]]
 ];

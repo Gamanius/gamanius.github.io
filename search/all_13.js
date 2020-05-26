@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['x_544',['x',['../struct_g_general_1_1_point.html#a18d59d7236c9251714ee654678e8e649',1,'GGeneral::Point']]]
+  ['s_320',['S',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a5dbc98dcc983a70728bd082d1a47546e',1,'GWindow']]],
+  ['s_5ferror_321',['S_ERROR',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7aac04e40d3b2f54f1f517d49594eb7849',1,'GGeneral::Logger']]],
+  ['s_5ffatal_322',['S_FATAL',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7ac90b5a22c7659cc99e7a6d919a14b660',1,'GGeneral::Logger']]],
+  ['s_5finfo_323',['S_INFO',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7ac238793326fae17afcc849e96b96e8e7',1,'GGeneral::Logger']]],
+  ['s_5fmsg_324',['S_MSG',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7a939ce1f859bb4372ed1201611a770e0d',1,'GGeneral::Logger']]],
+  ['s_5fsuccess_325',['S_SUCCESS',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7a9d5c7c40cac771659ff51dccb7518e4d',1,'GGeneral::Logger']]],
+  ['s_5fwarning_326',['S_WARNING',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7a4aee6034ce9dbc2b5c36f27c80abe021',1,'GGeneral::Logger']]],
+  ['screen_327',['Screen',['../struct_g_window_1_1_monitor_1_1_screen.html',1,'GWindow::Monitor::Screen'],['../struct_g_window_1_1_monitor_1_1_screen.html#a8f25ad383200f5dd2ea5862eae43c7b4',1,'GWindow::Monitor::Screen::Screen()']]],
+  ['screendimension_328',['screenDimension',['../struct_g_window_1_1_monitor_1_1_screen.html#a7e68af9a6027c271c3dd058158fad18b',1,'GWindow::Monitor::Screen']]],
+  ['screenname_329',['screenName',['../struct_g_window_1_1_monitor_1_1_screen.html#a802a0517ddd7b8ecab822befee15bd32',1,'GWindow::Monitor::Screen']]],
+  ['scroll_5flock_330',['SCROLL_LOCK',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a324bf1f059b99e2882bc1d567080d8ed',1,'GWindow']]],
+  ['select_331',['SELECT',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a63225f19fccb18e7c709f1fa11bc738e',1,'GWindow']]],
+  ['setcapturemousemode_332',['setCaptureMouseMode',['../class_g_window_1_1_window.html#adae91005026094c2368a57ceafd06a40',1,'GWindow::Window']]],
+  ['setopenglcontextactive_333',['setOpenGLContextActive',['../class_g_window_1_1_window.html#a390f00070c9a2909d8a8a6bf0e7957ab',1,'GWindow::Window']]],
+  ['setseverityfilter_334',['setSeverityFilter',['../namespace_g_general_1_1_logger.html#af87680823b7730e926c8bd8b24586f8f',1,'GGeneral::Logger']]],
+  ['setstate_335',['setState',['../class_g_window_1_1_window.html#a347c0f4a6f1f313924f1a54417f9f30c',1,'GWindow::Window']]],
+  ['sev_336',['sev',['../struct_g_general_1_1_logger_1_1_message.html#a37e9c8fd16aae26ce778a2dde6fe6745',1,'GGeneral::Logger::Message']]],
+  ['severity_337',['Severity',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7',1,'GGeneral::Logger']]],
+  ['severitycolors_338',['SeverityColors',['../_logger_8cpp.html#ad64c2da3cf5ef5f3a2f7030b32279292',1,'Logger.cpp']]],
+  ['severityfilter_339',['severityFilter',['../_logger_8cpp.html#a4797c25846dfad4c8fa6976d8034370e',1,'Logger.cpp']]],
+  ['shouldthreadterminate_340',['shouldThreadTerminate',['../_logger_8cpp.html#aed4efe0325cf1c39a818f7dc33efaa9e',1,'Logger.cpp']]],
+  ['shouldthreadwork_341',['shouldThreadWork',['../_logger_8cpp.html#ad9fdaaec67b9e400242cf74641ab5cdf',1,'Logger.cpp']]],
+  ['sleep_342',['SLEEP',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00ab32bd403b93dc6deffdab7af55e82596',1,'GWindow']]],
+  ['space_343',['SPACE',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6506ae39fdca9845e3a6de3865183e57',1,'GWindow']]]
 ];

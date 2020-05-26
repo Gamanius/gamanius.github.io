@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['point_586',['Point',['../struct_g_general_1_1_point.html#a5903876ad064501877f495fd87263583',1,'GGeneral::Point']]],
-  ['point3d_587',['Point3D',['../struct_g_general_1_1_point3_d.html#a5023fec7b8506ea04fbd7868c779c390',1,'GGeneral::Point3D']]],
-  ['printmessage_588',['printMessage',['../namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2',1,'GGeneral::Logger::printMessage(Message in)'],['../namespace_g_general_1_1_logger.html#aaacb5d14afcde7853402e2e0cada6840',1,'GGeneral::Logger::printMessage(T_T message, Severity sev, int ID)']]],
-  ['printmsg_589',['printmsg',['../_logger_8cpp.html#ac1f1f5b68161f6ad032be1f34ce6d6dc',1,'Logger.cpp']]]
+  ['operator_3c_3c_744',['operator&lt;&lt;',['../_g_renderer_8h.html#a82cb632e6cb86317a65aa6c4f3cda325',1,'operator&lt;&lt;(std::ostream &amp;os, const GGeneral::Dimension&lt; T &gt; &amp;p):&#160;GRenderer.h'],['../_g_renderer_8h.html#a30a5b03c0e00e32544d4faffef4bf6a6',1,'operator&lt;&lt;(std::ostream &amp;os, const GGeneral::Point&lt; T &gt; &amp;p):&#160;GRenderer.h'],['../_g_renderer_8h.html#a0d4d480ae01d5b6db26210d01870b1b3',1,'operator&lt;&lt;(std::ostream &amp;os, const GWindow::Monitor::Screen &amp;p):&#160;GRenderer.h']]]
 ];

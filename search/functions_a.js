@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['screen_590',['Screen',['../struct_g_window_1_1_monitor_1_1_screen.html#a8f25ad383200f5dd2ea5862eae43c7b4',1,'GWindow::Monitor::Screen']]],
-  ['setseverityfilter_591',['setSeverityFilter',['../namespace_g_general_1_1_logger.html#af87680823b7730e926c8bd8b24586f8f',1,'GGeneral::Logger']]],
-  ['setstate_592',['setState',['../class_g_window_1_1_window.html#a347c0f4a6f1f313924f1a54417f9f30c',1,'GWindow::Window']]]
+  ['point_745',['Point',['../struct_g_general_1_1_point.html#a5903876ad064501877f495fd87263583',1,'GGeneral::Point']]],
+  ['point3d_746',['Point3D',['../struct_g_general_1_1_point3_d.html#a5023fec7b8506ea04fbd7868c779c390',1,'GGeneral::Point3D']]],
+  ['printmessage_747',['printMessage',['../namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2',1,'GGeneral::Logger::printMessage(Message in)'],['../namespace_g_general_1_1_logger.html#aaacb5d14afcde7853402e2e0cada6840',1,'GGeneral::Logger::printMessage(T_T message, Severity sev, int ID)']]],
+  ['printmsg_748',['printmsg',['../_logger_8cpp.html#ac1f1f5b68161f6ad032be1f34ce6d6dc',1,'Logger.cpp']]]
 ];

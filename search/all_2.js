@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['callback_3',['Callback',['../_window_8cpp.html#ae2664b22f10a9bff8361a260e215cad1',1,'Window.cpp']]],
-  ['cb_4',['cb',['../struct___g_p_u___d_e_v_i_c_e.html#afcb22f16ba9e526610489ff56ab78ddb',1,'_GPU_DEVICE']]]
+  ['b_8',['B',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a9d5ed678fe57bcca610140957afab571',1,'GWindow']]],
+  ['backspace_9',['BACKSPACE',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6f5d8e41084b4d3d47fa621c459eede1',1,'GWindow']]]
 ];

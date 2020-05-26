@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['log_48',['LOG',['../_g_renderer_8h.html#af855c94dc540e943632089ce7496faac',1,'GRenderer.h']]],
-  ['loge_49',['LOGE',['../_g_renderer_8h.html#ae88c771aa94109b69f9ca83133986a04',1,'GRenderer.h']]],
-  ['logf_50',['LOGF',['../_g_renderer_8h.html#a0837ff38a1893a84e3243193689a3450',1,'GRenderer.h']]],
-  ['logger_2ecpp_51',['Logger.cpp',['../_logger_8cpp.html',1,'']]],
-  ['logi_52',['LOGI',['../_g_renderer_8h.html#aae87a6da64c7480ae4b36d9a4cdc12bc',1,'GRenderer.h']]],
-  ['logs_53',['LOGS',['../_g_renderer_8h.html#a01cd572a79d29b07cde0635002cdc881',1,'GRenderer.h']]],
-  ['logw_54',['LOGW',['../_g_renderer_8h.html#a7508ad13784302ee1b84b5edc652bdcb',1,'GRenderer.h']]],
-  ['lpfnenum_55',['lpfnEnum',['../_monitor_8cpp.html#a8704480c9a46ed783871a2f5e020ed93',1,'Monitor.cpp']]]
+  ['i_96',['I',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00add7536794b63bf90eccfd37f9b147d7f',1,'GWindow']]],
+  ['id_97',['ID',['../struct_g_general_1_1_logger_1_1_message.html#aa20fd7a5bed22f8c6b62f99fb19d0205',1,'GGeneral::Logger::Message']]],
+  ['indexcounter_98',['indexCounter',['../_monitor_8cpp.html#a6eed67ade0214ce1e8c4d7e349357e3c',1,'Monitor.cpp']]],
+  ['informationfetched_99',['informationFetched',['../_monitor_8cpp.html#a5be589df324ac042d8b7e484e9f28c7c',1,'Monitor.cpp']]],
+  ['init_100',['init',['../class_g_window_1_1_window.html#a2c7cf7241f99019ee5e330c8ae4e3843',1,'GWindow::Window::init()'],['../namespace_g_general_1_1_logger.html#ad86520bba91afcfbd42e612ff4b9e4dc',1,'GGeneral::Logger::init()'],['../namespace_g_window_1_1_monitor.html#ab954a24dbb1bbda72da332a8b828ae39',1,'GWindow::Monitor::init()']]],
+  ['initopenglcontext_101',['initOpenGLContext',['../class_g_window_1_1_window.html#ae61063e2207396b11f67c01f15389543',1,'GWindow::Window']]],
+  ['insert_102',['INSERT',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a61ee777e7f71dc466c3b2c685d8d313b',1,'GWindow']]],
+  ['isinit_103',['isInit',['../_logger_8cpp.html#ac4eddbd77742f6a9031c78fe7d3899f7',1,'isInit():&#160;Logger.cpp'],['../namespace_g_window_1_1_monitor.html#a7589189bba035dcbdedbbac41b4883e6',1,'GWindow::Monitor::isInit()']]]
 ];

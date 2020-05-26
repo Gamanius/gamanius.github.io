@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['log_773',['LOG',['../_g_renderer_8h.html#af855c94dc540e943632089ce7496faac',1,'GRenderer.h']]],
-  ['loge_774',['LOGE',['../_g_renderer_8h.html#ae88c771aa94109b69f9ca83133986a04',1,'GRenderer.h']]],
-  ['logf_775',['LOGF',['../_g_renderer_8h.html#a0837ff38a1893a84e3243193689a3450',1,'GRenderer.h']]],
-  ['logi_776',['LOGI',['../_g_renderer_8h.html#aae87a6da64c7480ae4b36d9a4cdc12bc',1,'GRenderer.h']]],
-  ['logs_777',['LOGS',['../_g_renderer_8h.html#a01cd572a79d29b07cde0635002cdc881',1,'GRenderer.h']]],
-  ['logw_778',['LOGW',['../_g_renderer_8h.html#a7508ad13784302ee1b84b5edc652bdcb',1,'GRenderer.h']]]
+  ['error_5fincompatible_5faffinity_5fmasks_5fnv_1072',['ERROR_INCOMPATIBLE_AFFINITY_MASKS_NV',['../wglext_8h.html#aba57c39607ef23bcc02cd6a42a13de83',1,'wglext.h']]],
+  ['error_5fincompatible_5fdevice_5fcontexts_5farb_1073',['ERROR_INCOMPATIBLE_DEVICE_CONTEXTS_ARB',['../wglext_8h.html#adf20e6297613c960933d70196939049d',1,'wglext.h']]],
+  ['error_5finvalid_5fpixel_5ftype_5farb_1074',['ERROR_INVALID_PIXEL_TYPE_ARB',['../wglext_8h.html#a4160f1333021dbf789fbc005ff9c8888',1,'wglext.h']]],
+  ['error_5finvalid_5fpixel_5ftype_5fext_1075',['ERROR_INVALID_PIXEL_TYPE_EXT',['../wglext_8h.html#a7137111625e80446e58919bad3e25072',1,'wglext.h']]],
+  ['error_5finvalid_5fprofile_5farb_1076',['ERROR_INVALID_PROFILE_ARB',['../wglext_8h.html#a685e9dcd28f13baaa254a1c41a796a5a',1,'wglext.h']]],
+  ['error_5finvalid_5fversion_5farb_1077',['ERROR_INVALID_VERSION_ARB',['../wglext_8h.html#aa711b7b414242207d8f58d9e9a8feb73',1,'wglext.h']]],
+  ['error_5fmissing_5faffinity_5fmask_5fnv_1078',['ERROR_MISSING_AFFINITY_MASK_NV',['../wglext_8h.html#a2b8fd1917b6fc092ee74c2ae442ba84e',1,'wglext.h']]]
 ];

@@ -36,6 +36,7 @@ var menudata={children:[
 {text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
+{text:"a",url:"functions.html#index_a"},
 {text:"c",url:"functions.html#index_c"},
 {text:"d",url:"functions.html#index_d"},
 {text:"f",url:"functions.html#index_f"},
@@ -75,9 +76,12 @@ var menudata={children:[
 {text:"Functions",url:"globals_func.html"},
 {text:"Variables",url:"globals_vars.html"},
 {text:"Typedefs",url:"globals_type.html",children:[
+{text:"g",url:"globals_type.html#index_g"},
 {text:"p",url:"globals_type.html#index_p"}]},
 {text:"Macros",url:"globals_defs.html",children:[
-{text:"e",url:"globals_defs.html#index_e"},
+{text:"c",url:"globals_defs.html#index_c"},
+{text:"e",url:"globals_defs_e.html#index_e"},
 {text:"l",url:"globals_defs_l.html#index_l"},
+{text:"t",url:"globals_defs_t.html#index_t"},
 {text:"u",url:"globals_defs_u.html#index_u"},
 {text:"w",url:"globals_defs_w.html#index_w"}]}]}]}]}
