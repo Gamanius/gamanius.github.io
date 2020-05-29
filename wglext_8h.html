@@ -748,7 +748,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:a12663f7c1dc4a7beb6984212b7d3e0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9625314182f3981a95ea94555bdefa9e"><td class="memItemLeft" align="right" valign="top">typedef const char *(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a9625314182f3981a95ea94555bdefa9e">PFNWGLGETEXTENSIONSSTRINGARBPROC</a>) (HDC hdc)</td></tr>
 <tr class="separator:a9625314182f3981a95ea94555bdefa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52ee9cdd9246531a1dd89ef00920843f"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a52ee9cdd9246531a1dd89ef00920843f">PFNWGLMAKECONTEXTCURRENTARBPROC</a>) (HDC hDrawDC, HDC hReadDC, HGLRC hglrc)</td></tr>
+<tr class="memitem:a52ee9cdd9246531a1dd89ef00920843f"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a52ee9cdd9246531a1dd89ef00920843f">PFNWGLMAKECONTEXTCURRENTARBPROC</a>) (HDC hDrawDC, HDC hReadDC, HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td></tr>
 <tr class="separator:a52ee9cdd9246531a1dd89ef00920843f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef9dc112d7e16cb384a8a6f57abe60e"><td class="memItemLeft" align="right" valign="top">typedef HDC(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a5ef9dc112d7e16cb384a8a6f57abe60e">PFNWGLGETCURRENTREADDCARBPROC</a>) (void)</td></tr>
 <tr class="separator:a5ef9dc112d7e16cb384a8a6f57abe60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -778,33 +778,33 @@ Typedefs</h2></td></tr>
 <tr class="separator:a3febfee9c6c905a376e4685a2816ea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39bfe9f3e7916aadf6a189e79c875557"><td class="memItemLeft" align="right" valign="top">typedef UINT(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a39bfe9f3e7916aadf6a189e79c875557">PFNWGLGETGPUIDSAMDPROC</a>) (UINT maxCount, UINT *ids)</td></tr>
 <tr class="separator:a39bfe9f3e7916aadf6a189e79c875557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b67b62b4366d6daae578bbd8bd608a4"><td class="memItemLeft" align="right" valign="top">typedef INT(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a5b67b62b4366d6daae578bbd8bd608a4">PFNWGLGETGPUINFOAMDPROC</a>) (UINT id, INT property, GLenum dataType, UINT size, void *data)</td></tr>
+<tr class="memitem:a5b67b62b4366d6daae578bbd8bd608a4"><td class="memItemLeft" align="right" valign="top">typedef INT(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a5b67b62b4366d6daae578bbd8bd608a4">PFNWGLGETGPUINFOAMDPROC</a>) (UINT id, INT property, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> dataType, UINT size, void *data)</td></tr>
 <tr class="separator:a5b67b62b4366d6daae578bbd8bd608a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67e9eb0a5a6b7bdc2cfbe295c37b78a4"><td class="memItemLeft" align="right" valign="top">typedef UINT(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a67e9eb0a5a6b7bdc2cfbe295c37b78a4">PFNWGLGETCONTEXTGPUIDAMDPROC</a>) (HGLRC hglrc)</td></tr>
+<tr class="memitem:a67e9eb0a5a6b7bdc2cfbe295c37b78a4"><td class="memItemLeft" align="right" valign="top">typedef UINT(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a67e9eb0a5a6b7bdc2cfbe295c37b78a4">PFNWGLGETCONTEXTGPUIDAMDPROC</a>) (HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td></tr>
 <tr class="separator:a67e9eb0a5a6b7bdc2cfbe295c37b78a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2df4120a6e0cb7349d3a0223bd13e5"><td class="memItemLeft" align="right" valign="top">typedef HGLRC(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a7d2df4120a6e0cb7349d3a0223bd13e5">PFNWGLCREATEASSOCIATEDCONTEXTAMDPROC</a>) (UINT id)</td></tr>
 <tr class="separator:a7d2df4120a6e0cb7349d3a0223bd13e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a26d103fe7d2445c26613caeeb93ea"><td class="memItemLeft" align="right" valign="top">typedef HGLRC(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a69a26d103fe7d2445c26613caeeb93ea">PFNWGLCREATEASSOCIATEDCONTEXTATTRIBSAMDPROC</a>) (UINT id, HGLRC hShareContext, const int *attribList)</td></tr>
 <tr class="separator:a69a26d103fe7d2445c26613caeeb93ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3548d77a839a28c664f33852ce59cc"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a8d3548d77a839a28c664f33852ce59cc">PFNWGLDELETEASSOCIATEDCONTEXTAMDPROC</a>) (HGLRC hglrc)</td></tr>
+<tr class="memitem:a8d3548d77a839a28c664f33852ce59cc"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a8d3548d77a839a28c664f33852ce59cc">PFNWGLDELETEASSOCIATEDCONTEXTAMDPROC</a>) (HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td></tr>
 <tr class="separator:a8d3548d77a839a28c664f33852ce59cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac907820f38f08a7bb6a7879963745531"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ac907820f38f08a7bb6a7879963745531">PFNWGLMAKEASSOCIATEDCONTEXTCURRENTAMDPROC</a>) (HGLRC hglrc)</td></tr>
+<tr class="memitem:ac907820f38f08a7bb6a7879963745531"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ac907820f38f08a7bb6a7879963745531">PFNWGLMAKEASSOCIATEDCONTEXTCURRENTAMDPROC</a>) (HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td></tr>
 <tr class="separator:ac907820f38f08a7bb6a7879963745531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace132f29929ba4340c603848fc49f4fb"><td class="memItemLeft" align="right" valign="top">typedef HGLRC(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ace132f29929ba4340c603848fc49f4fb">PFNWGLGETCURRENTASSOCIATEDCONTEXTAMDPROC</a>) (void)</td></tr>
 <tr class="separator:ace132f29929ba4340c603848fc49f4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3712b6d28e1f132fd9c4b1755fbd93f"><td class="memItemLeft" align="right" valign="top">typedef VOID(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ae3712b6d28e1f132fd9c4b1755fbd93f">PFNWGLBLITCONTEXTFRAMEBUFFERAMDPROC</a>) (HGLRC dstCtx, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)</td></tr>
+<tr class="memitem:ae3712b6d28e1f132fd9c4b1755fbd93f"><td class="memItemLeft" align="right" valign="top">typedef VOID(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ae3712b6d28e1f132fd9c4b1755fbd93f">PFNWGLBLITCONTEXTFRAMEBUFFERAMDPROC</a>) (HGLRC dstCtx, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcX0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcY0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcX1, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcY1, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstX0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstY0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstX1, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstY1, <a class="el" href="glew_8h.html#a0fb936f29008789fb46b434319f68cc9">GLbitfield</a> mask, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> filter)</td></tr>
 <tr class="separator:ae3712b6d28e1f132fd9c4b1755fbd93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c7fa225992a728e416b254358bb93bd"><td class="memItemLeft" align="right" valign="top">typedef GLboolean(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a9c7fa225992a728e416b254358bb93bd">PFNWGLCREATEDISPLAYCOLORTABLEEXTPROC</a>) (GLushort id)</td></tr>
+<tr class="memitem:a9c7fa225992a728e416b254358bb93bd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="glew_8h.html#aa010a67382116caf29c29318251ccb6c">GLboolean</a>(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a9c7fa225992a728e416b254358bb93bd">PFNWGLCREATEDISPLAYCOLORTABLEEXTPROC</a>) (<a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> id)</td></tr>
 <tr class="separator:a9c7fa225992a728e416b254358bb93bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce3505d0c34388f782c3fa050c72227"><td class="memItemLeft" align="right" valign="top">typedef GLboolean(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a6ce3505d0c34388f782c3fa050c72227">PFNWGLLOADDISPLAYCOLORTABLEEXTPROC</a>) (const GLushort *table, GLuint length)</td></tr>
+<tr class="memitem:a6ce3505d0c34388f782c3fa050c72227"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="glew_8h.html#aa010a67382116caf29c29318251ccb6c">GLboolean</a>(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a6ce3505d0c34388f782c3fa050c72227">PFNWGLLOADDISPLAYCOLORTABLEEXTPROC</a>) (const <a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> *table, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> length)</td></tr>
 <tr class="separator:a6ce3505d0c34388f782c3fa050c72227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3414783142f2e0b01be8a195f5ac1ba1"><td class="memItemLeft" align="right" valign="top">typedef GLboolean(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a3414783142f2e0b01be8a195f5ac1ba1">PFNWGLBINDDISPLAYCOLORTABLEEXTPROC</a>) (GLushort id)</td></tr>
+<tr class="memitem:a3414783142f2e0b01be8a195f5ac1ba1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="glew_8h.html#aa010a67382116caf29c29318251ccb6c">GLboolean</a>(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a3414783142f2e0b01be8a195f5ac1ba1">PFNWGLBINDDISPLAYCOLORTABLEEXTPROC</a>) (<a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> id)</td></tr>
 <tr class="separator:a3414783142f2e0b01be8a195f5ac1ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50bc3575fe07dc8db68679d2b419280d"><td class="memItemLeft" align="right" valign="top">typedef VOID(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a50bc3575fe07dc8db68679d2b419280d">PFNWGLDESTROYDISPLAYCOLORTABLEEXTPROC</a>) (GLushort id)</td></tr>
+<tr class="memitem:a50bc3575fe07dc8db68679d2b419280d"><td class="memItemLeft" align="right" valign="top">typedef VOID(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a50bc3575fe07dc8db68679d2b419280d">PFNWGLDESTROYDISPLAYCOLORTABLEEXTPROC</a>) (<a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> id)</td></tr>
 <tr class="separator:a50bc3575fe07dc8db68679d2b419280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9328183c0d66e5622357b9bbfc2cd78e"><td class="memItemLeft" align="right" valign="top">typedef const char *(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a9328183c0d66e5622357b9bbfc2cd78e">PFNWGLGETEXTENSIONSSTRINGEXTPROC</a>) (void)</td></tr>
 <tr class="separator:a9328183c0d66e5622357b9bbfc2cd78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af775a0cfdfc9a1bae14c30cf33cabec2"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#af775a0cfdfc9a1bae14c30cf33cabec2">PFNWGLMAKECONTEXTCURRENTEXTPROC</a>) (HDC hDrawDC, HDC hReadDC, HGLRC hglrc)</td></tr>
+<tr class="memitem:af775a0cfdfc9a1bae14c30cf33cabec2"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#af775a0cfdfc9a1bae14c30cf33cabec2">PFNWGLMAKECONTEXTCURRENTEXTPROC</a>) (HDC hDrawDC, HDC hReadDC, HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td></tr>
 <tr class="separator:af775a0cfdfc9a1bae14c30cf33cabec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3bc7f159c83274f6e263ab2720970b"><td class="memItemLeft" align="right" valign="top">typedef HDC(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a6f3bc7f159c83274f6e263ab2720970b">PFNWGLGETCURRENTREADDCEXTPROC</a>) (void)</td></tr>
 <tr class="separator:a6f3bc7f159c83274f6e263ab2720970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -894,25 +894,25 @@ Typedefs</h2></td></tr>
 <tr class="separator:a40307691eadcc5b30e4cd70e9f508340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47f71e2c8e458341ad2ec0c76bcb50b9"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a47f71e2c8e458341ad2ec0c76bcb50b9">PFNWGLDXCLOSEDEVICENVPROC</a>) (HANDLE hDevice)</td></tr>
 <tr class="separator:a47f71e2c8e458341ad2ec0c76bcb50b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ea5fce4da0be1d757fbd1100369685"><td class="memItemLeft" align="right" valign="top">typedef HANDLE(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a63ea5fce4da0be1d757fbd1100369685">PFNWGLDXREGISTEROBJECTNVPROC</a>) (HANDLE hDevice, void *dxObject, GLuint name, GLenum type, GLenum access)</td></tr>
+<tr class="memitem:a63ea5fce4da0be1d757fbd1100369685"><td class="memItemLeft" align="right" valign="top">typedef HANDLE(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a63ea5fce4da0be1d757fbd1100369685">PFNWGLDXREGISTEROBJECTNVPROC</a>) (HANDLE hDevice, void *dxObject, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> name, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> type, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> access)</td></tr>
 <tr class="separator:a63ea5fce4da0be1d757fbd1100369685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a435cbd4f9a7268d56dd4fe6ebf2c646e"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a435cbd4f9a7268d56dd4fe6ebf2c646e">PFNWGLDXUNREGISTEROBJECTNVPROC</a>) (HANDLE hDevice, HANDLE hObject)</td></tr>
 <tr class="separator:a435cbd4f9a7268d56dd4fe6ebf2c646e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a687967df43cf4d24de37203cff3396e1"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a687967df43cf4d24de37203cff3396e1">PFNWGLDXOBJECTACCESSNVPROC</a>) (HANDLE hObject, GLenum access)</td></tr>
+<tr class="memitem:a687967df43cf4d24de37203cff3396e1"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a687967df43cf4d24de37203cff3396e1">PFNWGLDXOBJECTACCESSNVPROC</a>) (HANDLE hObject, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> access)</td></tr>
 <tr class="separator:a687967df43cf4d24de37203cff3396e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d5baf9b9179e71febe4ab246df24f0"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a74d5baf9b9179e71febe4ab246df24f0">PFNWGLDXLOCKOBJECTSNVPROC</a>) (HANDLE hDevice, GLint count, HANDLE *hObjects)</td></tr>
+<tr class="memitem:a74d5baf9b9179e71febe4ab246df24f0"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a74d5baf9b9179e71febe4ab246df24f0">PFNWGLDXLOCKOBJECTSNVPROC</a>) (HANDLE hDevice, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> count, HANDLE *hObjects)</td></tr>
 <tr class="separator:a74d5baf9b9179e71febe4ab246df24f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada46c53353dc7f05f3a8c44745b5244b"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ada46c53353dc7f05f3a8c44745b5244b">PFNWGLDXUNLOCKOBJECTSNVPROC</a>) (HANDLE hDevice, GLint count, HANDLE *hObjects)</td></tr>
+<tr class="memitem:ada46c53353dc7f05f3a8c44745b5244b"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ada46c53353dc7f05f3a8c44745b5244b">PFNWGLDXUNLOCKOBJECTSNVPROC</a>) (HANDLE hDevice, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> count, HANDLE *hObjects)</td></tr>
 <tr class="separator:ada46c53353dc7f05f3a8c44745b5244b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6edf3ce32582ad99f19cbab9193775f9"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a6edf3ce32582ad99f19cbab9193775f9">PFNWGLCOPYIMAGESUBDATANVPROC</a>) (HGLRC hSrcRC, GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, HGLRC hDstRC, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth)</td></tr>
+<tr class="memitem:a6edf3ce32582ad99f19cbab9193775f9"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a6edf3ce32582ad99f19cbab9193775f9">PFNWGLCOPYIMAGESUBDATANVPROC</a>) (HGLRC hSrcRC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> srcName, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> srcTarget, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcLevel, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcX, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcY, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcZ, HGLRC hDstRC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> dstName, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> dstTarget, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstLevel, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstX, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstY, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstZ, <a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> width, <a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> height, <a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> depth)</td></tr>
 <tr class="separator:a6edf3ce32582ad99f19cbab9193775f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5598e44a43f9719553b1bfb0622f9a2"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ac5598e44a43f9719553b1bfb0622f9a2">PFNWGLDELAYBEFORESWAPNVPROC</a>) (HDC hDC, GLfloat seconds)</td></tr>
+<tr class="memitem:ac5598e44a43f9719553b1bfb0622f9a2"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ac5598e44a43f9719553b1bfb0622f9a2">PFNWGLDELAYBEFORESWAPNVPROC</a>) (HDC hDC, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> seconds)</td></tr>
 <tr class="separator:ac5598e44a43f9719553b1bfb0622f9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeaad4eb2ceb32236deb77d209ce1f7f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct___g_p_u___d_e_v_i_c_e.html">_GPU_DEVICE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#afeaad4eb2ceb32236deb77d209ce1f7f">PGPU_DEVICE</a></td></tr>
 <tr class="separator:afeaad4eb2ceb32236deb77d209ce1f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e204bc3faa974aef2af02699efde2da"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a9e204bc3faa974aef2af02699efde2da">PFNWGLENUMGPUSNVPROC</a>) (UINT iGpuIndex, HGPUNV *phGpu)</td></tr>
 <tr class="separator:a9e204bc3faa974aef2af02699efde2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a865eac1f17276bc990bcf08c56cc486c"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a865eac1f17276bc990bcf08c56cc486c">PFNWGLENUMGPUDEVICESNVPROC</a>) (HGPUNV hGpu, UINT iDeviceIndex, <a class="el" href="wglext_8h.html#afeaad4eb2ceb32236deb77d209ce1f7f">PGPU_DEVICE</a> lpGpuDevice)</td></tr>
+<tr class="memitem:a865eac1f17276bc990bcf08c56cc486c"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a865eac1f17276bc990bcf08c56cc486c">PFNWGLENUMGPUDEVICESNVPROC</a>) (HGPUNV hGpu, UINT iDeviceIndex, <a class="el" href="wglew_8h.html#a6e272efe8f4c3663204c387ae0cd4761">PGPU_DEVICE</a> lpGpuDevice)</td></tr>
 <tr class="separator:a865eac1f17276bc990bcf08c56cc486c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0bbcd829b91bf219809afea9394843d"><td class="memItemLeft" align="right" valign="top">typedef HDC(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ae0bbcd829b91bf219809afea9394843d">PFNWGLCREATEAFFINITYDCNVPROC</a>) (const HGPUNV *phGpuList)</td></tr>
 <tr class="separator:ae0bbcd829b91bf219809afea9394843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -926,19 +926,19 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6da9baa4272888176bc2968c3b1b7448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06959fd0677cf0a2174647db4f387d8f"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a06959fd0677cf0a2174647db4f387d8f">PFNWGLQUERYCURRENTCONTEXTNVPROC</a>) (int iAttribute, int *piValue)</td></tr>
 <tr class="separator:a06959fd0677cf0a2174647db4f387d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a4cbb845ff6db0f9319dfef00aac591"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a8a4cbb845ff6db0f9319dfef00aac591">PFNWGLJOINSWAPGROUPNVPROC</a>) (HDC hDC, GLuint group)</td></tr>
+<tr class="memitem:a8a4cbb845ff6db0f9319dfef00aac591"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a8a4cbb845ff6db0f9319dfef00aac591">PFNWGLJOINSWAPGROUPNVPROC</a>) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> group)</td></tr>
 <tr class="separator:a8a4cbb845ff6db0f9319dfef00aac591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab32fb2a084a06068b44865f8f10b44"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a6ab32fb2a084a06068b44865f8f10b44">PFNWGLBINDSWAPBARRIERNVPROC</a>) (GLuint group, GLuint barrier)</td></tr>
+<tr class="memitem:a6ab32fb2a084a06068b44865f8f10b44"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a6ab32fb2a084a06068b44865f8f10b44">PFNWGLBINDSWAPBARRIERNVPROC</a>) (<a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> group, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> barrier)</td></tr>
 <tr class="separator:a6ab32fb2a084a06068b44865f8f10b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a094190bd4973d6db2751e849467093a7"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a094190bd4973d6db2751e849467093a7">PFNWGLQUERYSWAPGROUPNVPROC</a>) (HDC hDC, GLuint *group, GLuint *barrier)</td></tr>
+<tr class="memitem:a094190bd4973d6db2751e849467093a7"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a094190bd4973d6db2751e849467093a7">PFNWGLQUERYSWAPGROUPNVPROC</a>) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *group, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *barrier)</td></tr>
 <tr class="separator:a094190bd4973d6db2751e849467093a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a719c6e26029d5d3957a1258f0d94880f"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a719c6e26029d5d3957a1258f0d94880f">PFNWGLQUERYMAXSWAPGROUPSNVPROC</a>) (HDC hDC, GLuint *maxGroups, GLuint *maxBarriers)</td></tr>
+<tr class="memitem:a719c6e26029d5d3957a1258f0d94880f"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a719c6e26029d5d3957a1258f0d94880f">PFNWGLQUERYMAXSWAPGROUPSNVPROC</a>) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *maxGroups, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *maxBarriers)</td></tr>
 <tr class="separator:a719c6e26029d5d3957a1258f0d94880f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a420946be73755204cfcb3db29357ce02"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a420946be73755204cfcb3db29357ce02">PFNWGLQUERYFRAMECOUNTNVPROC</a>) (HDC hDC, GLuint *count)</td></tr>
+<tr class="memitem:a420946be73755204cfcb3db29357ce02"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a420946be73755204cfcb3db29357ce02">PFNWGLQUERYFRAMECOUNTNVPROC</a>) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *count)</td></tr>
 <tr class="separator:a420946be73755204cfcb3db29357ce02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f218c98fb4302a2a59d33e7cb3fa2c"><td class="memItemLeft" align="right" valign="top">typedef BOOL(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#ac2f218c98fb4302a2a59d33e7cb3fa2c">PFNWGLRESETFRAMECOUNTNVPROC</a>) (HDC hDC)</td></tr>
 <tr class="separator:ac2f218c98fb4302a2a59d33e7cb3fa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b9ed8970cebdc7dbf4a2431c81af176"><td class="memItemLeft" align="right" valign="top">typedef void *(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a0b9ed8970cebdc7dbf4a2431c81af176">PFNWGLALLOCATEMEMORYNVPROC</a>) (GLsizei size, GLfloat readfreq, GLfloat writefreq, GLfloat priority)</td></tr>
+<tr class="memitem:a0b9ed8970cebdc7dbf4a2431c81af176"><td class="memItemLeft" align="right" valign="top">typedef void *(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a0b9ed8970cebdc7dbf4a2431c81af176">PFNWGLALLOCATEMEMORYNVPROC</a>) (<a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> size, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> readfreq, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> writefreq, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> priority)</td></tr>
 <tr class="separator:a0b9ed8970cebdc7dbf4a2431c81af176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d002992903be69c1ac1aa825b917090"><td class="memItemLeft" align="right" valign="top">typedef void(WINAPI *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wglext_8h.html#a4d002992903be69c1ac1aa825b917090">PFNWGLFREEMEMORYNVPROC</a>) (void *pointer)</td></tr>
 <tr class="separator:a4d002992903be69c1ac1aa825b917090"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5523,7 +5523,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void*(WINAPI* PFNWGLALLOCATEMEMORYNVPROC) (GLsizei size, GLfloat readfreq, GLfloat writefreq, GLfloat priority)</td>
+          <td class="memname">typedef void*(WINAPI* PFNWGLALLOCATEMEMORYNVPROC) (<a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> size, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> readfreq, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> writefreq, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> priority)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5565,7 +5565,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef GLboolean(WINAPI* PFNWGLBINDDISPLAYCOLORTABLEEXTPROC) (GLushort id)</td>
+          <td class="memname">typedef <a class="el" href="glew_8h.html#aa010a67382116caf29c29318251ccb6c">GLboolean</a>(WINAPI* PFNWGLBINDDISPLAYCOLORTABLEEXTPROC) (<a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5579,7 +5579,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLBINDSWAPBARRIERNVPROC) (GLuint group, GLuint barrier)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLBINDSWAPBARRIERNVPROC) (<a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> group, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> barrier)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5649,7 +5649,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef VOID(WINAPI* PFNWGLBLITCONTEXTFRAMEBUFFERAMDPROC) (HGLRC dstCtx, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter)</td>
+          <td class="memname">typedef VOID(WINAPI* PFNWGLBLITCONTEXTFRAMEBUFFERAMDPROC) (HGLRC dstCtx, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcX0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcY0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcX1, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcY1, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstX0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstY0, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstX1, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstY1, <a class="el" href="glew_8h.html#a0fb936f29008789fb46b434319f68cc9">GLbitfield</a> mask, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> filter)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5691,7 +5691,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLCOPYIMAGESUBDATANVPROC) (HGLRC hSrcRC, GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, HGLRC hDstRC, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLCOPYIMAGESUBDATANVPROC) (HGLRC hSrcRC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> srcName, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> srcTarget, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcLevel, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcX, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcY, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> srcZ, HGLRC hDstRC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> dstName, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> dstTarget, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstLevel, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstX, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstY, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> dstZ, <a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> width, <a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> height, <a class="el" href="glew_8h.html#a9289d5b99dc1f27f01480360f2e18ae0">GLsizei</a> depth)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5775,7 +5775,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef GLboolean(WINAPI* PFNWGLCREATEDISPLAYCOLORTABLEEXTPROC) (GLushort id)</td>
+          <td class="memname">typedef <a class="el" href="glew_8h.html#aa010a67382116caf29c29318251ccb6c">GLboolean</a>(WINAPI* PFNWGLCREATEDISPLAYCOLORTABLEEXTPROC) (<a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5831,7 +5831,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLDELAYBEFORESWAPNVPROC) (HDC hDC, GLfloat seconds)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLDELAYBEFORESWAPNVPROC) (HDC hDC, <a class="el" href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a> seconds)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5845,7 +5845,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLDELETEASSOCIATEDCONTEXTAMDPROC) (HGLRC hglrc)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLDELETEASSOCIATEDCONTEXTAMDPROC) (HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5887,7 +5887,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef VOID(WINAPI* PFNWGLDESTROYDISPLAYCOLORTABLEEXTPROC) (GLushort id)</td>
+          <td class="memname">typedef VOID(WINAPI* PFNWGLDESTROYDISPLAYCOLORTABLEEXTPROC) (<a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5985,7 +5985,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLDXLOCKOBJECTSNVPROC) (HANDLE hDevice, GLint count, HANDLE *hObjects)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLDXLOCKOBJECTSNVPROC) (HANDLE hDevice, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> count, HANDLE *hObjects)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5999,7 +5999,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLDXOBJECTACCESSNVPROC) (HANDLE hObject, GLenum access)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLDXOBJECTACCESSNVPROC) (HANDLE hObject, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> access)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6027,7 +6027,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef HANDLE(WINAPI* PFNWGLDXREGISTEROBJECTNVPROC) (HANDLE hDevice, void *dxObject, GLuint name, GLenum type, GLenum access)</td>
+          <td class="memname">typedef HANDLE(WINAPI* PFNWGLDXREGISTEROBJECTNVPROC) (HANDLE hDevice, void *dxObject, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> name, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> type, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> access)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6055,7 +6055,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLDXUNLOCKOBJECTSNVPROC) (HANDLE hDevice, GLint count, HANDLE *hObjects)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLDXUNLOCKOBJECTSNVPROC) (HANDLE hDevice, <a class="el" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> count, HANDLE *hObjects)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6153,7 +6153,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLENUMGPUDEVICESNVPROC) (HGPUNV hGpu, UINT iDeviceIndex, <a class="el" href="wglext_8h.html#afeaad4eb2ceb32236deb77d209ce1f7f">PGPU_DEVICE</a> lpGpuDevice)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLENUMGPUDEVICESNVPROC) (HGPUNV hGpu, UINT iDeviceIndex, <a class="el" href="wglew_8h.html#a6e272efe8f4c3663204c387ae0cd4761">PGPU_DEVICE</a> lpGpuDevice)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6265,7 +6265,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef UINT(WINAPI* PFNWGLGETCONTEXTGPUIDAMDPROC) (HGLRC hglrc)</td>
+          <td class="memname">typedef UINT(WINAPI* PFNWGLGETCONTEXTGPUIDAMDPROC) (HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6475,7 +6475,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef INT(WINAPI* PFNWGLGETGPUINFOAMDPROC) (UINT id, INT property, GLenum dataType, UINT size, void *data)</td>
+          <td class="memname">typedef INT(WINAPI* PFNWGLGETGPUINFOAMDPROC) (UINT id, INT property, <a class="el" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> dataType, UINT size, void *data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6671,7 +6671,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLJOINSWAPGROUPNVPROC) (HDC hDC, GLuint group)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLJOINSWAPGROUPNVPROC) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> group)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6685,7 +6685,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef GLboolean(WINAPI* PFNWGLLOADDISPLAYCOLORTABLEEXTPROC) (const GLushort *table, GLuint length)</td>
+          <td class="memname">typedef <a class="el" href="glew_8h.html#aa010a67382116caf29c29318251ccb6c">GLboolean</a>(WINAPI* PFNWGLLOADDISPLAYCOLORTABLEEXTPROC) (const <a class="el" href="glew_8h.html#ac995a558f6571eb5f98b7a6d2b2a4468">GLushort</a> *table, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> length)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6713,7 +6713,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLMAKEASSOCIATEDCONTEXTCURRENTAMDPROC) (HGLRC hglrc)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLMAKEASSOCIATEDCONTEXTCURRENTAMDPROC) (HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6727,7 +6727,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLMAKECONTEXTCURRENTARBPROC) (HDC hDrawDC, HDC hReadDC, HGLRC hglrc)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLMAKECONTEXTCURRENTARBPROC) (HDC hDrawDC, HDC hReadDC, HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6741,7 +6741,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLMAKECONTEXTCURRENTEXTPROC) (HDC hDrawDC, HDC hReadDC, HGLRC hglrc)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLMAKECONTEXTCURRENTEXTPROC) (HDC hDrawDC, HDC hReadDC, HGLRC <a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6769,7 +6769,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLQUERYFRAMECOUNTNVPROC) (HDC hDC, GLuint *count)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLQUERYFRAMECOUNTNVPROC) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *count)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6825,7 +6825,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLQUERYMAXSWAPGROUPSNVPROC) (HDC hDC, GLuint *maxGroups, GLuint *maxBarriers)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLQUERYMAXSWAPGROUPSNVPROC) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *maxGroups, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *maxBarriers)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6867,7 +6867,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef BOOL(WINAPI* PFNWGLQUERYSWAPGROUPNVPROC) (HDC hDC, GLuint *group, GLuint *barrier)</td>
+          <td class="memname">typedef BOOL(WINAPI* PFNWGLQUERYSWAPGROUPNVPROC) (HDC hDC, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *group, <a class="el" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> *barrier)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -7189,7 +7189,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct___g_p_u___d_e_v_i_c_e.html">_GPU_DEVICE</a>* <a class="el" href="wglext_8h.html#afeaad4eb2ceb32236deb77d209ce1f7f">PGPU_DEVICE</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct___g_p_u___d_e_v_i_c_e.html">_GPU_DEVICE</a>* <a class="el" href="wglew_8h.html#a6e272efe8f4c3663204c387ae0cd4761">PGPU_DEVICE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['msg_777',['msg',['../struct_g_general_1_1_logger_1_1_message.html#ae45152aec121a668bc5c3ac3a4368b36',1,'GGeneral::Logger::Message']]],
-  ['msgbuffer_778',['msgBuffer',['../_logger_8cpp.html#aa782721e6fcd9246c793feb59c29c611',1,'Logger.cpp']]]
+  ['flags_23694',['Flags',['../struct___g_p_u___d_e_v_i_c_e.html#a008db9d0f5fc13a5160805f40465f14a',1,'_GPU_DEVICE']]]
 ];

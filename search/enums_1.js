@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vk_919',['VK',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00',1,'GWindow']]]
+  ['severity_26806',['Severity',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7',1,'GGeneral::Logger']]]
 ];

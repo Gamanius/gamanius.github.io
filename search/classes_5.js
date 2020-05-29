@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['window_708',['Window',['../class_g_window_1_1_window.html',1,'GWindow']]],
-  ['windowclass_709',['WindowClass',['../struct_window_class.html',1,'']]]
+  ['point_19191',['Point',['../struct_g_general_1_1_point.html',1,'GGeneral']]],
+  ['point3d_19192',['Point3D',['../struct_g_general_1_1_point3_d.html',1,'GGeneral']]],
+  ['point_3c_20int_20_3e_19193',['Point&lt; int &gt;',['../struct_g_general_1_1_point.html',1,'GGeneral']]]
 ];

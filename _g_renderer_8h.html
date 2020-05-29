@@ -81,11 +81,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;initializer_list&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="_g_renderer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_time_1_1_timer.html">GGeneral::Time::Timer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_logger_1_1_message.html">GGeneral::Logger::Message</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension&lt; T &gt;</a></td></tr>
@@ -96,6 +100,16 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_point3_d.html">GGeneral::Point3D&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_index_buffer.html">GRenderer::Primitives::IndexBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html">GRenderer::Primitives::VertexBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array.html">GRenderer::Primitives::VertexArray</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array_1_1_vertex_array_layout.html">GRenderer::Primitives::VertexArray::VertexArrayLayout</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_primitives_1_1_shader.html">GRenderer::Primitives::Shader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html">GWindow::Window</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_window_1_1_monitor_1_1_screen.html">GWindow::Monitor::Screen</a></td></tr>
@@ -105,15 +119,17 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_g_general"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general.html">GGeneral</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_g_general_1_1_time"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_time.html">GGeneral::Time</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_general_1_1_logger"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html">GGeneral::Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_renderer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html">GRenderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_g_renderer_1_1_primitives"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer_1_1_primitives.html">GRenderer::Primitives</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_window"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window.html">GWindow</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_window_1_1_monitor"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_monitor.html">GWindow::Monitor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_g_window_1_1_o_s"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_o_s.html">GWindow::OS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_enum_string"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_enum_string.html">GEnumString</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +165,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
+<tr class="separator:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e7d58bd10d0de036985a67b1e13648"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#af4e7d58bd10d0de036985a67b1e13648">GWindowCallback</a>) (int)</td></tr>
 <tr class="separator:af4e7d58bd10d0de036985a67b1e13648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -165,6 +183,21 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9de7729ef34053379a45395c34cf84e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8729df3ef7b2106f8cae92849fd1380b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer_1_1_primitives.html#a8729df3ef7b2106f8cae92849fd1380b">GRenderer::Primitives::IndexTypes</a> { <a class="el" href="namespace_g_renderer_1_1_primitives.html#a8729df3ef7b2106f8cae92849fd1380ba9c0389cdb943fd7826de2b12b7aad11a">GRenderer::Primitives::IndexTypes::UNSIGNED_BYTE</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#a8729df3ef7b2106f8cae92849fd1380ba765ef1b950ba8455b8992510ffa56895">GRenderer::Primitives::IndexTypes::UNSIGNED_SHORT</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#a8729df3ef7b2106f8cae92849fd1380ba9ba5b3da1d35e22e1680ddbe52d36ed5">GRenderer::Primitives::IndexTypes::UNSIGNED_INT</a>
+ }</td></tr>
+<tr class="separator:a8729df3ef7b2106f8cae92849fd1380b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64454cc82769ed6d889d730c4f777cf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer_1_1_primitives.html#ad64454cc82769ed6d889d730c4f777cf">GRenderer::Primitives::VertexTypes</a> { <br />
+&#160;&#160;<a class="el" href="namespace_g_renderer_1_1_primitives.html#ad64454cc82769ed6d889d730c4f777cfae409eb2ba6eb6801f52763ae370c350e">GRenderer::Primitives::VertexTypes::BYTE</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#ad64454cc82769ed6d889d730c4f777cfaa35c2b02966b1563e5bf7b81b8b0cf77">GRenderer::Primitives::VertexTypes::SHORT</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#ad64454cc82769ed6d889d730c4f777cfa53f93baa3057821107c750323892fa92">GRenderer::Primitives::VertexTypes::INT</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#ad64454cc82769ed6d889d730c4f777cfae738c26bf4ce1037fa81b039a915cbf6">GRenderer::Primitives::VertexTypes::FLOAT</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_renderer_1_1_primitives.html#ad64454cc82769ed6d889d730c4f777cfafd3e4ece78a7d422280d5ed379482229">GRenderer::Primitives::VertexTypes::DOUBLE</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad64454cc82769ed6d889d730c4f777cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba040cbf3f091efdd3517cf6ae8af65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65">GWindow::WindowState</a> { <a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a347e628a8f72626a0611ef842fe9d304">GWindow::WindowState::HIDDEN</a>, 
 <a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a2f33d682f3a4e19c31ced6cb4fd022e3">GWindow::WindowState::MAXIMIZED</a>, 
 <a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a43245b4788b59a22d5357a7146c06deb">GWindow::WindowState::MINIMIZED</a>, 
@@ -356,9 +389,9 @@ Functions</h2></td></tr>
 <tr class="separator:ad86520bba91afcfbd42e612ff4b9e4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48322ad38e1e62c584b406f220f6f3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2">GGeneral::Logger::printMessage</a> (Message in)</td></tr>
 <tr class="separator:a48322ad38e1e62c584b406f220f6f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaacb5d14afcde7853402e2e0cada6840"><td class="memTemplParams" colspan="2">template&lt;typename T_T &gt; </td></tr>
-<tr class="memitem:aaacb5d14afcde7853402e2e0cada6840"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#aaacb5d14afcde7853402e2e0cada6840">GGeneral::Logger::printMessage</a> (T_T message, Severity sev, int ID)</td></tr>
-<tr class="separator:aaacb5d14afcde7853402e2e0cada6840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b9bb1c1f45dc7e27b4dda061d7290e"><td class="memTemplParams" colspan="2">template&lt;typename T_TYPE &gt; </td></tr>
+<tr class="memitem:a55b9bb1c1f45dc7e27b4dda061d7290e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a55b9bb1c1f45dc7e27b4dda061d7290e">GGeneral::Logger::printMessage</a> (T_TYPE message, Severity sev, int ID)</td></tr>
+<tr class="separator:a55b9bb1c1f45dc7e27b4dda061d7290e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abacd844f5edc1bd2954a864449173712"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#abacd844f5edc1bd2954a864449173712">GGeneral::Logger::addUserName</a> (std::string name)</td></tr>
 <tr class="separator:abacd844f5edc1bd2954a864449173712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87680823b7730e926c8bd8b24586f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#af87680823b7730e926c8bd8b24586f8f">GGeneral::Logger::setSeverityFilter</a> (Severity filter)</td></tr>
@@ -381,8 +414,8 @@ Functions</h2></td></tr>
 <tr class="separator:a97b36343c25a0d1743f97ac3c2901440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fde7decdfbf751ae074f0340184f0e1"><td class="memItemLeft" align="right" valign="top">Screen const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_monitor.html#a0fde7decdfbf751ae074f0340184f0e1">GWindow::Monitor::getMonitorInformation</a> (unsigned int i)</td></tr>
 <tr class="separator:a0fde7decdfbf751ae074f0340184f0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc29feda8c53279846fe4d393aeaa3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_o_s.html#a4dc29feda8c53279846fe4d393aeaa3f">GWindow::OS::moveMouse</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos)</td></tr>
-<tr class="separator:a4dc29feda8c53279846fe4d393aeaa3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5123edd69410243cdc59da28da235a"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_monitor.html#aba5123edd69410243cdc59da28da235a">GWindow::Monitor::getSupportedAmountOfMonitorDevices</a> ()</td></tr>
+<tr class="separator:aba5123edd69410243cdc59da28da235a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a734d98e3e87224bf7b7679912745490d"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
 <tr class="memitem:a734d98e3e87224bf7b7679912745490d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_enum_string.html#a734d98e3e87224bf7b7679912745490d">GEnumString::enumToString</a> (E GEnum)</td></tr>
 <tr class="separator:a734d98e3e87224bf7b7679912745490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -691,6 +724,20 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a0c8186d9b9b7880309c27230bbb5e69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8186d9b9b7880309c27230bbb5e69d">&#9670;&nbsp;</a></span>byte</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af4e7d58bd10d0de036985a67b1e13648"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4e7d58bd10d0de036985a67b1e13648">&#9670;&nbsp;</a></span>GWindowCallback</h2>
 

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['wait_757',['wait',['../namespace_g_general_1_1_logger.html#af74f90b2d97a6e38253042a51ad1a489',1,'GGeneral::Logger']]],
-  ['window_758',['Window',['../class_g_window_1_1_window.html#a3ef8d474db0a8b7aae23ae6766c1cf46',1,'GWindow::Window::Window()'],['../class_g_window_1_1_window.html#a6729c3e8d9dfff89802ea38b30ceb4d2',1,'GWindow::Window::Window(std::string name, GGeneral::Point&lt; int &gt; pos, GGeneral::Dimension&lt; int &gt; dim)']]]
+  ['unbind_19634',['unbind',['../struct_g_renderer_1_1_primitives_1_1_index_buffer.html#ab15b79fb467081cbe40f5ae854770699',1,'GRenderer::Primitives::IndexBuffer::unbind()'],['../struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html#a46adedad1e50cc68eb9bd6245e23f824',1,'GRenderer::Primitives::VertexBuffer::unbind()'],['../struct_g_renderer_1_1_primitives_1_1_vertex_array.html#a2de314ecb32c408a160730ea0fe98bbf',1,'GRenderer::Primitives::VertexArray::unbind()']]]
 ];

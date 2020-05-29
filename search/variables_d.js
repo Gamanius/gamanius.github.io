@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_794',['x',['../struct_g_general_1_1_point.html#a18d59d7236c9251714ee654678e8e649',1,'GGeneral::Point']]]
+  ['rcvirtualscreen_23719',['rcVirtualScreen',['../struct___g_p_u___d_e_v_i_c_e.html#aeb573bbeb3b6c589246720ef259b9a27',1,'_GPU_DEVICE']]]
 ];

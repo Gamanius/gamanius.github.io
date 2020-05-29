@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['screendimension_781',['screenDimension',['../struct_g_window_1_1_monitor_1_1_screen.html#a7e68af9a6027c271c3dd058158fad18b',1,'GWindow::Monitor::Screen']]],
-  ['screenname_782',['screenName',['../struct_g_window_1_1_monitor_1_1_screen.html#a802a0517ddd7b8ecab822befee15bd32',1,'GWindow::Monitor::Screen']]],
-  ['sev_783',['sev',['../struct_g_general_1_1_logger_1_1_message.html#a37e9c8fd16aae26ce778a2dde6fe6745',1,'GGeneral::Logger::Message']]],
-  ['severitycolors_784',['SeverityColors',['../_logger_8cpp.html#ad64c2da3cf5ef5f3a2f7030b32279292',1,'Logger.cpp']]],
-  ['severityfilter_785',['severityFilter',['../_logger_8cpp.html#a4797c25846dfad4c8fa6976d8034370e',1,'Logger.cpp']]],
-  ['shouldthreadterminate_786',['shouldThreadTerminate',['../_logger_8cpp.html#aed4efe0325cf1c39a818f7dc33efaa9e',1,'Logger.cpp']]],
-  ['shouldthreadwork_787',['shouldThreadWork',['../_logger_8cpp.html#ad9fdaaec67b9e400242cf74641ab5cdf',1,'Logger.cpp']]]
+  ['id_23704',['ID',['../struct_g_general_1_1_logger_1_1_message.html#aa20fd7a5bed22f8c6b62f99fb19d0205',1,'GGeneral::Logger::Message']]],
+  ['indexcounter_23705',['indexCounter',['../_monitor_8cpp.html#a6eed67ade0214ce1e8c4d7e349357e3c',1,'Monitor.cpp']]],
+  ['informationfetched_23706',['informationFetched',['../_monitor_8cpp.html#a5be589df324ac042d8b7e484e9f28c7c',1,'Monitor.cpp']]],
+  ['isinit_23707',['isInit',['../_logger_8cpp.html#ac4eddbd77742f6a9031c78fe7d3899f7',1,'Logger.cpp']]]
 ];
