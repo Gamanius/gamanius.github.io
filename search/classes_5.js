@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['point_19191',['Point',['../struct_g_general_1_1_point.html',1,'GGeneral']]],
-  ['point3d_19192',['Point3D',['../struct_g_general_1_1_point3_d.html',1,'GGeneral']]],
-  ['point_3c_20int_20_3e_19193',['Point&lt; int &gt;',['../struct_g_general_1_1_point.html',1,'GGeneral']]]
+  ['image_19266',['Image',['../struct_g_i_o_1_1_graphics_1_1_image.html',1,'GIO::Graphics']]],
+  ['indexbuffer_19267',['IndexBuffer',['../struct_g_renderer_1_1_primitives_1_1_index_buffer.html',1,'GRenderer::Primitives']]]
 ];

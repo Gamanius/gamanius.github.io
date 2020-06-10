@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['window_19200',['Window',['../class_g_window_1_1_window.html',1,'GWindow']]],
-  ['windowclass_19201',['WindowClass',['../struct_window_class.html',1,'']]]
+  ['texture_19276',['Texture',['../class_g_renderer_1_1_texture.html',1,'GRenderer']]],
+  ['timer_19277',['Timer',['../struct_g_general_1_1_time_1_1_timer.html',1,'GGeneral::Time']]]
 ];

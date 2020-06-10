@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['glxbufferclobbereventsgix_19183',['GLXBufferClobberEventSGIX',['../struct_g_l_x_buffer_clobber_event_s_g_i_x.html',1,'']]],
-  ['glxhyperpipeconfigsgix_19184',['GLXHyperpipeConfigSGIX',['../struct_g_l_x_hyperpipe_config_s_g_i_x.html',1,'']]],
-  ['glxhyperpipenetworksgix_19185',['GLXHyperpipeNetworkSGIX',['../struct_g_l_x_hyperpipe_network_s_g_i_x.html',1,'']]],
-  ['glxpbufferclobberevent_19186',['GLXPbufferClobberEvent',['../struct_g_l_x_pbuffer_clobber_event.html',1,'']]],
-  ['glxpiperect_19187',['GLXPipeRect',['../struct_g_l_x_pipe_rect.html',1,'']]],
-  ['glxpiperectlimits_19188',['GLXPipeRectLimits',['../struct_g_l_x_pipe_rect_limits.html',1,'']]]
+  ['dimension_19255',['Dimension',['../struct_g_general_1_1_dimension.html',1,'GGeneral']]],
+  ['dimension3d_19256',['Dimension3D',['../struct_g_general_1_1_dimension3_d.html',1,'GGeneral']]],
+  ['dimension_3c_20int_20_3e_19257',['Dimension&lt; int &gt;',['../struct_g_general_1_1_dimension.html',1,'GGeneral']]],
+  ['dimension_3c_20unsigned_20int_20_3e_19258',['Dimension&lt; unsigned int &gt;',['../struct_g_general_1_1_dimension.html',1,'GGeneral']]]
 ];

@@ -79,15 +79,17 @@ $(function() {
 <div class="title">GRenderer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
+<div class="textblock"><code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;initializer_list&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="_g_math_8h_source.html">GMath.h</a>&quot;</code><br />
 </div>
 <p><a href="_g_renderer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_color.html">GGeneral::Color</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_time_1_1_timer.html">GGeneral::Time::Timer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_logger_1_1_message.html">GGeneral::Logger::Message</a></td></tr>
@@ -100,6 +102,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_point3_d.html">GGeneral::Point3D&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_i_o_1_1_file.html">GIO::File</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_i_o_1_1_graphics_1_1_image.html">GIO::Graphics::Image</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_index_buffer.html">GRenderer::Primitives::IndexBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html">GRenderer::Primitives::VertexBuffer</a></td></tr>
@@ -109,6 +115,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array_1_1_vertex_array_layout.html">GRenderer::Primitives::VertexArray::VertexArrayLayout</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_primitives_1_1_shader.html">GRenderer::Primitives::Shader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_texture.html">GRenderer::Texture</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html">GRenderer::ShaderProgram</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html">GWindow::Window</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +132,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_g_general_1_1_time"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_time.html">GGeneral::Time</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_general_1_1_logger"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html">GGeneral::Logger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_g_general_1_1_o_s"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_o_s.html">GGeneral::OS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_g_i_o"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o.html">GIO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_g_i_o_1_1_graphics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o_1_1_graphics.html">GIO::Graphics</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_renderer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html">GRenderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,8 +181,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
-<tr class="separator:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e7d58bd10d0de036985a67b1e13648"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#af4e7d58bd10d0de036985a67b1e13648">GWindowCallback</a>) (int)</td></tr>
 <tr class="separator:af4e7d58bd10d0de036985a67b1e13648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -198,6 +212,18 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ad64454cc82769ed6d889d730c4f777cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d47154870847d73904cbc5cf4bdd9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9f">GRenderer::Primitives::ShaderTypes</a> { <br />
+&#160;&#160;<a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9fae6ae2d0a1bee9d966dcae11a201a3c56">GRenderer::Primitives::ShaderTypes::COMPUTE_SHADER</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9fa9861721c6c2dfbdc35d20746c386a090">GRenderer::Primitives::ShaderTypes::VERTEX_SHADER</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9fac9394f8ecaf645b8fea9b309439c96cc">GRenderer::Primitives::ShaderTypes::TESS_CONTROL_SHADER</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9fa487cb071f3bd8d1ab9857a273b6d25ef">GRenderer::Primitives::ShaderTypes::TESS_EVALUATION_SHADER</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9faa722bdad7ad66e0cd0297ddc6d5c50aa">GRenderer::Primitives::ShaderTypes::GEOMETRY_SHADER</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9faaf58ae9f6cade42be9607c7298fd97d1">GRenderer::Primitives::ShaderTypes::FRAGMENT_SHADER</a>, 
+<a class="el" href="namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9fa2e044750d95b6fa9741fbd505851e8bd">GRenderer::Primitives::ShaderTypes::UNKOWN_SHADER</a>
+<br />
+ }</td></tr>
+<tr class="separator:a17d47154870847d73904cbc5cf4bdd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba040cbf3f091efdd3517cf6ae8af65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65">GWindow::WindowState</a> { <a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a347e628a8f72626a0611ef842fe9d304">GWindow::WindowState::HIDDEN</a>, 
 <a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a2f33d682f3a4e19c31ced6cb4fd022e3">GWindow::WindowState::MAXIMIZED</a>, 
 <a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65a43245b4788b59a22d5357a7146c06deb">GWindow::WindowState::MINIMIZED</a>, 
@@ -385,6 +411,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a664c956ab37a63594d2a85c67e1fcd52"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a664c956ab37a63594d2a85c67e1fcd52"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_general.html#a664c956ab37a63594d2a85c67e1fcd52">GGeneral::toString</a> (T arg)</td></tr>
+<tr class="separator:a664c956ab37a63594d2a85c67e1fcd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ada8d9eea8acca30df0549e9f714599"><td class="memTemplParams" colspan="2">template&lt;typename T_FIRST , typename... T_MORE&gt; </td></tr>
+<tr class="memitem:a9ada8d9eea8acca30df0549e9f714599"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_general.html#a9ada8d9eea8acca30df0549e9f714599">GGeneral::toString</a> (T_FIRST arg, T_MORE... args)</td></tr>
+<tr class="separator:a9ada8d9eea8acca30df0549e9f714599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad86520bba91afcfbd42e612ff4b9e4dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#ad86520bba91afcfbd42e612ff4b9e4dc">GGeneral::Logger::init</a> ()</td></tr>
 <tr class="separator:ad86520bba91afcfbd42e612ff4b9e4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48322ad38e1e62c584b406f220f6f3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2">GGeneral::Logger::printMessage</a> (Message in)</td></tr>
@@ -402,6 +434,28 @@ Functions</h2></td></tr>
 <tr class="separator:af74f90b2d97a6e38253042a51ad1a489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a7330c321094ccdcb99eaa8f16d9ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a07a7330c321094ccdcb99eaa8f16d9ec">GGeneral::Logger::terminateThread</a> ()</td></tr>
 <tr class="separator:a07a7330c321094ccdcb99eaa8f16d9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b20d8b847b81a50705e91f300e64ff3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_o_s.html#a3b20d8b847b81a50705e91f300e64ff3">GGeneral::OS::getComputerName</a> ()</td></tr>
+<tr class="separator:a3b20d8b847b81a50705e91f300e64ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd76a8db168c4a495925331ef247f19a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_o_s.html#abd76a8db168c4a495925331ef247f19a">GGeneral::OS::getUserName</a> ()</td></tr>
+<tr class="separator:abd76a8db168c4a495925331ef247f19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b21d1fcca5b061bfee396d9679739b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_o_s.html#ad3b21d1fcca5b061bfee396d9679739b">GGeneral::OS::moveMouse</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; newPos)</td></tr>
+<tr class="separator:ad3b21d1fcca5b061bfee396d9679739b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6711b50061270814f183e2db28236cdf"><td class="memItemLeft" align="right" valign="top">unsigned long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o.html#a6711b50061270814f183e2db28236cdf">GIO::getFileSize</a> (std::string &amp;filepath)</td></tr>
+<tr class="separator:a6711b50061270814f183e2db28236cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac934f202855565bcd35ce40793c1a39b"><td class="memItemLeft" align="right" valign="top">File *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o.html#ac934f202855565bcd35ce40793c1a39b">GIO::loadFile</a> (std::string filepath)</td></tr>
+<tr class="separator:ac934f202855565bcd35ce40793c1a39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a13bad2c8ff1120c81de10981662f46"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o.html#a7a13bad2c8ff1120c81de10981662f46">GIO::getWorkingDirectionary</a> ()</td></tr>
+<tr class="separator:a7a13bad2c8ff1120c81de10981662f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692b051407bd260a3f2c0e9d704e3190"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o_1_1_graphics.html#a692b051407bd260a3f2c0e9d704e3190">GIO::Graphics::isParseble</a> (std::string &amp;filepath)</td></tr>
+<tr class="separator:a692b051407bd260a3f2c0e9d704e3190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0614c325f55c40656e1c1806ce6269a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o_1_1_graphics.html#a0614c325f55c40656e1c1806ce6269a1">GIO::Graphics::isParseble</a> (<a class="el" href="_g_math_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> *data)</td></tr>
+<tr class="separator:a0614c325f55c40656e1c1806ce6269a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85af98b110a04427ec073fa64663474d"><td class="memItemLeft" align="right" valign="top">Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_i_o_1_1_graphics.html#a85af98b110a04427ec073fa64663474d">GIO::Graphics::loadImage</a> (std::string filepath)</td></tr>
+<tr class="separator:a85af98b110a04427ec073fa64663474d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b55f0f81375f434ae677d6509c3bf28"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a0b55f0f81375f434ae677d6509c3bf28">GRenderer::getCurentOpenGLVersion</a> ()</td></tr>
+<tr class="separator:a0b55f0f81375f434ae677d6509c3bf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb193c1eb69ebdcb7ce7ec1eaa97ff9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#acb193c1eb69ebdcb7ce7ec1eaa97ff9b">GRenderer::clear</a> (<a class="el" href="struct_g_general_1_1_color.html">GGeneral::Color</a> &amp;color)</td></tr>
+<tr class="separator:acb193c1eb69ebdcb7ce7ec1eaa97ff9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab954a24dbb1bbda72da332a8b828ae39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_monitor.html#ab954a24dbb1bbda72da332a8b828ae39">GWindow::Monitor::init</a> ()</td></tr>
 <tr class="separator:ab954a24dbb1bbda72da332a8b828ae39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7589189bba035dcbdedbbac41b4883e6"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_window_1_1_monitor.html#a7589189bba035dcbdedbbac41b4883e6">GWindow::Monitor::isInit</a> ()</td></tr>
@@ -724,20 +778,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a0c8186d9b9b7880309c27230bbb5e69d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c8186d9b9b7880309c27230bbb5e69d">&#9670;&nbsp;</a></span>byte</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef unsigned char <a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af4e7d58bd10d0de036985a67b1e13648"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4e7d58bd10d0de036985a67b1e13648">&#9670;&nbsp;</a></span>GWindowCallback</h2>
 

@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['screen_19623',['Screen',['../struct_g_window_1_1_monitor_1_1_screen.html#a8f25ad383200f5dd2ea5862eae43c7b4',1,'GWindow::Monitor::Screen']]],
-  ['setcapturemousemode_19624',['setCaptureMouseMode',['../class_g_window_1_1_window.html#adae91005026094c2368a57ceafd06a40',1,'GWindow::Window']]],
-  ['setopenglcontextactive_19625',['setOpenGLContextActive',['../class_g_window_1_1_window.html#a390f00070c9a2909d8a8a6bf0e7957ab',1,'GWindow::Window']]],
-  ['setseverityfilter_19626',['setSeverityFilter',['../namespace_g_general_1_1_logger.html#af87680823b7730e926c8bd8b24586f8f',1,'GGeneral::Logger']]],
-  ['setstate_19627',['setState',['../class_g_window_1_1_window.html#a347c0f4a6f1f313924f1a54417f9f30c',1,'GWindow::Window']]],
-  ['stop_19628',['stop',['../struct_g_general_1_1_time_1_1_timer.html#acdfcbf7138d14ef8e585c2037786c839',1,'GGeneral::Time::Timer']]],
-  ['swapbuffers_19629',['swapBuffers',['../class_g_window_1_1_window.html#a248c14bbf96ea23b45fa5de30c04bd9a',1,'GWindow::Window']]]
+  ['point_19742',['Point',['../struct_g_general_1_1_point.html#a5903876ad064501877f495fd87263583',1,'GGeneral::Point']]],
+  ['point3d_19743',['Point3D',['../struct_g_general_1_1_point3_d.html#a5023fec7b8506ea04fbd7868c779c390',1,'GGeneral::Point3D']]],
+  ['printmessage_19744',['printMessage',['../namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2',1,'GGeneral::Logger::printMessage(Message in)'],['../namespace_g_general_1_1_logger.html#a55b9bb1c1f45dc7e27b4dda061d7290e',1,'GGeneral::Logger::printMessage(T_TYPE message, Severity sev, int ID)']]],
+  ['printmsg_19745',['printmsg',['../_logger_8cpp.html#ac1f1f5b68161f6ad032be1f34ce6d6dc',1,'Logger.cpp']]]
 ];

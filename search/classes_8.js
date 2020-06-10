@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['vertexarray_19197',['VertexArray',['../struct_g_renderer_1_1_primitives_1_1_vertex_array.html',1,'GRenderer::Primitives']]],
-  ['vertexarraylayout_19198',['VertexArrayLayout',['../struct_g_renderer_1_1_primitives_1_1_vertex_array_1_1_vertex_array_layout.html',1,'GRenderer::Primitives::VertexArray']]],
-  ['vertexbuffer_19199',['VertexBuffer',['../struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html',1,'GRenderer::Primitives']]]
+  ['screen_19273',['Screen',['../struct_g_window_1_1_monitor_1_1_screen.html',1,'GWindow::Monitor']]],
+  ['shader_19274',['Shader',['../class_g_renderer_1_1_primitives_1_1_shader.html',1,'GRenderer::Primitives']]],
+  ['shaderprogram_19275',['ShaderProgram',['../class_g_renderer_1_1_shader_program.html',1,'GRenderer']]]
 ];
