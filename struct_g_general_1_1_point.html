@@ -84,7 +84,8 @@ Inheritance diagram for GGeneral::Point&lt; T &gt;:</div>
  <div class="center">
   <img src="struct_g_general_1_1_point.png" usemap="#GGeneral::Point_3C_20T_20_3E_map" alt=""/>
   <map id="GGeneral::Point_3C_20T_20_3E_map" name="GGeneral::Point_3C_20T_20_3E_map">
-<area href="struct_g_general_1_1_point3_d.html" alt="GGeneral::Point3D&lt; T &gt;" shape="rect" coords="0,56,147,80"/>
+<area href="struct_g_general_1_1_base_object.html" alt="GGeneral::BaseObject" shape="rect" coords="0,0,147,24"/>
+<area href="struct_g_general_1_1_point3_d.html" alt="GGeneral::Point3D&lt; T &gt;" shape="rect" coords="0,112,147,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -92,8 +93,8 @@ Inheritance diagram for GGeneral::Point&lt; T &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5903876ad064501877f495fd87263583"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_point.html#a5903876ad064501877f495fd87263583">Point</a> (T <a class="el" href="struct_g_general_1_1_point.html#a18d59d7236c9251714ee654678e8e649">x</a>=0, T <a class="el" href="struct_g_general_1_1_point.html#aaeff4bf998468b8e1f4ace60584fc0ca">y</a>=0)</td></tr>
 <tr class="separator:a5903876ad064501877f495fd87263583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b5a0160ec910054b9f375d198438632"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_point.html#a5b5a0160ec910054b9f375d198438632">toString</a> () const</td></tr>
-<tr class="separator:a5b5a0160ec910054b9f375d198438632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa486f856db9407f56e372367cd135252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_point.html#aa486f856db9407f56e372367cd135252">toString</a> () const override</td></tr>
+<tr class="separator:aa486f856db9407f56e372367cd135252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -148,8 +149,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5b5a0160ec910054b9f375d198438632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b5a0160ec910054b9f375d198438632">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="aa486f856db9407f56e372367cd135252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa486f856db9407f56e372367cd135252">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +161,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const std::string <a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; T &gt;::toString </td>
+          <td class="memname"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> <a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; T &gt;::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -168,13 +169,15 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A string with the current values of the <a class="el" href="struct_g_general_1_1_point.html">Point</a> struct </dd></dl>
 
-<p>Reimplemented in <a class="el" href="struct_g_general_1_1_point3_d.html#adbaa7180fc221b09ba1d29f26e90b5d9">GGeneral::Point3D&lt; T &gt;</a>.</p>
+<p>Implements <a class="el" href="struct_g_general_1_1_base_object.html#abff4b59cee60360d537635db290b2d64">GGeneral::BaseObject</a>.</p>
+
+<p>Reimplemented in <a class="el" href="struct_g_general_1_1_point3_d.html#a22456b60aebc9308d7191fdaf948862b">GGeneral::Point3D&lt; T &gt;</a>.</p>
 
 </div>
 </div>

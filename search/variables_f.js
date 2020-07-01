@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['threadbufferclearlock_23875',['threadBufferClearLock',['../_logger_8cpp.html#a3fa59aaccf6c22244886425042e71b5e',1,'Logger.cpp']]],
-  ['timeslice_23876',['timeSlice',['../struct_g_l_x_hyperpipe_config_s_g_i_x.html#afe9288e75dc1ae5e0f33eff978d7024d',1,'GLXHyperpipeConfigSGIX']]],
-  ['type_23877',['type',['../struct_g_l_x_buffer_clobber_event_s_g_i_x.html#a36e3e8a5feea664623ea43d0f273b63a',1,'GLXBufferClobberEventSGIX']]]
+  ['x_889',['x',['../struct_g_math_1_1vec2.html#a7713470b9227a2b5be7e75f59c0ef4b3',1,'GMath::vec2::x()'],['../struct_g_math_1_1mat4x4.html#ab6890922342e82bb7ff0b5d12ec04923',1,'GMath::mat4x4::x()'],['../struct_g_general_1_1_point.html#a18d59d7236c9251714ee654678e8e649',1,'GGeneral::Point::x()']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['_5f_5fglxevent_19252',['__GLXEvent',['../union_____g_l_x_event.html',1,'']]],
-  ['_5fgpu_5fdevice_19253',['_GPU_DEVICE',['../struct___g_p_u___d_e_v_i_c_e.html',1,'']]]
+  ['baseobject_663',['BaseObject',['../struct_g_general_1_1_base_object.html',1,'GGeneral']]]
 ];

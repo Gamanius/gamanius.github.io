@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['byte_23890',['byte',['../_g_math_8h.html#a0c8186d9b9b7880309c27230bbb5e69d',1,'GMath.h']]]
+  ['gwindowcallback_894',['GWindowCallback',['../_g_renderer_8h.html#af4e7d58bd10d0de036985a67b1e13648',1,'GRenderer.h']]]
 ];

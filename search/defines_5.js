@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['log_38018',['LOG',['../_g_renderer_8h.html#af855c94dc540e943632089ce7496faac',1,'GRenderer.h']]],
-  ['loge_38019',['LOGE',['../_g_renderer_8h.html#ae88c771aa94109b69f9ca83133986a04',1,'GRenderer.h']]],
-  ['logf_38020',['LOGF',['../_g_renderer_8h.html#a0837ff38a1893a84e3243193689a3450',1,'GRenderer.h']]],
-  ['logi_38021',['LOGI',['../_g_renderer_8h.html#aae87a6da64c7480ae4b36d9a4cdc12bc',1,'GRenderer.h']]],
-  ['logs_38022',['LOGS',['../_g_renderer_8h.html#a01cd572a79d29b07cde0635002cdc881',1,'GRenderer.h']]],
-  ['logw_38023',['LOGW',['../_g_renderer_8h.html#a7508ad13784302ee1b84b5edc652bdcb',1,'GRenderer.h']]]
+  ['log_1207',['LOG',['../_defines_8h.html#a3577749fb48d57a158b8ac1a0b3ab57e',1,'Defines.h']]],
+  ['loge_1208',['LOGE',['../_defines_8h.html#ae02538a80ad5fc009caec73487d11a8d',1,'Defines.h']]],
+  ['logf_1209',['LOGF',['../_defines_8h.html#ae8ab89c21007872cfc5289304d876d59',1,'Defines.h']]],
+  ['logi_1210',['LOGI',['../_defines_8h.html#a5512e59d578a380a441a70256af997d0',1,'Defines.h']]],
+  ['logs_1211',['LOGS',['../_defines_8h.html#aa6eca866a113477409fdda563cb8d391',1,'Defines.h']]],
+  ['logw_1212',['LOGW',['../_defines_8h.html#a07f1b0d507acedeb7550353eba4f6e66',1,'Defines.h']]]
 ];

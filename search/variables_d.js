@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rcvirtualscreen_23858',['rcVirtualScreen',['../struct___g_p_u___d_e_v_i_c_e.html#aeb573bbeb3b6c589246720ef259b9a27',1,'_GPU_DEVICE']]],
-  ['red_23859',['red',['../struct_g_general_1_1_color.html#a4aa12c7958aac3bddb4b082154866ee8',1,'GGeneral::Color']]]
+  ['usernames_883',['userNames',['../_logger_8cpp.html#ae22dd615b8f3f6516c369b4e693c078e',1,'Logger.cpp']]]
 ];

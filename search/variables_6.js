@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['flags_23831',['Flags',['../struct___g_p_u___d_e_v_i_c_e.html#a008db9d0f5fc13a5160805f40465f14a',1,'_GPU_DEVICE']]]
+  ['id_855',['ID',['../struct_g_general_1_1_logger_1_1_message.html#aa20fd7a5bed22f8c6b62f99fb19d0205',1,'GGeneral::Logger::Message']]],
+  ['indexcounter_856',['indexCounter',['../_monitor_8cpp.html#a6eed67ade0214ce1e8c4d7e349357e3c',1,'Monitor.cpp']]],
+  ['informationfetched_857',['informationFetched',['../_monitor_8cpp.html#a5be589df324ac042d8b7e484e9f28c7c',1,'Monitor.cpp']]],
+  ['isfree_858',['isFree',['../struct_window_class.html#a30c55cbba4ed8a969f0aa422be7037c0',1,'WindowClass']]],
+  ['isinit_859',['isInit',['../_logger_8cpp.html#ac4eddbd77742f6a9031c78fe7d3899f7',1,'Logger.cpp']]]
 ];

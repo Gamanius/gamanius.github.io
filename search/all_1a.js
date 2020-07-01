@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['z_19245',['z',['../struct_g_math_1_1vec3.html#a92bc02340634c592f04e6e99dc69f2a0',1,'GMath::vec3::z()'],['../struct_g_math_1_1mat4x4.html#a7f8b80c5dd80384f7d0d3ef01d123aba',1,'GMath::mat4x4::z()'],['../struct_g_general_1_1_point3_d.html#a81cc15bb6c921c1e937dda88b19305cb',1,'GGeneral::Point3D::z()'],['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a21c2e59531c8710156d34a3c30ac81d5',1,'GWindow::Z()']]],
-  ['zoom_19246',['ZOOM',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a66f276916d5a97cbb3b0008213bda1c3',1,'GWindow']]]
+  ['_7efile_654',['~File',['../struct_g_i_o_1_1_file.html#ad92bfcbc8a3907484b705a72b858775b',1,'GIO::File']]],
+  ['_7eindexbuffer_655',['~IndexBuffer',['../struct_g_renderer_1_1_primitives_1_1_index_buffer.html#a8f7862ff68675073b4f7a2f5eaf9d6b9',1,'GRenderer::Primitives::IndexBuffer']]],
+  ['_7eshader_656',['~Shader',['../class_g_renderer_1_1_primitives_1_1_shader.html#a5334345f33daf3306df93a37252cac89',1,'GRenderer::Primitives::Shader']]],
+  ['_7eshaderprogram_657',['~ShaderProgram',['../class_g_renderer_1_1_shader_program.html#ad8f4b54952f6c04acfd69b15a4c24cca',1,'GRenderer::ShaderProgram']]],
+  ['_7estring_658',['~String',['../class_g_general_1_1_string.html#a47453a2695136d5351f22fb7e00d4543',1,'GGeneral::String']]],
+  ['_7etexture_659',['~Texture',['../class_g_renderer_1_1_texture.html#a465900c13bbd44a0778fa3f9cbe4498f',1,'GRenderer::Texture']]],
+  ['_7evertexarray_660',['~VertexArray',['../struct_g_renderer_1_1_primitives_1_1_vertex_array.html#a05b4ef6952363a6ce49095349862a134',1,'GRenderer::Primitives::VertexArray']]],
+  ['_7evertexbuffer_661',['~VertexBuffer',['../struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html#ac4da4d0f57baedf4fe4925fd559349a0',1,'GRenderer::Primitives::VertexBuffer']]],
+  ['_7ewindow_662',['~Window',['../class_g_window_1_1_window.html#ab80589a5c59cde590a507e6ef33af9e9',1,'GWindow::Window']]]
 ];

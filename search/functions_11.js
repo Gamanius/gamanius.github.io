@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['_7efile_19774',['~File',['../struct_g_i_o_1_1_file.html#ad92bfcbc8a3907484b705a72b858775b',1,'GIO::File']]],
-  ['_7eindexbuffer_19775',['~IndexBuffer',['../struct_g_renderer_1_1_primitives_1_1_index_buffer.html#a8f7862ff68675073b4f7a2f5eaf9d6b9',1,'GRenderer::Primitives::IndexBuffer']]],
-  ['_7eshader_19776',['~Shader',['../class_g_renderer_1_1_primitives_1_1_shader.html#a5334345f33daf3306df93a37252cac89',1,'GRenderer::Primitives::Shader']]],
-  ['_7etexture_19777',['~Texture',['../class_g_renderer_1_1_texture.html#a465900c13bbd44a0778fa3f9cbe4498f',1,'GRenderer::Texture']]],
-  ['_7evertexbuffer_19778',['~VertexBuffer',['../struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html#ac4da4d0f57baedf4fe4925fd559349a0',1,'GRenderer::Primitives::VertexBuffer']]]
+  ['wait_826',['wait',['../namespace_g_general_1_1_logger.html#af74f90b2d97a6e38253042a51ad1a489',1,'GGeneral::Logger']]],
+  ['window_827',['Window',['../class_g_window_1_1_window.html#a3ef8d474db0a8b7aae23ae6766c1cf46',1,'GWindow::Window::Window()'],['../class_g_window_1_1_window.html#ad618507593a3af82660b0b04c5bb4829',1,'GWindow::Window::Window(GGeneral::String name, GGeneral::Point&lt; int &gt; pos, GGeneral::Dimension&lt; int &gt; dim)']]]
 ];
