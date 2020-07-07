@@ -84,20 +84,24 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_memory.html">GMemory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_memory_1_1_memory_tracker.html">GMemory::MemoryTracker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a64e0d756d2c3f68650e4893c369c02bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a64e0d756d2c3f68650e4893c369c02bc">G_MEMORY</a></td></tr>
 <tr class="separator:a64e0d756d2c3f68650e4893c369c02bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2098b694243988f4d8faf600acf2ba74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a2098b694243988f4d8faf600acf2ba74">GET_ALLOC_INFO_COUNT</a>(pointer)&#160;&#160;&#160;reinterpret_cast&lt;unsigned int*&gt;(pointer)[-1]</td></tr>
+<tr class="separator:a2098b694243988f4d8faf600acf2ba74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a205ed048fdf5259c2e8e0cb60ee8f719"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719">operator new</a> (size_t size)</td></tr>
 <tr class="separator:a205ed048fdf5259c2e8e0cb60ee8f719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fef17cd6aa7326dbac9e3ce8d8565d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a95fef17cd6aa7326dbac9e3ce8d8565d">operator delete</a> (void *p, size_t size)</td></tr>
-<tr class="separator:a95fef17cd6aa7326dbac9e3ce8d8565d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cbc22617fdecbbdb7f6ce301450bd10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a1cbc22617fdecbbdb7f6ce301450bd10">operator delete[]</a> (void *p, size_t size)</td></tr>
-<tr class="separator:a1cbc22617fdecbbdb7f6ce301450bd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86107594327f3a001230df9802cd4422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a86107594327f3a001230df9802cd4422">operator delete</a> (void *p)</td></tr>
+<tr class="separator:a86107594327f3a001230df9802cd4422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8d8403dca7d813a59dd1f07728349d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#aaa8d8403dca7d813a59dd1f07728349d">operator delete[]</a> (void *p)</td></tr>
+<tr class="separator:aaa8d8403dca7d813a59dd1f07728349d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a64e0d756d2c3f68650e4893c369c02bc"></a>
@@ -114,9 +118,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2098b694243988f4d8faf600acf2ba74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2098b694243988f4d8faf600acf2ba74">&#9670;&nbsp;</a></span>GET_ALLOC_INFO_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_ALLOC_INFO_COUNT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pointer</td><td>)</td>
+          <td>&#160;&#160;&#160;reinterpret_cast&lt;unsigned int*&gt;(pointer)[-1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a95fef17cd6aa7326dbac9e3ce8d8565d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95fef17cd6aa7326dbac9e3ce8d8565d">&#9670;&nbsp;</a></span>operator delete()</h2>
+<a id="a86107594327f3a001230df9802cd4422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86107594327f3a001230df9802cd4422">&#9670;&nbsp;</a></span>operator delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,18 +150,8 @@ Functions</h2></td></tr>
           <td class="memname">void operator delete </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -151,8 +163,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1cbc22617fdecbbdb7f6ce301450bd10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cbc22617fdecbbdb7f6ce301450bd10">&#9670;&nbsp;</a></span>operator delete[]()</h2>
+<a id="aaa8d8403dca7d813a59dd1f07728349d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8d8403dca7d813a59dd1f07728349d">&#9670;&nbsp;</a></span>operator delete[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,18 +176,8 @@ Functions</h2></td></tr>
           <td class="memname">void operator delete[] </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>

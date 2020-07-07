@@ -88,6 +88,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a572fdca9f225c124b6463fa536248dca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a572fdca9f225c124b6463fa536248dca"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a572fdca9f225c124b6463fa536248dca">mat4x4Identity</a> ()</td></tr>
 <tr class="separator:a572fdca9f225c124b6463fa536248dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bfe7c70e45cfce9ff4a81035afe74b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af4bfe7c70e45cfce9ff4a81035afe74b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#af4bfe7c70e45cfce9ff4a81035afe74b">ortho</a> (T left, T right, T bottom, T top, T _near, T _far)</td></tr>
+<tr class="separator:af4bfe7c70e45cfce9ff4a81035afe74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763ee1066a3b77e6c520f8232bbb1055"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a763ee1066a3b77e6c520f8232bbb1055"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a763ee1066a3b77e6c520f8232bbb1055">perpective</a> (float FOV, T aspect, T _near, T _far)</td></tr>
+<tr class="separator:a763ee1066a3b77e6c520f8232bbb1055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This namespace includes the most important OpenGL math functions needed. It can be also used outside the engine and/or without OpenGL. The Renderer doesn't need to be initialized to use the functions </p>
@@ -109,6 +115,124 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Creates a new Identity Matrix 4x4 </p><dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a> </dd></dl>
+
+</div>
+</div>
+<a id="af4bfe7c70e45cfce9ff4a81035afe74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4bfe7c70e45cfce9ff4a81035afe74b">&#9670;&nbsp;</a></span>ortho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a>&lt;T&gt; GMath::ortho </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>bottom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_near</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_far</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Will create an orthographic projection matrix and return it </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>- Left coordinate of the frustum </td></tr>
+    <tr><td class="paramname">right</td><td>- Right coordinate of the frustum </td></tr>
+    <tr><td class="paramname">bottom</td><td>- Bottom coordinate of the frustum </td></tr>
+    <tr><td class="paramname">top</td><td>- Top coordinate of the frustum </td></tr>
+    <tr><td class="paramname">_near</td><td>- The near plane frustum </td></tr>
+    <tr><td class="paramname">_far</td><td>- The far plane frustum </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a> </dd></dl>
+
+</div>
+</div>
+<a id="a763ee1066a3b77e6c520f8232bbb1055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763ee1066a3b77e6c520f8232bbb1055">&#9670;&nbsp;</a></span>perpective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a>&lt;T&gt; GMath::perpective </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>FOV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>aspect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_near</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>_far</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Will create an perspective projection matrix and return it </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FOV</td><td>- The field of view in degrees </td></tr>
+    <tr><td class="paramname">aspect</td><td>- The aspect ratio </td></tr>
+    <tr><td class="paramname">_near</td><td>- Specifies the near plane frustum </td></tr>
+    <tr><td class="paramname">_far</td><td>- Specifies the far plane frustum </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="struct_g_math_1_1mat4x4.html">mat4x4</a> </dd></dl>
 
 </div>
 </div>

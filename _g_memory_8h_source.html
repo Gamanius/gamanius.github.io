@@ -79,54 +79,180 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define G_MEMORY</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#a64e0d756d2c3f68650e4893c369c02bc">    6</a></span>&#160;<span class="preprocessor">#endif // !G_MEMORY</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_g_memory.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_memory.html">GMemory</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> allocated = 0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">size_t</span> allocatedStart = <a class="code" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">getMemory</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">   17</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">alloc</a>(<span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Allocated &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; bytes\n&quot;</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        allocated += size;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> malloc(size);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_g_memory.html#a5d51fad6041b6ce40bb31e24ca983549">   26</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_g_memory.html#a5d51fad6041b6ce40bb31e24ca983549">dele</a>(<span class="keywordtype">void</span>* p, <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Deleted &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; bytes\n&quot;</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        allocated -= size;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        free(p);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">   36</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">getMemory</a>() { <span class="keywordflow">return</span> allocated; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_g_memory.html#a16f50d3c5d42f8694405f4e08d4fa818">   42</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">long</span> <a class="code" href="class_g_memory.html#a16f50d3c5d42f8694405f4e08d4fa818">stop</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">getMemory</a>() - allocatedStart;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_g_memory.html#ae74170343f98d9b148932a2da3a12c1b">   50</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">long</span> <a class="code" href="class_g_memory.html#ae74170343f98d9b148932a2da3a12c1b">reset</a>() {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">auto</span> m = <a class="code" href="class_g_memory.html#a16f50d3c5d42f8694405f4e08d4fa818">stop</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        allocatedStart = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> m;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719">   57</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a>(size);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#a95fef17cd6aa7326dbac9e3ce8d8565d">   61</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* p, <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_g_memory.html#a5d51fad6041b6ce40bb31e24ca983549">GMemory::dele</a>(p, size);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#a1cbc22617fdecbbdb7f6ce301450bd10">   65</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>[](<span class="keywordtype">void</span>* p, <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_g_memory.html#a5d51fad6041b6ce40bb31e24ca983549">GMemory::dele</a>(p, size);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define EXTENDED_MEMORYTRACKING</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif // _DEBUG</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define GET_ALLOC_INFO_COUNT(pointer) reinterpret_cast&lt;unsigned int*&gt;(pointer)[-1]</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#a2098b694243988f4d8faf600acf2ba74">   13</a></span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_g_memory.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_memory.html">GMemory</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> memoryUsage = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> allocations = 0, deallocations = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">   27</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">getMemory</a>() { <span class="keywordflow">return</span> memoryUsage; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_g_memory.html#aa06df9c42a2d92461db7f435caeb79b6">   29</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="class_g_memory.html#aa06df9c42a2d92461db7f435caeb79b6">getCurrentAllocationCount</a>() { <span class="keywordflow">return</span> allocations - deallocations; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_g_memory.html#ac3f25af936e92393cc1651257c004ae8">   30</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="class_g_memory.html#ac3f25af936e92393cc1651257c004ae8">getAllocation</a>() { <span class="keywordflow">return</span> allocations; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_g_memory.html#af53404381fa7280731dbe1661316063f">   31</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="class_g_memory.html#af53404381fa7280731dbe1661316063f">getDeAllocation</a>() { <span class="keywordflow">return</span> deallocations; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EXTENDED_MEMORYTRACKING</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_g_memory.html#a703e1fc076dc636ce9bdf6122020a263">   37</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>** <a class="code" href="class_g_memory.html#a703e1fc076dc636ce9bdf6122020a263">getAllocInfo</a>() {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">auto</span> temp = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(malloc(2 * <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        temp[0] = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        temp++;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">void</span>**)temp;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_g_memory_1_1_memory_tracker.html">   45</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_g_memory_1_1_memory_tracker.html">MemoryTracker</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">size_t</span> start = <a class="code" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">getMemory</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">size_t</span> allocations = <a class="code" href="class_g_memory.html#ac3f25af936e92393cc1651257c004ae8">getAllocation</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_g_memory_1_1_memory_tracker.html#aa9bc0e86fda0bb672f1ab0fc91a893da">   52</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_g_memory_1_1_memory_tracker.html#aa9bc0e86fda0bb672f1ab0fc91a893da">getAllocationDifference</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_g_memory.html#aa06df9c42a2d92461db7f435caeb79b6">getCurrentAllocationCount</a>() - allocations; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_g_memory_1_1_memory_tracker.html#afcb82bd32866fad7ebaf3ff9808348f8">   56</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_g_memory_1_1_memory_tracker.html#afcb82bd32866fad7ebaf3ff9808348f8">getMemoryDifference</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span>  <a class="code" href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">getMemory</a>() - start; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#ifdef EXTENDED_MEMORYTRACKING</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span>AllocInfo {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span>* address;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">size_t</span> size;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* functionSig;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> operator==(<span class="keywordtype">void</span>* b) { <span class="keywordflow">return</span> address == b; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">struct </span>List {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        AllocInfo* address;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        List* next;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> List* extendedAllocations = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> AllocInfo** <a class="code" href="class_g_memory.html#a703e1fc076dc636ce9bdf6122020a263">getAllocInfo</a>() {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">auto</span> temp = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(malloc(<a class="code" href="class_g_memory.html#aa06df9c42a2d92461db7f435caeb79b6">getCurrentAllocationCount</a>() * <span class="keyword">sizeof</span>(AllocInfo**) + <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">auto</span> add = extendedAllocations;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        temp++;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">auto</span> <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">alloc</a> = <span class="keyword">reinterpret_cast&lt;</span>AllocInfo**<span class="keyword">&gt;</span>(temp);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> amount = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">while</span> (add-&gt;next != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">alloc</a>[amount] = add-&gt;address;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            add = add-&gt;next;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            amount++;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        temp[-1] = amount;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">alloc</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">alloc</a>(<span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">function</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="comment">//std::cout &lt;&lt; &quot;Allocated &quot; &lt;&lt; size &lt;&lt; &quot; bytes\n&quot;;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        AllocInfo* mem = <span class="keyword">reinterpret_cast&lt;</span>AllocInfo*<span class="keyword">&gt;</span>(malloc(size + <span class="keyword">sizeof</span>(AllocInfo)));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">auto</span> info = mem;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        mem++;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        info[0] = { mem, size, file, <span class="keyword">function</span>, line };</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (extendedAllocations == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            extendedAllocations = <span class="keyword">reinterpret_cast&lt;</span>List*<span class="keyword">&gt;</span>(malloc(<span class="keyword">sizeof</span>(List)));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            extendedAllocations-&gt;address = info;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            extendedAllocations-&gt;next = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keyword">auto</span> temp = extendedAllocations;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">while</span> (temp-&gt;next != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                temp = temp-&gt;next;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            temp-&gt;next = <span class="keyword">reinterpret_cast&lt;</span>List*<span class="keyword">&gt;</span>(malloc(<span class="keyword">sizeof</span>(List)));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keyword">auto</span> last = temp;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            temp = temp-&gt;next;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            temp-&gt;address = info;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            temp-&gt;next = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        memoryUsage += size;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        allocations++;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(mem);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_g_memory.html#a5c012629a884996dc84a94fc85a344fb">dele</a>(<span class="keywordtype">void</span>* p) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        AllocInfo info = (<span class="keyword">reinterpret_cast&lt;</span>AllocInfo*<span class="keyword">&gt;</span>(p) - 1)[0];</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="comment">//std::cout &lt;&lt; &quot;Deleted &quot; &lt;&lt; info.size &lt;&lt; &quot; bytes\n&quot;;</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        memoryUsage -= info.size;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        deallocations++;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">auto</span> temp = extendedAllocations;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">auto</span> last = temp;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">while</span> (temp-&gt;address-&gt;address != p &amp;&amp; temp-&gt;next != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            last = temp;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            temp = temp-&gt;next;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        last-&gt;next = temp-&gt;next;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        free(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>((<span class="keyword">reinterpret_cast&lt;</span>AllocInfo*<span class="keyword">&gt;</span>(p) - 1)));</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">  164</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">alloc</a>(<span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Allocated &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; bytes\n&quot;</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        memoryUsage += size;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        allocations++;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* mem = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(malloc(size + 4));</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        mem[0] = size;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        mem++;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)mem;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="class_g_memory.html#a5c012629a884996dc84a94fc85a344fb">  177</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_g_memory.html#a5c012629a884996dc84a94fc85a344fb">dele</a>(<span class="keywordtype">void</span>* p) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size = (<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(p) - 1)[0];</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Deleted &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; bytes\n&quot;</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        memoryUsage -= size;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        deallocations++;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">auto</span> del = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(p) - 1;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        free((<span class="keywordtype">void</span>*)del);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif // EXTENDED_MEMORYTRACKING</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;};</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#ifndef EXTENDED_MEMORYTRACKING</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719">  189</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a>(size);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a>(size, <span class="stringliteral">&quot;UNKNOWN&quot;</span>, <span class="stringliteral">&quot;UNKNOWN&quot;</span>, 0);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">function</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a>(size, file, <span class="keyword">function</span>, line);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* p, <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">function</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line) {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="class_g_memory.html#a5c012629a884996dc84a94fc85a344fb">GMemory::dele</a>(p);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#define new new(__FILE__,  __FUNCSIG__, __LINE__)</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif // !EXTENDED_MEMORYTRACKING</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#a86107594327f3a001230df9802cd4422">  205</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* p) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="class_g_memory.html#a5c012629a884996dc84a94fc85a344fb">GMemory::dele</a>(p);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="_g_memory_8h.html#aaa8d8403dca7d813a59dd1f07728349d">  209</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>[](<span class="keywordtype">void</span>* p) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="class_g_memory.html#a5c012629a884996dc84a94fc85a344fb">GMemory::dele</a>(p);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_g_memory_html_a5d51fad6041b6ce40bb31e24ca983549"><div class="ttname"><a href="class_g_memory.html#a5d51fad6041b6ce40bb31e24ca983549">GMemory::dele</a></div><div class="ttdeci">static void dele(void *p, size_t size)</div><div class="ttdef"><b>Definition:</b> GMemory.h:26</div></div>
-<div class="ttc" id="aclass_g_memory_html_a81c49228389c87f61b63a339fc6fe31f"><div class="ttname"><a href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">GMemory::getMemory</a></div><div class="ttdeci">static const size_t getMemory()</div><div class="ttdef"><b>Definition:</b> GMemory.h:36</div></div>
-<div class="ttc" id="aclass_g_memory_html_aad60f1a0b765352478e0a9fba96a7697"><div class="ttname"><a href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a></div><div class="ttdeci">static void * alloc(size_t size)</div><div class="ttdef"><b>Definition:</b> GMemory.h:17</div></div>
-<div class="ttc" id="aclass_g_memory_html"><div class="ttname"><a href="class_g_memory.html">GMemory</a></div><div class="ttdef"><b>Definition:</b> GMemory.h:9</div></div>
-<div class="ttc" id="aclass_g_memory_html_a16f50d3c5d42f8694405f4e08d4fa818"><div class="ttname"><a href="class_g_memory.html#a16f50d3c5d42f8694405f4e08d4fa818">GMemory::stop</a></div><div class="ttdeci">const long stop() const</div><div class="ttdef"><b>Definition:</b> GMemory.h:42</div></div>
-<div class="ttc" id="aclass_g_memory_html_ae74170343f98d9b148932a2da3a12c1b"><div class="ttname"><a href="class_g_memory.html#ae74170343f98d9b148932a2da3a12c1b">GMemory::reset</a></div><div class="ttdeci">const long reset()</div><div class="ttdef"><b>Definition:</b> GMemory.h:50</div></div>
+<div class="ttc" id="aclass_g_memory_html_a703e1fc076dc636ce9bdf6122020a263"><div class="ttname"><a href="class_g_memory.html#a703e1fc076dc636ce9bdf6122020a263">GMemory::getAllocInfo</a></div><div class="ttdeci">static void ** getAllocInfo()</div><div class="ttdef"><b>Definition:</b> GMemory.h:37</div></div>
+<div class="ttc" id="aclass_g_memory_html_a81c49228389c87f61b63a339fc6fe31f"><div class="ttname"><a href="class_g_memory.html#a81c49228389c87f61b63a339fc6fe31f">GMemory::getMemory</a></div><div class="ttdeci">static const size_t getMemory()</div><div class="ttdef"><b>Definition:</b> GMemory.h:27</div></div>
+<div class="ttc" id="aclass_g_memory_html_aad60f1a0b765352478e0a9fba96a7697"><div class="ttname"><a href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a></div><div class="ttdeci">static void * alloc(size_t size)</div><div class="ttdef"><b>Definition:</b> GMemory.h:164</div></div>
+<div class="ttc" id="aclass_g_memory_html_aa06df9c42a2d92461db7f435caeb79b6"><div class="ttname"><a href="class_g_memory.html#aa06df9c42a2d92461db7f435caeb79b6">GMemory::getCurrentAllocationCount</a></div><div class="ttdeci">static const size_t getCurrentAllocationCount()</div><div class="ttdef"><b>Definition:</b> GMemory.h:29</div></div>
+<div class="ttc" id="aclass_g_memory_html_a5c012629a884996dc84a94fc85a344fb"><div class="ttname"><a href="class_g_memory.html#a5c012629a884996dc84a94fc85a344fb">GMemory::dele</a></div><div class="ttdeci">static void dele(void *p)</div><div class="ttdef"><b>Definition:</b> GMemory.h:177</div></div>
+<div class="ttc" id="aclass_g_memory_html"><div class="ttname"><a href="class_g_memory.html">GMemory</a></div><div class="ttdef"><b>Definition:</b> GMemory.h:18</div></div>
+<div class="ttc" id="aclass_g_memory_1_1_memory_tracker_html_aa9bc0e86fda0bb672f1ab0fc91a893da"><div class="ttname"><a href="class_g_memory_1_1_memory_tracker.html#aa9bc0e86fda0bb672f1ab0fc91a893da">GMemory::MemoryTracker::getAllocationDifference</a></div><div class="ttdeci">const int getAllocationDifference() const</div><div class="ttdef"><b>Definition:</b> GMemory.h:52</div></div>
+<div class="ttc" id="aclass_g_memory_1_1_memory_tracker_html_afcb82bd32866fad7ebaf3ff9808348f8"><div class="ttname"><a href="class_g_memory_1_1_memory_tracker.html#afcb82bd32866fad7ebaf3ff9808348f8">GMemory::MemoryTracker::getMemoryDifference</a></div><div class="ttdeci">const int getMemoryDifference() const</div><div class="ttdef"><b>Definition:</b> GMemory.h:56</div></div>
+<div class="ttc" id="aclass_g_memory_1_1_memory_tracker_html"><div class="ttname"><a href="class_g_memory_1_1_memory_tracker.html">GMemory::MemoryTracker</a></div><div class="ttdef"><b>Definition:</b> GMemory.h:45</div></div>
+<div class="ttc" id="aclass_g_memory_html_af53404381fa7280731dbe1661316063f"><div class="ttname"><a href="class_g_memory.html#af53404381fa7280731dbe1661316063f">GMemory::getDeAllocation</a></div><div class="ttdeci">static const size_t getDeAllocation()</div><div class="ttdef"><b>Definition:</b> GMemory.h:31</div></div>
+<div class="ttc" id="aclass_g_memory_html_ac3f25af936e92393cc1651257c004ae8"><div class="ttname"><a href="class_g_memory.html#ac3f25af936e92393cc1651257c004ae8">GMemory::getAllocation</a></div><div class="ttdeci">static const size_t getAllocation()</div><div class="ttdef"><b>Definition:</b> GMemory.h:30</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

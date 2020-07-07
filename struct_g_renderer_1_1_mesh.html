@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>G-Renderer: C:/!cpp/Render Project/Renderer/src/core/general/String.cpp File Reference</title>
+<title>G-Renderer: GRenderer::Mesh Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,58 +64,61 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_72d139265cdfc197a7554df6fbd76cc5.html">Render Project</a></li><li class="navelem"><a class="el" href="dir_53b5cc79f3e812e859f37b4c57e5bb3c.html">Renderer</a></li><li class="navelem"><a class="el" href="dir_0d5d1067519b40a1815b5b461fefed0a.html">src</a></li><li class="navelem"><a class="el" href="dir_c8ccdae2da9646d6f5218835e1bbbb20.html">core</a></li><li class="navelem"><a class="el" href="dir_f93f59f830dffb34f5983ee662f3a72d.html">general</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_g_renderer.html">GRenderer</a></li><li class="navelem"><a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_g_renderer_1_1_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">String.cpp File Reference</div>  </div>
+<div class="title">GRenderer::Mesh Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_g_renderer_8h_source.html">../GRenderer.h</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a83b85440c420c0e120857b55734d10eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_string_8cpp.html#a83b85440c420c0e120857b55734d10eb">FORMAT</a>(format,  varname)</td></tr>
-<tr class="separator:a83b85440c420c0e120857b55734d10eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p><code>#include &lt;<a class="el" href="_g_renderer_8h_source.html">GRenderer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4f4d2f48babf8b40203413355289a85a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_renderer_1_1_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_mesh.html#a4f4d2f48babf8b40203413355289a85a">tex</a></td></tr>
+<tr class="separator:a4f4d2f48babf8b40203413355289a85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a9df5015f6dc8cbc4e15e1cc6b5020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array.html">Primitives::VertexArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_mesh.html#a76a9df5015f6dc8cbc4e15e1cc6b5020">vertex</a></td></tr>
+<tr class="separator:a76a9df5015f6dc8cbc4e15e1cc6b5020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a83b85440c420c0e120857b55734d10eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83b85440c420c0e120857b55734d10eb">&#9670;&nbsp;</a></span>FORMAT</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A struct containing the Information to render an Object in 2D and 3D space </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4f4d2f48babf8b40203413355289a85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f4d2f48babf8b40203413355289a85a">&#9670;&nbsp;</a></span>tex</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FORMAT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">format, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">varname&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="class_g_renderer_1_1_texture.html">Texture</a> GRenderer::Mesh::tex</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">size_t</span> size = _scprintf(format, varname) + 1;\</div>
-<div class="line">char* c = <span class="keyword">new</span> <span class="keywordtype">char</span>[size];<span class="comment">/*TMALLOC(char*, size);*/</span>\</div>
-<div class="line">snprintf(c, size, format, varname);\</div>
-<div class="line">this-&gt;append(c);\</div>
-<div class="line">delete[] c;\</div>
-<div class="line">return *<span class="keyword">this</span>;</div>
-</div><!-- fragment -->
+
 </div>
 </div>
+<a id="a76a9df5015f6dc8cbc4e15e1cc6b5020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a9df5015f6dc8cbc4e15e1cc6b5020">&#9670;&nbsp;</a></span>vertex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array.html">Primitives::VertexArray</a> GRenderer::Mesh::vertex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>C:/!cpp/Render Project/Renderer/src/core/<a class="el" href="_g_renderer_8h_source.html">GRenderer.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -80,6 +80,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html">ShaderProgram</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_texture.html">Texture</a></td></tr>
@@ -93,6 +95,8 @@ Functions</h2></td></tr>
 <tr class="separator:a944553d7fa3dfad2b8c9fbac21d2d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb193c1eb69ebdcb7ce7ec1eaa97ff9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#acb193c1eb69ebdcb7ce7ec1eaa97ff9b">clear</a> (<a class="el" href="struct_g_general_1_1_color.html">GGeneral::Color</a> &amp;color)</td></tr>
 <tr class="separator:acb193c1eb69ebdcb7ce7ec1eaa97ff9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f44d65a7c4056e4f696aef321623c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#ae3f44d65a7c4056e4f696aef321623c8">draw</a> (<a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> &amp;m)</td></tr>
+<tr class="separator:ae3f44d65a7c4056e4f696aef321623c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="acb193c1eb69ebdcb7ce7ec1eaa97ff9b"></a>
@@ -111,6 +115,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Clears the current active OpenGL context with the given color </p>
+
+</div>
+</div>
+<a id="ae3f44d65a7c4056e4f696aef321623c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f44d65a7c4056e4f696aef321623c8">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GRenderer::draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Will bind the needed VertexArrays and Textures and then render the <a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> using the currently bound shaders </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>- The <a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> to be drawn </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
