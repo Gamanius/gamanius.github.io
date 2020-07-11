@@ -71,6 +71,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -79,7 +80,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_g_renderer_8h_source.html">../GRenderer.h</a>&quot;</code><br />
 <code>#include &lt;Windows.h&gt;</code><br />
-<code>#include &lt;gl/GL.h&gt;</code><br />
+<code>#include &lt;gl/glew.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><table class="memberdecls">
@@ -92,6 +93,25 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a2748c6eb2f7795ab31178c21963b07b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a2748c6eb2f7795ab31178c21963b07b2">THIS_INSTANCE</a>&#160;&#160;&#160;<a class="el" href="_window_8cpp.html#ab373c40e8eeb170206c7237ba54ebd68">allWindowsInstances</a>[this-&gt;WindowID]</td></tr>
 <tr class="separator:a2748c6eb2f7795ab31178c21963b07b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d5f1fa63a1979e33aee2949f6f21ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a64d5f1fa63a1979e33aee2949f6f21ad">WGL_CONTEXT_MAJOR_VERSION_ARB</a>&#160;&#160;&#160;0x2091</td></tr>
+<tr class="separator:a64d5f1fa63a1979e33aee2949f6f21ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043b9ae0e73a1ff853339c02a3026096"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a043b9ae0e73a1ff853339c02a3026096">WGL_CONTEXT_MINOR_VERSION_ARB</a>&#160;&#160;&#160;0x2092</td></tr>
+<tr class="separator:a043b9ae0e73a1ff853339c02a3026096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e171b65bf6c350ed81ecd79101f0424"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a3e171b65bf6c350ed81ecd79101f0424">WGL_CONTEXT_LAYER_PLANE_ARB</a>&#160;&#160;&#160;0x2093</td></tr>
+<tr class="separator:a3e171b65bf6c350ed81ecd79101f0424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b5de1c7cb84a809ad79296192a76d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#aa9b5de1c7cb84a809ad79296192a76d3">WGL_CONTEXT_FLAGS_ARB</a>&#160;&#160;&#160;0x2094</td></tr>
+<tr class="separator:aa9b5de1c7cb84a809ad79296192a76d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6847a02f9b4e6e9712a4b32250337dc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a6847a02f9b4e6e9712a4b32250337dc1">WGL_CONTEXT_PROFILE_MASK_ARB</a>&#160;&#160;&#160;0x9126</td></tr>
+<tr class="separator:a6847a02f9b4e6e9712a4b32250337dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956f8c0391ca8b3076aacdd11123ab23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a956f8c0391ca8b3076aacdd11123ab23">WGL_CONTEXT_CORE_PROFILE_BIT_ARB</a>&#160;&#160;&#160;0x00000001</td></tr>
+<tr class="separator:a956f8c0391ca8b3076aacdd11123ab23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e0f83037fd693f85a0a382245cded4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#ac0e0f83037fd693f85a0a382245cded4">WGL_CONTEXT_COMPATIBILITY_PROFILE_BIT_ARB</a>&#160;&#160;&#160;0x00000002</td></tr>
+<tr class="separator:ac0e0f83037fd693f85a0a382245cded4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a8833923d34c926ffb19dda579473783c"><td class="memItemLeft" align="right" valign="top">typedef HGLRC WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a8833923d34c926ffb19dda579473783c">wglCreateContextAttribsARB_type</a>(HDC hdc, HGLRC hShareContext, const int *attribList)</td></tr>
+<tr class="separator:a8833923d34c926ffb19dda579473783c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -100,6 +120,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:aa97d05f3344daa1f210f6025839ae86b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_window_8cpp.html#a8833923d34c926ffb19dda579473783c">wglCreateContextAttribsARB_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#aa97d05f3344daa1f210f6025839ae86b">wglCreateContextAttribsARB</a></td></tr>
+<tr class="separator:aa97d05f3344daa1f210f6025839ae86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74029128723095e7bf00a71d46af8b24"><td class="memItemLeft" align="right" valign="top">HINSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a74029128723095e7bf00a71d46af8b24">hInstance</a> = GetModuleHandle(0)</td></tr>
 <tr class="separator:a74029128723095e7bf00a71d46af8b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ee506075353e87329edd8c16ebde59"><td class="memItemLeft" align="right" valign="top">HGLRC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a></td></tr>
@@ -116,6 +138,119 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define THIS_INSTANCE&#160;&#160;&#160;<a class="el" href="_window_8cpp.html#ab373c40e8eeb170206c7237ba54ebd68">allWindowsInstances</a>[this-&gt;WindowID]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0e0f83037fd693f85a0a382245cded4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e0f83037fd693f85a0a382245cded4">&#9670;&nbsp;</a></span>WGL_CONTEXT_COMPATIBILITY_PROFILE_BIT_ARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WGL_CONTEXT_COMPATIBILITY_PROFILE_BIT_ARB&#160;&#160;&#160;0x00000002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a956f8c0391ca8b3076aacdd11123ab23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956f8c0391ca8b3076aacdd11123ab23">&#9670;&nbsp;</a></span>WGL_CONTEXT_CORE_PROFILE_BIT_ARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WGL_CONTEXT_CORE_PROFILE_BIT_ARB&#160;&#160;&#160;0x00000001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9b5de1c7cb84a809ad79296192a76d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b5de1c7cb84a809ad79296192a76d3">&#9670;&nbsp;</a></span>WGL_CONTEXT_FLAGS_ARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WGL_CONTEXT_FLAGS_ARB&#160;&#160;&#160;0x2094</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e171b65bf6c350ed81ecd79101f0424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e171b65bf6c350ed81ecd79101f0424">&#9670;&nbsp;</a></span>WGL_CONTEXT_LAYER_PLANE_ARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WGL_CONTEXT_LAYER_PLANE_ARB&#160;&#160;&#160;0x2093</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64d5f1fa63a1979e33aee2949f6f21ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d5f1fa63a1979e33aee2949f6f21ad">&#9670;&nbsp;</a></span>WGL_CONTEXT_MAJOR_VERSION_ARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WGL_CONTEXT_MAJOR_VERSION_ARB&#160;&#160;&#160;0x2091</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a043b9ae0e73a1ff853339c02a3026096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043b9ae0e73a1ff853339c02a3026096">&#9670;&nbsp;</a></span>WGL_CONTEXT_MINOR_VERSION_ARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WGL_CONTEXT_MINOR_VERSION_ARB&#160;&#160;&#160;0x2092</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6847a02f9b4e6e9712a4b32250337dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6847a02f9b4e6e9712a4b32250337dc1">&#9670;&nbsp;</a></span>WGL_CONTEXT_PROFILE_MASK_ARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WGL_CONTEXT_PROFILE_MASK_ARB&#160;&#160;&#160;0x9126</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8833923d34c926ffb19dda579473783c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8833923d34c926ffb19dda579473783c">&#9670;&nbsp;</a></span>wglCreateContextAttribsARB_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef HGLRC WINAPI wglCreateContextAttribsARB_type(HDC hdc, HGLRC hShareContext, const int *attribList)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,6 +335,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">HINSTANCE hInstance = GetModuleHandle(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa97d05f3344daa1f210f6025839ae86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97d05f3344daa1f210f6025839ae86b">&#9670;&nbsp;</a></span>wglCreateContextAttribsARB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_window_8cpp.html#a8833923d34c926ffb19dda579473783c">wglCreateContextAttribsARB_type</a>* wglCreateContextAttribsARB</td>
         </tr>
       </table>
 </div><div class="memdoc">

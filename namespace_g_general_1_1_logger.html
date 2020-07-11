@@ -102,11 +102,9 @@ Functions</h2></td></tr>
 <tr class="separator:ad86520bba91afcfbd42e612ff4b9e4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48322ad38e1e62c584b406f220f6f3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2">printMessage</a> (<a class="el" href="struct_g_general_1_1_logger_1_1_message.html">Message</a> in)</td></tr>
 <tr class="separator:a48322ad38e1e62c584b406f220f6f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b9bb1c1f45dc7e27b4dda061d7290e"><td class="memTemplParams" colspan="2">template&lt;typename T_TYPE &gt; </td></tr>
-<tr class="memitem:a55b9bb1c1f45dc7e27b4dda061d7290e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a55b9bb1c1f45dc7e27b4dda061d7290e">printMessage</a> (T_TYPE message, <a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7">Severity</a> sev, int ID)</td></tr>
-<tr class="separator:a55b9bb1c1f45dc7e27b4dda061d7290e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6584388fd7c54cf79f5fdd8dae6d9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a9f6584388fd7c54cf79f5fdd8dae6d9d">addUserName</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> name)</td></tr>
-<tr class="separator:a9f6584388fd7c54cf79f5fdd8dae6d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7eb335f85aff968b8194d2e08f288f"><td class="memTemplParams" colspan="2">template&lt;typename T_TYPE &gt; </td></tr>
+<tr class="memitem:acb7eb335f85aff968b8194d2e08f288f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#acb7eb335f85aff968b8194d2e08f288f">printMessage</a> (T_TYPE message, <a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7">Severity</a> sev)</td></tr>
+<tr class="separator:acb7eb335f85aff968b8194d2e08f288f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87680823b7730e926c8bd8b24586f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#af87680823b7730e926c8bd8b24586f8f">setSeverityFilter</a> (<a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7">Severity</a> filter)</td></tr>
 <tr class="separator:af87680823b7730e926c8bd8b24586f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eef9cb5ed0a522d9034bafa1310fb89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7">Severity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_general_1_1_logger.html#a9eef9cb5ed0a522d9034bafa1310fb89">getSeverityFilter</a> ()</td></tr>
@@ -117,7 +115,7 @@ Functions</h2></td></tr>
 <tr class="separator:a07a7330c321094ccdcb99eaa8f16d9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This <a class="el" href="namespace_g_general_1_1_logger.html">Logger</a> class needs to be initialized manually before calling the <a class="el" href="namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2">printMessage()</a> function. The class is multi threaded meaning that there is a buffer all messages will go into. All message in the buffer thread are being read from the worker thread, formatted and in the end printed to the console. You can set the maximum size of the buffer via setMaxBufferSize variable. If you try to send a message into the buffer, while the buffer size is larger or the same size as the maximum buffer size, the program will halt until there is enough free space to add new message Before the normal program termination you should always call <a class="el" href="namespace_g_general_1_1_logger.html#a07a7330c321094ccdcb99eaa8f16d9ec">terminateThread()</a> to end the worker thread correctly. If you font want to use multi threading you can deactivate it by defining LOGGER_NO_MULTITHREAD (WIP). NOTE: There is a really small chance that a message will get deleted </p>
+<div class="textblock"><p>The class is multi threaded meaning that there is a buffer all messages will go into. All message in the buffer thread are being read from the worker thread, formatted and in the end printed to the console. You can set the maximum size of the buffer via setMaxBufferSize variable. If you try to send a message into the buffer, while the buffer size is larger or the same size as the maximum buffer size, the program will halt until there is enough free space to add new message NOTE: If <a class="el" href="namespace_g_general_1_1_logger.html#ad86520bba91afcfbd42e612ff4b9e4dc">Logger::init()</a> is not called the function printMsg() will not be multi threaded. Instead it will be processed by the same thread that called the function </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a9de7729ef34053379a45395c34cf84e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9de7729ef34053379a45395c34cf84e7">&#9670;&nbsp;</a></span>Severity</h2>
@@ -157,26 +155,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9f6584388fd7c54cf79f5fdd8dae6d9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f6584388fd7c54cf79f5fdd8dae6d9d">&#9670;&nbsp;</a></span>addUserName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GGeneral::Logger::addUserName </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Adds a new user name to the <a class="el" href="namespace_g_general_1_1_logger.html">Logger</a>. The int can be used in the <a class="el" href="namespace_g_general_1_1_logger.html#a48322ad38e1e62c584b406f220f6f3d2">printMessage()</a> function to print the user name given. Every thread can use any User ID. there is no checking.</p>
-<dl class="section return"><dt>Returns</dt><dd>The ID of the name </dd></dl>
-
-</div>
-</div>
 <a id="a9eef9cb5ed0a522d9034bafa1310fb89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9eef9cb5ed0a522d9034bafa1310fb89">&#9670;&nbsp;</a></span>getSeverityFilter()</h2>
 
@@ -240,8 +218,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a55b9bb1c1f45dc7e27b4dda061d7290e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55b9bb1c1f45dc7e27b4dda061d7290e">&#9670;&nbsp;</a></span>printMessage() <span class="overload">[2/2]</span></h2>
+<a id="acb7eb335f85aff968b8194d2e08f288f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7eb335f85aff968b8194d2e08f288f">&#9670;&nbsp;</a></span>printMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,13 +236,7 @@ template&lt;typename T_TYPE &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7">Severity</a>&#160;</td>
-          <td class="paramname"><em>sev</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ID</em>&#160;</td>
+          <td class="paramname"><em>sev</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

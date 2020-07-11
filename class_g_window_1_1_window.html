@@ -87,8 +87,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad618507593a3af82660b0b04c5bb4829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab80589a5c59cde590a507e6ef33af9e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#ab80589a5c59cde590a507e6ef33af9e9">~Window</a> ()</td></tr>
 <tr class="separator:ab80589a5c59cde590a507e6ef33af9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae61063e2207396b11f67c01f15389543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#ae61063e2207396b11f67c01f15389543">initOpenGLContext</a> ()</td></tr>
-<tr class="separator:ae61063e2207396b11f67c01f15389543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7cb4fd801dba97dbeb2f77306dd3bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#abd7cb4fd801dba97dbeb2f77306dd3bf">createOpenGLcontext</a> ()</td></tr>
+<tr class="separator:abd7cb4fd801dba97dbeb2f77306dd3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390f00070c9a2909d8a8a6bf0e7957ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#a390f00070c9a2909d8a8a6bf0e7957ab">setOpenGLContextActive</a> (bool b)</td></tr>
 <tr class="separator:a390f00070c9a2909d8a8a6bf0e7957ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248c14bbf96ea23b45fa5de30c04bd9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#a248c14bbf96ea23b45fa5de30c04bd9a">swapBuffers</a> ()</td></tr>
@@ -103,18 +103,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adae91005026094c2368a57ceafd06a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a5829bef0d4416810500fc8b1419bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_window.html#a1ba040cbf3f091efdd3517cf6ae8af65">WindowState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#a68a5829bef0d4416810500fc8b1419bc">getCurrentWindowState</a> () const</td></tr>
 <tr class="separator:a68a5829bef0d4416810500fc8b1419bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97334ec56bf235c104de08a89f008c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#ad97334ec56bf235c104de08a89f008c6">addCallbackFunction</a> (<a class="el" href="_g_renderer_8h.html#af4e7d58bd10d0de036985a67b1e13648">GWindowCallback</a> fun)</td></tr>
+<tr class="memitem:ad97334ec56bf235c104de08a89f008c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#ad97334ec56bf235c104de08a89f008c6">addCallbackFunction</a> (<a class="el" href="namespace_g_window.html#aa8c7f98ee085f781947f76a0c39f1cc0">GWindowCallback</a> fun)</td></tr>
 <tr class="separator:ad97334ec56bf235c104de08a89f008c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c7cf7241f99019ee5e330c8ae4e3843"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#a2c7cf7241f99019ee5e330c8ae4e3843">init</a> ()</td></tr>
-<tr class="separator:a2c7cf7241f99019ee5e330c8ae4e3843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c66cc5bb01d3df54d16f089a8f75a1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_window_1_1_window.html#a4c66cc5bb01d3df54d16f089a8f75a1c">fetchEvents</a> ()</td></tr>
 <tr class="separator:a4c66cc5bb01d3df54d16f089a8f75a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class including all functions to create a window and fetch events from it using the WinAPI. When the class is constructed, it can only be accessed from the thread that constructed it. This also counts for the <a class="el" href="class_g_window_1_1_window.html#a4c66cc5bb01d3df54d16f089a8f75a1c">fetchEvents()</a> function but not the <a class="el" href="class_g_window_1_1_window.html#a2c7cf7241f99019ee5e330c8ae4e3843">init()</a> function! </p>
+<div class="textblock"><p>A class including all functions to create a window and fetch events from it using the WinAPI. When the class is constructed, it can only be accessed from the thread that constructed it. This also counts for the <a class="el" href="class_g_window_1_1_window.html#a4c66cc5bb01d3df54d16f089a8f75a1c">fetchEvents()</a> function but not the <a class="el" href="namespace_g_window.html#a902481ae120c363f8e2810a0c7a84cbd">init()</a> function! </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3ef8d474db0a8b7aae23ae6766c1cf46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ef8d474db0a8b7aae23ae6766c1cf46">&#9670;&nbsp;</a></span>Window() <span class="overload">[1/2]</span></h2>
@@ -211,8 +209,26 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void GWindow::Window::addCallbackFunction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_g_renderer_8h.html#af4e7d58bd10d0de036985a67b1e13648">GWindowCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_g_window.html#aa8c7f98ee085f781947f76a0c39f1cc0">GWindowCallback</a>&#160;</td>
           <td class="paramname"><em>fun</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TODO </p>
+
+</div>
+</div>
+<a id="abd7cb4fd801dba97dbeb2f77306dd3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd7cb4fd801dba97dbeb2f77306dd3bf">&#9670;&nbsp;</a></span>createOpenGLcontext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GWindow::Window::createOpenGLcontext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -299,50 +315,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO Will fetch the current window state and return it</p>
 <dl class="section return"><dt>Returns</dt><dd>The current <a class="el" href="class_g_window_1_1_window.html">Window</a> state of the window </dd></dl>
-
-</div>
-</div>
-<a id="a2c7cf7241f99019ee5e330c8ae4e3843"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c7cf7241f99019ee5e330c8ae4e3843">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GWindow::Window::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>TODO </p>
-
-</div>
-</div>
-<a id="ae61063e2207396b11f67c01f15389543"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae61063e2207396b11f67c01f15389543">&#9670;&nbsp;</a></span>initOpenGLContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool GWindow::Window::initOpenGLContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>TODO </p>
 
 </div>
 </div>

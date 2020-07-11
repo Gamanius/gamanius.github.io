@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['allscreens_862',['allScreens',['../_monitor_8cpp.html#a6033305412455f83197742a503977292',1,'Monitor.cpp']]],
-  ['allwindowsinstances_863',['allWindowsInstances',['../_window_8cpp.html#ab373c40e8eeb170206c7237ba54ebd68',1,'Window.cpp']]]
+  ['allscreens_899',['allScreens',['../_monitor_8cpp.html#a6033305412455f83197742a503977292',1,'Monitor.cpp']]],
+  ['allwindowsinstances_900',['allWindowsInstances',['../_window_8cpp.html#ab373c40e8eeb170206c7237ba54ebd68',1,'Window.cpp']]]
 ];

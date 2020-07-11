@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['c_17',['C',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a0d61f8370cad1d412f80b84d143e1257',1,'GWindow']]],
-  ['callback_18',['Callback',['../_window_8cpp.html#ae2664b22f10a9bff8361a260e215cad1',1,'Window.cpp']]],
+  ['c_16',['C',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a0d61f8370cad1d412f80b84d143e1257',1,'GWindow']]],
+  ['callback_17',['Callback',['../_window_8cpp.html#ae2664b22f10a9bff8361a260e215cad1',1,'Window.cpp']]],
+  ['callbackfun_18',['callbackfun',['../struct_window_class.html#aea794a777d027b813c66d0452e8bfe04',1,'WindowClass']]],
   ['cancel_19',['CANCEL',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a2027c027133e22c8929e2874dc44dd36',1,'GWindow']]],
   ['capslock_20',['CAPSLOCK',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00a6f306354deb2a5e21ba787d683290004',1,'GWindow']]],
   ['chooser0_21',['CHOOSER0',['../_defines_8h.html#aa02e45080a46bb91566cd7f71dd816ee',1,'Defines.h']]],
@@ -131,7 +132,7 @@ var searchData=
   ['chooser97_145',['CHOOSER97',['../_defines_8h.html#a0b47ac24c4be8d9972260dc1cd171775',1,'Defines.h']]],
   ['chooser98_146',['CHOOSER98',['../_defines_8h.html#aaaa30be91ed077e6fe96ad549a4c651c',1,'Defines.h']]],
   ['chooser99_147',['CHOOSER99',['../_defines_8h.html#af07a1fd558d69931335e1e624e2a0695',1,'Defines.h']]],
-  ['clear_148',['clear',['../namespace_g_renderer.html#acb193c1eb69ebdcb7ce7ec1eaa97ff9b',1,'GRenderer']]],
+  ['clear_148',['clear',['../namespace_g_renderer.html#aceea708ec3aa549399920a5a2973dcf9',1,'GRenderer']]],
   ['closerequest_149',['closeRequest',['../struct_window_class.html#aa0c337fc99d5e62dca56af9daea99386',1,'WindowClass']]],
   ['color_150',['Color',['../struct_g_general_1_1_color.html',1,'GGeneral::Color'],['../struct_g_general_1_1_color.html#af6c55b8319b8de26324affa105ae928b',1,'GGeneral::Color::Color()']]],
   ['color_2ecpp_151',['Color.cpp',['../_color_8cpp.html',1,'']]],
@@ -139,6 +140,7 @@ var searchData=
   ['compileshader_153',['compileShader',['../class_g_renderer_1_1_primitives_1_1_shader.html#a07c835fcc9d7dc1ba9e4e1e6c8d21ed8',1,'GRenderer::Primitives::Shader']]],
   ['compute_5fshader_154',['COMPUTE_SHADER',['../namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9fae6ae2d0a1bee9d966dcae11a201a3c56',1,'GRenderer::Primitives']]],
   ['count_5fargs_5fmax_155',['COUNT_ARGS_MAX',['../_defines_8h.html#a0d0beec74933cf640045212535ac6c1c',1,'Defines.h']]],
-  ['createtexture_156',['createTexture',['../class_g_renderer_1_1_texture.html#a61f9e54ec3097aed99f6119e45db9fcf',1,'GRenderer::Texture']]],
-  ['cstr_157',['cStr',['../class_g_general_1_1_string.html#a71f5b23bf90b80cee463e2860b0f54d1',1,'GGeneral::String']]]
+  ['createopenglcontext_156',['createOpenGLcontext',['../class_g_window_1_1_window.html#abd7cb4fd801dba97dbeb2f77306dd3bf',1,'GWindow::Window']]],
+  ['createtexture_157',['createTexture',['../class_g_renderer_1_1_texture.html#a61f9e54ec3097aed99f6119e45db9fcf',1,'GRenderer::Texture']]],
+  ['cstr_158',['cStr',['../class_g_general_1_1_string.html#a71f5b23bf90b80cee463e2860b0f54d1',1,'GGeneral::String']]]
 ];

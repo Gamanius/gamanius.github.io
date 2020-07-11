@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['cl_5fcontext_24183',['cl_context',['../glew_8h.html#a96a7d9b65e8319e2f8c751455ae92ec8',1,'glew.h']]],
-  ['cl_5fevent_24184',['cl_event',['../glew_8h.html#a1c56130de44e6cc96783ed2acb2a47ae',1,'glew.h']]]
+  ['wglcreatecontextattribsarb_5ftype_969',['wglCreateContextAttribsARB_type',['../_window_8cpp.html#a8833923d34c926ffb19dda579473783c',1,'Window.cpp']]]
 ];

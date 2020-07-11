@@ -82,18 +82,19 @@ $(function() {
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;Windows.h&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aaa8b7bd4d84ad4a3083cb1e3b3610984"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#aaa8b7bd4d84ad4a3083cb1e3b3610984">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="struct_g_general_1_1_base_object.html">GGeneral::BaseObject</a> &amp;obj)</td></tr>
 <tr class="separator:aaa8b7bd4d84ad4a3083cb1e3b3610984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc984aa0b5acf2218648e86d2029512d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#afc984aa0b5acf2218648e86d2029512d">getSystemTime</a> ()</td></tr>
-<tr class="separator:afc984aa0b5acf2218648e86d2029512d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1f1f5b68161f6ad032be1f34ce6d6dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#ac1f1f5b68161f6ad032be1f34ce6d6dc">printmsg</a> (<a class="el" href="struct_g_general_1_1_logger_1_1_message.html">GGeneral::Logger::Message</a> msg)</td></tr>
-<tr class="separator:ac1f1f5b68161f6ad032be1f34ce6d6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d8cabb8f64c962e8af06f4878798ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#ae7d8cabb8f64c962e8af06f4878798ee">processMsg</a> (<a class="el" href="struct_g_general_1_1_logger_1_1_message.html">GGeneral::Logger::Message</a> msg)</td></tr>
+<tr class="separator:ae7d8cabb8f64c962e8af06f4878798ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5556008768e4fdcd30dcad3e63faa36b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#a5556008768e4fdcd30dcad3e63faa36b">t_process</a> ()</td></tr>
 <tr class="separator:a5556008768e4fdcd30dcad3e63faa36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c528baf37154d347366083f0f816846"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#a8c528baf37154d347366083f0f816846">stop</a> ()</td></tr>
+<tr class="separator:a8c528baf37154d347366083f0f816846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -101,6 +102,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa782721e6fcd9246c793feb59c29c611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57674dfadc38f9f7a6db3e274c28e806"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#a57674dfadc38f9f7a6db3e274c28e806">workerThread</a></td></tr>
 <tr class="separator:a57674dfadc38f9f7a6db3e274c28e806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba918c8e6065622cc5ba90e569eaa8bc"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#aba918c8e6065622cc5ba90e569eaa8bc">globalMutex</a></td></tr>
+<tr class="separator:aba918c8e6065622cc5ba90e569eaa8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae22dd615b8f3f6516c369b4e693c078e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#ae22dd615b8f3f6516c369b4e693c078e">userNames</a></td></tr>
 <tr class="separator:ae22dd615b8f3f6516c369b4e693c078e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad64c2da3cf5ef5f3a2f7030b32279292"><td class="memItemLeft" align="right" valign="top">const std::array&lt; unsigned int, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#ad64c2da3cf5ef5f3a2f7030b32279292">SeverityColors</a> = { 8, 9, 10, 6, 4, 64 }</td></tr>
@@ -109,33 +112,14 @@ Variables</h2></td></tr>
 <tr class="separator:a4797c25846dfad4c8fa6976d8034370e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4eddbd77742f6a9031c78fe7d3899f7"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#ac4eddbd77742f6a9031c78fe7d3899f7">isInit</a> = false</td></tr>
 <tr class="separator:ac4eddbd77742f6a9031c78fe7d3899f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9fdaaec67b9e400242cf74641ab5cdf"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#ad9fdaaec67b9e400242cf74641ab5cdf">shouldThreadWork</a> = true</td></tr>
-<tr class="separator:ad9fdaaec67b9e400242cf74641ab5cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c5c697be203a4ab2e633c9a87de47d"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#a84c5c697be203a4ab2e633c9a87de47d">wasInit</a> = false</td></tr>
+<tr class="separator:a84c5c697be203a4ab2e633c9a87de47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4efe0325cf1c39a818f7dc33efaa9e"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#aed4efe0325cf1c39a818f7dc33efaa9e">shouldThreadTerminate</a> = false</td></tr>
 <tr class="separator:aed4efe0325cf1c39a818f7dc33efaa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa59aaccf6c22244886425042e71b5e"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#a3fa59aaccf6c22244886425042e71b5e">threadBufferClearLock</a> = false</td></tr>
 <tr class="separator:a3fa59aaccf6c22244886425042e71b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abaf98f8d49870714163fd63bf492bb"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8cpp.html#a9abaf98f8d49870714163fd63bf492bb">discardAllMsg</a> = false</td></tr>
-<tr class="separator:a9abaf98f8d49870714163fd63bf492bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="afc984aa0b5acf2218648e86d2029512d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc984aa0b5acf2218648e86d2029512d">&#9670;&nbsp;</a></span>getSystemTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> getSystemTime </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aaa8b7bd4d84ad4a3083cb1e3b3610984"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa8b7bd4d84ad4a3083cb1e3b3610984">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
 
@@ -172,17 +156,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac1f1f5b68161f6ad032be1f34ce6d6dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1f1f5b68161f6ad032be1f34ce6d6dc">&#9670;&nbsp;</a></span>printmsg()</h2>
+<a id="ae7d8cabb8f64c962e8af06f4878798ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d8cabb8f64c962e8af06f4878798ee">&#9670;&nbsp;</a></span>processMsg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void printmsg </td>
+          <td class="memname">void processMsg </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_g_general_1_1_logger_1_1_message.html">GGeneral::Logger::Message</a>&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c528baf37154d347366083f0f816846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c528baf37154d347366083f0f816846">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -208,14 +209,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a9abaf98f8d49870714163fd63bf492bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9abaf98f8d49870714163fd63bf492bb">&#9670;&nbsp;</a></span>discardAllMsg</h2>
+<a id="aba918c8e6065622cc5ba90e569eaa8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba918c8e6065622cc5ba90e569eaa8bc">&#9670;&nbsp;</a></span>globalMutex</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool discardAllMsg = false</td>
+          <td class="memname">std::mutex globalMutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -292,20 +293,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9fdaaec67b9e400242cf74641ab5cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9fdaaec67b9e400242cf74641ab5cdf">&#9670;&nbsp;</a></span>shouldThreadWork</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool shouldThreadWork = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3fa59aaccf6c22244886425042e71b5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3fa59aaccf6c22244886425042e71b5e">&#9670;&nbsp;</a></span>threadBufferClearLock</h2>
 
@@ -328,6 +315,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&gt; userNames</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84c5c697be203a4ab2e633c9a87de47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c5c697be203a4ab2e633c9a87de47d">&#9670;&nbsp;</a></span>wasInit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool wasInit = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
