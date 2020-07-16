@@ -82,7 +82,6 @@ $(function() {
 <div class="textblock"><code>#include &lt;initializer_list&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="_g_math_8h_source.html">GMath.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_g_memory_8h_source.html">GMemory.h</a>&quot;</code><br />
 </div>
 <p><a href="_g_renderer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -93,6 +92,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_base_object.html">GGeneral::BaseObject</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_color.html">GGeneral::Color</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1a_color.html">GGeneral::aColor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_time_1_1_time_point.html">GGeneral::Time::TimePoint</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +157,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_g_renderer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html">GRenderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_g_renderer_1_1_primitives"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer_1_1_primitives.html">GRenderer::Primitives</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_g_graphics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html">GGraphics</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -494,6 +497,12 @@ Functions</h2></td></tr>
 <tr class="separator:aceea708ec3aa549399920a5a2973dcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f44d65a7c4056e4f696aef321623c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#ae3f44d65a7c4056e4f696aef321623c8">GRenderer::draw</a> (Mesh &amp;m)</td></tr>
 <tr class="separator:ae3f44d65a7c4056e4f696aef321623c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8417dc5a524f37b0156747177d8394a6"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#a8417dc5a524f37b0156747177d8394a6">GGraphics::init</a> ()</td></tr>
+<tr class="separator:a8417dc5a524f37b0156747177d8394a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c26f13a5754364ba44641102f97033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#af5c26f13a5754364ba44641102f97033">GGraphics::setColor</a> (<a class="el" href="struct_g_general_1_1a_color.html">GGeneral::aColor</a> c)</td></tr>
+<tr class="separator:af5c26f13a5754364ba44641102f97033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0adf59153d2e83e7ac808a57275d505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#ab0adf59153d2e83e7ac808a57275d505">GGraphics::drawRect</a> (<a class="el" href="struct_g_general_1_1_rectangle.html">GGeneral::Rectangle</a>&lt; int &gt; r)</td></tr>
+<tr class="separator:ab0adf59153d2e83e7ac808a57275d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94989bba8ccb216e9105ed5f05d3c59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#ab94989bba8ccb216e9105ed5f05d3c59">operator&lt;&lt;</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;s, <a class="el" href="namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7">GGeneral::Logger::Severity</a> e)</td></tr>
 <tr class="separator:ab94989bba8ccb216e9105ed5f05d3c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19636d7a02f1fc3e90921d308153e2ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a19636d7a02f1fc3e90921d308153e2ab">operator&lt;&lt;</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;s, <a class="el" href="namespace_g_renderer_1_1_primitives.html#a8729df3ef7b2106f8cae92849fd1380b">GRenderer::Primitives::IndexTypes</a> e)</td></tr>

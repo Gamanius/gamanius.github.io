@@ -79,25 +79,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_defines_8h_source.html">Defines.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_g_memory_8h_source.html">GMemory.h</a>&quot;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 </div>
 <p><a href="_g_math_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1vec2.html">GMath::vec2&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1vec.html">GMath::vec&lt; T, size &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1vec3.html">GMath::vec3&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1vec4.html">GMath::vec4&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1vec2.html">GMath::vec2&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1vec3.html">GMath::vec3&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1vec4.html">GMath::vec4&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1mat4x4.html">GMath::mat4x4&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_math_1_1mat.html">GMath::mat&lt; T, row, column &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -109,94 +100,45 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:acd70dc6247248e7644f02da9ced61e02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_math_8h.html#acd70dc6247248e7644f02da9ced61e02">G_MATH</a></td></tr>
 <tr class="separator:acd70dc6247248e7644f02da9ced61e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6d7bfd545e0700931fb2df0a6de6cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_math_8h.html#acf6d7bfd545e0700931fb2df0a6de6cd">A_OPERATION</a>(type,  op)</td></tr>
-<tr class="separator:acf6d7bfd545e0700931fb2df0a6de6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb038e1ea790538eb032a54289857d9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_math_8h.html#acb038e1ea790538eb032a54289857d9c">A_OPERATION_BODY</a>(type,  op)</td></tr>
-<tr class="separator:acb038e1ea790538eb032a54289857d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd17ce2ce5fd8438ffff35e9e4cdf1e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_math_8h.html#abd17ce2ce5fd8438ffff35e9e4cdf1e1">USE_MAT</a>(n)</td></tr>
+<tr class="separator:abd17ce2ce5fd8438ffff35e9e4cdf1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_math_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
 <tr class="separator:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385a29160d06f8a4f18747ad7558886c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a385a29160d06f8a4f18747ad7558886c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a385a29160d06f8a4f18747ad7558886c">GMath::vec2</a> = vec&lt; T, 2 &gt;</td></tr>
+<tr class="separator:a385a29160d06f8a4f18747ad7558886c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90fa49dfbac9dc16b37b500c943518f9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a90fa49dfbac9dc16b37b500c943518f9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a90fa49dfbac9dc16b37b500c943518f9">GMath::vec3</a> = vec&lt; T, 3 &gt;</td></tr>
+<tr class="separator:a90fa49dfbac9dc16b37b500c943518f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48df66c9cec05415fce74b69bfb38787"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a48df66c9cec05415fce74b69bfb38787"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a48df66c9cec05415fce74b69bfb38787">GMath::vec4</a> = vec&lt; T, 4 &gt;</td></tr>
+<tr class="separator:a48df66c9cec05415fce74b69bfb38787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a572fdca9f225c124b6463fa536248dca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a572fdca9f225c124b6463fa536248dca"><td class="memTemplItemLeft" align="right" valign="top">mat4x4&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a572fdca9f225c124b6463fa536248dca">GMath::mat4x4Identity</a> ()</td></tr>
-<tr class="separator:a572fdca9f225c124b6463fa536248dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4bfe7c70e45cfce9ff4a81035afe74b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af4bfe7c70e45cfce9ff4a81035afe74b"><td class="memTemplItemLeft" align="right" valign="top">mat4x4&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#af4bfe7c70e45cfce9ff4a81035afe74b">GMath::ortho</a> (T left, T right, T bottom, T top, T _near, T _far)</td></tr>
-<tr class="separator:af4bfe7c70e45cfce9ff4a81035afe74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763ee1066a3b77e6c520f8232bbb1055"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a763ee1066a3b77e6c520f8232bbb1055"><td class="memTemplItemLeft" align="right" valign="top">mat4x4&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a763ee1066a3b77e6c520f8232bbb1055">GMath::perpective</a> (float FOV, T aspect, T _near, T _far)</td></tr>
-<tr class="separator:a763ee1066a3b77e6c520f8232bbb1055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591aaced7fd8242589050b07f998ccb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a591aaced7fd8242589050b07f998ccb5">GMath::USE_MAT</a> (2)</td></tr>
+<tr class="separator:a591aaced7fd8242589050b07f998ccb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade59a2891224acf1e84ecf40e293581e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#ade59a2891224acf1e84ecf40e293581e">GMath::USE_MAT</a> (3)</td></tr>
+<tr class="separator:ade59a2891224acf1e84ecf40e293581e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9845429e0c013ec03d113098d174bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a1b9845429e0c013ec03d113098d174bf">GMath::USE_MAT</a> (4)</td></tr>
+<tr class="separator:a1b9845429e0c013ec03d113098d174bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfeadffc580a1ae500abbd8eecb0000b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acfeadffc580a1ae500abbd8eecb0000b"><td class="memTemplItemLeft" align="right" valign="top">mat4&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#acfeadffc580a1ae500abbd8eecb0000b">GMath::mat4x4Identity</a> ()</td></tr>
+<tr class="separator:acfeadffc580a1ae500abbd8eecb0000b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7f593b64a7e0f8805bfca1a79d34b2"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t S&gt; </td></tr>
+<tr class="memitem:a9b7f593b64a7e0f8805bfca1a79d34b2"><td class="memTemplItemLeft" align="right" valign="top">mat&lt; T, S, S &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a9b7f593b64a7e0f8805bfca1a79d34b2">GMath::matIdentity</a> ()</td></tr>
+<tr class="separator:a9b7f593b64a7e0f8805bfca1a79d34b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5f1e53646029608fb8d037c22820d5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afd5f1e53646029608fb8d037c22820d5"><td class="memTemplItemLeft" align="right" valign="top">mat4&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#afd5f1e53646029608fb8d037c22820d5">GMath::ortho</a> (T left, T right, T bottom, T top, T _near, T _far)</td></tr>
+<tr class="separator:afd5f1e53646029608fb8d037c22820d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b34846a596fe1466368df3bce1b378"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a99b34846a596fe1466368df3bce1b378"><td class="memTemplItemLeft" align="right" valign="top">mat4&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_g_math.html#a99b34846a596fe1466368df3bce1b378">GMath::perpective</a> (float FOV, T aspect, T _near, T _far)</td></tr>
+<tr class="separator:a99b34846a596fe1466368df3bce1b378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="acf6d7bfd545e0700931fb2df0a6de6cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf6d7bfd545e0700931fb2df0a6de6cd">&#9670;&nbsp;</a></span>A_OPERATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A_OPERATION</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">op&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                              type &lt;T&gt; returnValue;                                \</div>
-<div class="line">                              for (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; this-&gt;getVectorAmount(); i++) \</div>
-<div class="line">                              {                                                    \</div>
-<div class="line">                                returnValue[i] = this-&gt;operator[](i) + a[i];             \</div>
-<div class="line">                              }                                                    \</div>
-<div class="line">                              return returnValue;</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="acb038e1ea790538eb032a54289857d9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb038e1ea790538eb032a54289857d9c">&#9670;&nbsp;</a></span>A_OPERATION_BODY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A_OPERATION_BODY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">op&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">type &lt;T&gt; <span class="keyword">operator</span> op (<span class="keyword">const</span> type &lt;T&gt;&amp; a) { \</div>
-<div class="line">    A_OPERATION(type, op);                 \</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="acd70dc6247248e7644f02da9ced61e02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd70dc6247248e7644f02da9ced61e02">&#9670;&nbsp;</a></span>G_MATH</h2>
 
@@ -209,6 +151,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="abd17ce2ce5fd8438ffff35e9e4cdf1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd17ce2ce5fd8438ffff35e9e4cdf1e1">&#9670;&nbsp;</a></span>USE_MAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_MAT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;\</div>
+<div class="line">    using mat##n##x##n = mat&lt;T, n, n&gt;;\</div>
+<div class="line">    template&lt;typename T&gt;\</div>
+<div class="line">    using mat##n = mat##n##x##n &lt;T&gt;;</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>

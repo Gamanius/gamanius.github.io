@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['mat4x4_837',['mat4x4',['../struct_g_math_1_1mat4x4.html#ae2f92188466e1ac3008439b749461940',1,'GMath::mat4x4']]],
-  ['mat4x4identity_838',['mat4x4Identity',['../namespace_g_math.html#a572fdca9f225c124b6463fa536248dca',1,'GMath']]],
-  ['memadd_839',['memadd',['../struct_g_math_1_1vec2.html#a6bb272b6d8d43ffba869ad43d5ced6be',1,'GMath::vec2::memadd()'],['../struct_g_math_1_1mat4x4.html#a0872a43702e824f1ae3629447ac519ca',1,'GMath::mat4x4::memadd()']]],
-  ['monthstodays_840',['monthsToDays',['../namespace_g_general_1_1_time.html#a60e7a7f256f18b092171df2365b46aca',1,'GGeneral::Time::monthsToDays(byte m)'],['../namespace_g_general_1_1_time.html#a49fba16c867e7f934a423990a3e4204f',1,'GGeneral::Time::monthsToDays(byte m, bool leap)']]],
-  ['movemouse_841',['moveMouse',['../namespace_g_general_1_1_o_s.html#ad3b21d1fcca5b061bfee396d9679739b',1,'GGeneral::OS']]]
+  ['mat_855',['mat',['../struct_g_math_1_1mat.html#ae1908afc6442d027c65f2a9d7d04c2c0',1,'GMath::mat::mat()'],['../struct_g_math_1_1mat.html#abc64aafa62e02742a9690deedaa2d4b6',1,'GMath::mat::mat(T value)'],['../struct_g_math_1_1mat.html#add9bcd91db79056abbb1c6ae63929845',1,'GMath::mat::mat(const mat&lt; T, row, column &gt; &amp;other)'],['../struct_g_math_1_1mat.html#a1e48828b61f5e82e98660ee2cfafa951',1,'GMath::mat::mat(mat&lt; T, row, column &gt; &amp;&amp;other) noexcept']]],
+  ['mat4x4identity_856',['mat4x4Identity',['../namespace_g_math.html#acfeadffc580a1ae500abbd8eecb0000b',1,'GMath']]],
+  ['matidentity_857',['matIdentity',['../namespace_g_math.html#a9b7f593b64a7e0f8805bfca1a79d34b2',1,'GMath']]],
+  ['mem_858',['mem',['../struct_g_math_1_1vec.html#a14f660238d147239697b2e429912d01d',1,'GMath::vec::mem()'],['../struct_g_math_1_1mat.html#af1ac2606ba4a90bf0b158411a70d9307',1,'GMath::mat::mem()']]],
+  ['monthstodays_859',['monthsToDays',['../namespace_g_general_1_1_time.html#a60e7a7f256f18b092171df2365b46aca',1,'GGeneral::Time::monthsToDays(byte m)'],['../namespace_g_general_1_1_time.html#a49fba16c867e7f934a423990a3e4204f',1,'GGeneral::Time::monthsToDays(byte m, bool leap)']]],
+  ['movemouse_860',['moveMouse',['../namespace_g_general_1_1_o_s.html#ad3b21d1fcca5b061bfee396d9679739b',1,'GGeneral::OS']]]
 ];

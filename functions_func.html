@@ -67,10 +67,8 @@ $(function() {
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
-<li>A_OPERATION_BODY()
-: <a class="el" href="struct_g_math_1_1vec2.html#a75b785372bc25fef1bfe393461ebccf9">GMath::vec2&lt; T &gt;</a>
-, <a class="el" href="struct_g_math_1_1vec3.html#adabf901b406e9f436ed9287a27f20a07">GMath::vec3&lt; T &gt;</a>
-, <a class="el" href="struct_g_math_1_1vec4.html#a92c3351c7efa8afccacc5331d14ebb89">GMath::vec4&lt; T &gt;</a>
+<li>aColor()
+: <a class="el" href="struct_g_general_1_1a_color.html#ac696c671572d8824b49bc9b6a2534726">GGeneral::aColor</a>
 </li>
 <li>addCallbackFunction()
 : <a class="el" href="class_g_window_1_1_window.html#ad97334ec56bf235c104de08a89f008c6">GWindow::Window</a>
@@ -202,6 +200,7 @@ $(function() {
 </li>
 <li>getSize()
 : <a class="el" href="class_g_general_1_1_string.html#aee294219f14839b2967dc0bf3566d649">GGeneral::String</a>
+, <a class="el" href="struct_g_math_1_1vec.html#a0f89e7d7007bcf960a16f067733a37c8">GMath::vec&lt; T, size &gt;</a>
 </li>
 <li>getStride()
 : <a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array_1_1_vertex_array_layout.html#a098af8d54f175e33d607c2bcd7661bcf">GRenderer::Primitives::VertexArray::VertexArrayLayout</a>
@@ -233,12 +232,12 @@ $(function() {
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
-<li>mat4x4()
-: <a class="el" href="struct_g_math_1_1mat4x4.html#ae2f92188466e1ac3008439b749461940">GMath::mat4x4&lt; T &gt;</a>
+<li>mat()
+: <a class="el" href="struct_g_math_1_1mat.html#ae1908afc6442d027c65f2a9d7d04c2c0">GMath::mat&lt; T, row, column &gt;</a>
 </li>
-<li>memadd()
-: <a class="el" href="struct_g_math_1_1mat4x4.html#a0872a43702e824f1ae3629447ac519ca">GMath::mat4x4&lt; T &gt;</a>
-, <a class="el" href="struct_g_math_1_1vec2.html#a6bb272b6d8d43ffba869ad43d5ced6be">GMath::vec2&lt; T &gt;</a>
+<li>mem()
+: <a class="el" href="struct_g_math_1_1mat.html#af1ac2606ba4a90bf0b158411a70d9307">GMath::mat&lt; T, row, column &gt;</a>
+, <a class="el" href="struct_g_math_1_1vec.html#a14f660238d147239697b2e429912d01d">GMath::vec&lt; T, size &gt;</a>
 </li>
 </ul>
 
@@ -250,28 +249,28 @@ $(function() {
 <li>operator unsigned long long int()
 : <a class="el" href="struct_g_general_1_1_time_1_1_time_point.html#a6c382b48b11266c6e21f62a06bd4232c">GGeneral::Time::TimePoint</a>
 </li>
-<li>operator!=()
-: <a class="el" href="struct_g_math_1_1vec2.html#a693d5c075ca76ddd103b9ec5ac1e7e99">GMath::vec2&lt; T &gt;</a>
+<li>operator+()
+: <a class="el" href="struct_g_math_1_1vec.html#a6be156e32f600b47e89dc5ae07e2d198">GMath::vec&lt; T, size &gt;</a>
 </li>
 <li>operator+=()
 : <a class="el" href="class_g_general_1_1_string.html#a4bf57b0a05d0467d40de9675ce9773c0">GGeneral::String</a>
+, <a class="el" href="struct_g_math_1_1vec.html#a9cbb9e0ba38882f9ceedfa8e30ee0bd4">GMath::vec&lt; T, size &gt;</a>
 </li>
 <li>operator&lt;&lt;()
-: <a class="el" href="class_g_general_1_1_string.html#a2eed1e1cb9e779fa7796fbcc9e32dd83">GGeneral::String</a>
+: <a class="el" href="class_g_general_1_1_string.html#a7065a1ba9ca1c410db8a8c9c23c310e5">GGeneral::String</a>
 </li>
 <li>operator=()
-: <a class="el" href="class_g_general_1_1_string.html#aa10a75dce8943eecab882bb0f105c488">GGeneral::String</a>
-, <a class="el" href="class_g_renderer_1_1_texture.html#a089d3ec97e50e7d163a6a06326d7f1f6">GRenderer::Texture</a>
-</li>
-<li>operator==()
-: <a class="el" href="struct_g_math_1_1vec2.html#a698de3f8760a5cfac189656cbfa778e2">GMath::vec2&lt; T &gt;</a>
+: <a class="el" href="class_g_general_1_1_string.html#af298c1ddcd14170423be9bc2083e488b">GGeneral::String</a>
+, <a class="el" href="struct_g_math_1_1mat.html#a6058321e60f91b7160b9893ad7723d43">GMath::mat&lt; T, row, column &gt;</a>
+, <a class="el" href="class_g_renderer_1_1_texture.html#af08f645086ae7a89268608ff07d56bd4">GRenderer::Texture</a>
 </li>
 <li>operator[]()
-: <a class="el" href="struct_g_general_1_1_color.html#a0a68d1c6d601f391d196ca9ded4c3a4f">GGeneral::Color</a>
-, <a class="el" href="class_g_general_1_1_string.html#afe1ca4e86cb21976a354153b0766a292">GGeneral::String</a>
+: <a class="el" href="struct_g_general_1_1a_color.html#aa4ab708989d204e2212bd554a2e68fdc">GGeneral::aColor</a>
+, <a class="el" href="struct_g_general_1_1_color.html#a0a68d1c6d601f391d196ca9ded4c3a4f">GGeneral::Color</a>
+, <a class="el" href="class_g_general_1_1_string.html#ae453a11cd3f92f27aa97fd5bd73473b8">GGeneral::String</a>
 , <a class="el" href="struct_g_i_o_1_1_file.html#a1543ab14d1f94851c2f638cb462ebe2b">GIO::File</a>
-, <a class="el" href="struct_g_math_1_1mat4x4.html#aad2ce48cfcf429d7ae7962a577e9d3af">GMath::mat4x4&lt; T &gt;</a>
-, <a class="el" href="struct_g_math_1_1vec2.html#a5861fe0e6f65268fd76111c964b75535">GMath::vec2&lt; T &gt;</a>
+, <a class="el" href="struct_g_math_1_1mat.html#a9650f9f8e1a3827a1beecdcfb94ae583">GMath::mat&lt; T, row, column &gt;</a>
+, <a class="el" href="struct_g_math_1_1vec.html#a5791772db040499221990b843d91eff8">GMath::vec&lt; T, size &gt;</a>
 </li>
 </ul>
 
@@ -297,6 +296,9 @@ $(function() {
 <li>Screen()
 : <a class="el" href="struct_g_window_1_1_monitor_1_1_screen.html#a10959346426cefd66228b433d0331083">GWindow::Monitor::Screen</a>
 </li>
+<li>set()
+: <a class="el" href="class_g_renderer_1_1_shader_program.html#ad25bb6e27dd2bb53f53299c331ddc6a0">GRenderer::ShaderProgram</a>
+</li>
 <li>setCaptureMouseMode()
 : <a class="el" href="class_g_window_1_1_window.html#adae91005026094c2368a57ceafd06a40">GWindow::Window</a>
 </li>
@@ -313,16 +315,19 @@ $(function() {
 : <a class="el" href="class_g_renderer_1_1_texture.html#af6d4233c7b226936ab9035c6714072ba">GRenderer::Texture</a>
 </li>
 <li>Shader()
-: <a class="el" href="class_g_renderer_1_1_primitives_1_1_shader.html#aeb001d4af2caa7ead103bea8d9fd2290">GRenderer::Primitives::Shader</a>
+: <a class="el" href="class_g_renderer_1_1_primitives_1_1_shader.html#acb642217cee56e5524c5dbfc43f9052c">GRenderer::Primitives::Shader</a>
 </li>
 <li>ShaderProgram()
-: <a class="el" href="class_g_renderer_1_1_shader_program.html#a944050805ee7aeec7d4f33a8c4f2b9af">GRenderer::ShaderProgram</a>
+: <a class="el" href="class_g_renderer_1_1_shader_program.html#ad89b2365298eb83a40151a211a355c0c">GRenderer::ShaderProgram</a>
+</li>
+<li>sourceShader()
+: <a class="el" href="class_g_renderer_1_1_primitives_1_1_shader.html#a228cd7049bb0a10514e7639523bdde4b">GRenderer::Primitives::Shader</a>
 </li>
 <li>stop()
 : <a class="el" href="struct_g_general_1_1_time_1_1_timer.html#acdfcbf7138d14ef8e585c2037786c839">GGeneral::Time::Timer</a>
 </li>
 <li>String()
-: <a class="el" href="class_g_general_1_1_string.html#ad69ac2ad25dc2a593469587bd1c7b517">GGeneral::String</a>
+: <a class="el" href="class_g_general_1_1_string.html#acb989aabe11d8ca74d82d3aabe77d57f">GGeneral::String</a>
 </li>
 <li>swapBuffers()
 : <a class="el" href="class_g_window_1_1_window.html#a248c14bbf96ea23b45fa5de30c04bd9a">GWindow::Window</a>
@@ -341,7 +346,8 @@ $(function() {
 : <a class="el" href="struct_g_general_1_1_time_1_1_timer.html#a316d8667bba8226358bd60e132fb9bfa">GGeneral::Time::Timer</a>
 </li>
 <li>toString()
-: <a class="el" href="struct_g_general_1_1_base_object.html#abff4b59cee60360d537635db290b2d64">GGeneral::BaseObject</a>
+: <a class="el" href="struct_g_general_1_1a_color.html#ab6643666975213ce34735e750baefe38">GGeneral::aColor</a>
+, <a class="el" href="struct_g_general_1_1_base_object.html#abff4b59cee60360d537635db290b2d64">GGeneral::BaseObject</a>
 , <a class="el" href="struct_g_general_1_1_color.html#a2b9128b3785759343cb60a2d72a2f64c">GGeneral::Color</a>
 , <a class="el" href="struct_g_general_1_1_dimension3_d.html#a89d7cc5f2ac3852ff31ef8f13493c8c2">GGeneral::Dimension3D&lt; T &gt;</a>
 , <a class="el" href="struct_g_general_1_1_dimension.html#a5ba7d9e8e86cfbf0d31edeb7c4b28a68">GGeneral::Dimension&lt; T &gt;</a>
@@ -352,9 +358,6 @@ $(function() {
 , <a class="el" href="struct_g_i_o_1_1_file.html#aca3565aef3dec0a93415a0ab13f3cd00">GIO::File</a>
 , <a class="el" href="struct_g_i_o_1_1_graphics_1_1_image.html#a241c2ee1d3339257053a6c24692e90ba">GIO::Graphics::Image</a>
 , <a class="el" href="struct_g_window_1_1_monitor_1_1_screen.html#aa7fa69dd9f298256826b74482b031f3c">GWindow::Monitor::Screen</a>
-</li>
-<li>translate()
-: <a class="el" href="struct_g_math_1_1mat4x4.html#a7e1c7329cda01359161ae1f1247e824c">GMath::mat4x4&lt; T &gt;</a>
 </li>
 </ul>
 
@@ -371,14 +374,8 @@ $(function() {
 
 
 <h3><a id="index_v"></a>- v -</h3><ul>
-<li>vec2()
-: <a class="el" href="struct_g_math_1_1vec2.html#a5adea8570223bd10e2c52acb273c0c87">GMath::vec2&lt; T &gt;</a>
-</li>
-<li>vec3()
-: <a class="el" href="struct_g_math_1_1vec3.html#a5ec9a43c485637af17f30a775c9c135e">GMath::vec3&lt; T &gt;</a>
-</li>
-<li>vec4()
-: <a class="el" href="struct_g_math_1_1vec4.html#a8774fa8cb53922a2ab98dccef601d2fa">GMath::vec4&lt; T &gt;</a>
+<li>vec()
+: <a class="el" href="struct_g_math_1_1vec.html#afc23c5f01be3bf5d9831c508af3277c1">GMath::vec&lt; T, size &gt;</a>
 </li>
 <li>VertexArray()
 : <a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array.html#ac5a662cc0ba912e2f42d4dfcbf24e5d4">GRenderer::Primitives::VertexArray</a>
@@ -387,7 +384,7 @@ $(function() {
 : <a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array_1_1_vertex_array_layout.html#afb3e80ea90ce1e4db6e20e297792d0a9">GRenderer::Primitives::VertexArray::VertexArrayLayout</a>
 </li>
 <li>VertexBuffer()
-: <a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html#a2091271b19356923592e462469951aca">GRenderer::Primitives::VertexBuffer</a>
+: <a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html#a6ece06553b38a902f8597000b58b98a8">GRenderer::Primitives::VertexBuffer</a>
 </li>
 </ul>
 
@@ -406,6 +403,12 @@ $(function() {
 <li>~IndexBuffer()
 : <a class="el" href="struct_g_renderer_1_1_primitives_1_1_index_buffer.html#a8f7862ff68675073b4f7a2f5eaf9d6b9">GRenderer::Primitives::IndexBuffer</a>
 </li>
+<li>~mat()
+: <a class="el" href="struct_g_math_1_1mat.html#ac43144cddde028bb363de68faa4be7ae">GMath::mat&lt; T, row, column &gt;</a>
+</li>
+<li>~Mesh()
+: <a class="el" href="struct_g_renderer_1_1_mesh.html#ab01513d8e6b1a70fb3345ea50d2224d7">GRenderer::Mesh</a>
+</li>
 <li>~Shader()
 : <a class="el" href="class_g_renderer_1_1_primitives_1_1_shader.html#a5334345f33daf3306df93a37252cac89">GRenderer::Primitives::Shader</a>
 </li>
@@ -417,6 +420,9 @@ $(function() {
 </li>
 <li>~Texture()
 : <a class="el" href="class_g_renderer_1_1_texture.html#a465900c13bbd44a0778fa3f9cbe4498f">GRenderer::Texture</a>
+</li>
+<li>~vec()
+: <a class="el" href="struct_g_math_1_1vec.html#afd625e0bd22a886c28aec5e7fcf81fd5">GMath::vec&lt; T, size &gt;</a>
 </li>
 <li>~VertexArray()
 : <a class="el" href="struct_g_renderer_1_1_primitives_1_1_vertex_array.html#a05b4ef6952363a6ce49095349862a134">GRenderer::Primitives::VertexArray</a>

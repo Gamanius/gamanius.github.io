@@ -76,7 +76,8 @@ $(function() {
 <div class="title">GMemory.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
 </div>
 <p><a href="_g_memory_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -91,8 +92,12 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a64e0d756d2c3f68650e4893c369c02bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a64e0d756d2c3f68650e4893c369c02bc">G_MEMORY</a></td></tr>
 <tr class="separator:a64e0d756d2c3f68650e4893c369c02bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8787f8e5c1fafb5ece028a3f3798a9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#aa8787f8e5c1fafb5ece028a3f3798a9c">IF_EXTENDED_MEM</a>(expression)</td></tr>
+<tr class="separator:aa8787f8e5c1fafb5ece028a3f3798a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2098b694243988f4d8faf600acf2ba74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a2098b694243988f4d8faf600acf2ba74">GET_ALLOC_INFO_COUNT</a>(pointer)&#160;&#160;&#160;reinterpret_cast&lt;unsigned int*&gt;(pointer)[-1]</td></tr>
 <tr class="separator:a2098b694243988f4d8faf600acf2ba74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1f2b9dfe6005d437e893f3de1666ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_memory_8h.html#a7e1f2b9dfe6005d437e893f3de1666ec">TMALLOC</a>(type,  size)&#160;&#160;&#160;reinterpret_cast&lt;type&gt;(<a class="el" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a>(size))</td></tr>
+<tr class="separator:a7e1f2b9dfe6005d437e893f3de1666ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -130,6 +135,52 @@ Functions</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pointer</td><td>)</td>
           <td>&#160;&#160;&#160;reinterpret_cast&lt;unsigned int*&gt;(pointer)[-1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8787f8e5c1fafb5ece028a3f3798a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8787f8e5c1fafb5ece028a3f3798a9c">&#9670;&nbsp;</a></span>IF_EXTENDED_MEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IF_EXTENDED_MEM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expression</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e1f2b9dfe6005d437e893f3de1666ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1f2b9dfe6005d437e893f3de1666ec">&#9670;&nbsp;</a></span>TMALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TMALLOC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;reinterpret_cast&lt;type&gt;(<a class="el" href="class_g_memory.html#aad60f1a0b765352478e0a9fba96a7697">GMemory::alloc</a>(size))</td>
         </tr>
       </table>
 </div><div class="memdoc">
