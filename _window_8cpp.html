@@ -115,6 +115,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1ed8e10eef21c7c3c32b1e3068bf981b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00">GWindow::VK</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a1ed8e10eef21c7c3c32b1e3068bf981b">processUnknownKeys</a> (bool pressed)</td></tr>
+<tr class="separator:a1ed8e10eef21c7c3c32b1e3068bf981b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732168267af37ea797b4f8e7a1702b18"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a732168267af37ea797b4f8e7a1702b18">proccessXButton</a> (WPARAM button)</td></tr>
+<tr class="separator:a732168267af37ea797b4f8e7a1702b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2664b22f10a9bff8361a260e215cad1"><td class="memItemLeft" align="right" valign="top">LRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#ae2664b22f10a9bff8361a260e215cad1">Callback</a> (HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</td></tr>
 <tr class="separator:ae2664b22f10a9bff8361a260e215cad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,10 +128,16 @@ Variables</h2></td></tr>
 <tr class="separator:aa97d05f3344daa1f210f6025839ae86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74029128723095e7bf00a71d46af8b24"><td class="memItemLeft" align="right" valign="top">HINSTANCE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a74029128723095e7bf00a71d46af8b24">hInstance</a> = GetModuleHandle(0)</td></tr>
 <tr class="separator:a74029128723095e7bf00a71d46af8b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ee506075353e87329edd8c16ebde59"><td class="memItemLeft" align="right" valign="top">HGLRC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a></td></tr>
+<tr class="memitem:ae6ee506075353e87329edd8c16ebde59"><td class="memItemLeft" align="right" valign="top">HGLRC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59">hglrc</a> = NULL</td></tr>
 <tr class="separator:ae6ee506075353e87329edd8c16ebde59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab373c40e8eeb170206c7237ba54ebd68"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_window_class.html">WindowClass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#ab373c40e8eeb170206c7237ba54ebd68">allWindowsInstances</a></td></tr>
 <tr class="separator:ab373c40e8eeb170206c7237ba54ebd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd7c2f4a3d554ee51427b3abae4d6d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a0bd7c2f4a3d554ee51427b3abae4d6d4">context_major</a> = 3</td></tr>
+<tr class="separator:a0bd7c2f4a3d554ee51427b3abae4d6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3940d561333f8cdc5d4f7357cb2483d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#af3940d561333f8cdc5d4f7357cb2483d">context_minor</a> = 3</td></tr>
+<tr class="separator:af3940d561333f8cdc5d4f7357cb2483d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221f8edb0e485d0f35f7efe4cd87bee3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_window_8cpp.html#a221f8edb0e485d0f35f7efe4cd87bee3">context_profile</a> = <a class="el" href="_window_8cpp.html#a956f8c0391ca8b3076aacdd11123ab23">WGL_CONTEXT_CORE_PROFILE_BIT_ARB</a></td></tr>
+<tr class="separator:a221f8edb0e485d0f35f7efe4cd87bee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2748c6eb2f7795ab31178c21963b07b2"></a>
@@ -298,6 +308,42 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a732168267af37ea797b4f8e7a1702b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a732168267af37ea797b4f8e7a1702b18">&#9670;&nbsp;</a></span>proccessXButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* proccessXButton </td>
+          <td>(</td>
+          <td class="paramtype">WPARAM&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ed8e10eef21c7c3c32b1e3068bf981b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed8e10eef21c7c3c32b1e3068bf981b">&#9670;&nbsp;</a></span>processUnknownKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00">GWindow::VK</a>&gt; processUnknownKeys </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pressed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ab373c40e8eeb170206c7237ba54ebd68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab373c40e8eeb170206c7237ba54ebd68">&#9670;&nbsp;</a></span>allWindowsInstances</h2>
@@ -313,6 +359,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a0bd7c2f4a3d554ee51427b3abae4d6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd7c2f4a3d554ee51427b3abae4d6d4">&#9670;&nbsp;</a></span>context_major</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int context_major = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3940d561333f8cdc5d4f7357cb2483d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3940d561333f8cdc5d4f7357cb2483d">&#9670;&nbsp;</a></span>context_minor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int context_minor = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a221f8edb0e485d0f35f7efe4cd87bee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221f8edb0e485d0f35f7efe4cd87bee3">&#9670;&nbsp;</a></span>context_profile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int context_profile = <a class="el" href="_window_8cpp.html#a956f8c0391ca8b3076aacdd11123ab23">WGL_CONTEXT_CORE_PROFILE_BIT_ARB</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae6ee506075353e87329edd8c16ebde59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6ee506075353e87329edd8c16ebde59">&#9670;&nbsp;</a></span>hglrc</h2>
 
@@ -320,7 +408,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HGLRC hglrc</td>
+          <td class="memname">HGLRC hglrc = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">

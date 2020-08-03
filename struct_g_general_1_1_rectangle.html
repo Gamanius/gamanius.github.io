@@ -92,6 +92,16 @@ Inheritance diagram for GGeneral::Rectangle&lt; T &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a75ef2da2966a374964cf4b902ec982c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_rectangle.html#a75ef2da2966a374964cf4b902ec982c9">Rectangle</a> (T x=0, T y=0, T width=0, T height=0)</td></tr>
 <tr class="separator:a75ef2da2966a374964cf4b902ec982c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98459a50fba2c76b61826ba4935847f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_rectangle.html#a98459a50fba2c76b61826ba4935847f1">Rectangle</a> (<a class="el" href="struct_g_general_1_1_point.html">Point</a>&lt; T &gt; p, T width=0, T height=0)</td></tr>
+<tr class="separator:a98459a50fba2c76b61826ba4935847f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0174e343375c91a5b98cad9ed342ea28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_rectangle.html#a0174e343375c91a5b98cad9ed342ea28">Rectangle</a> (<a class="el" href="struct_g_general_1_1_point.html">Point</a>&lt; T &gt; p, <a class="el" href="struct_g_general_1_1_dimension.html">Dimension</a>&lt; T &gt; d)</td></tr>
+<tr class="separator:a0174e343375c91a5b98cad9ed342ea28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a3db2b7e3eb690e5b8291594634b0d"><td class="memTemplParams" colspan="2">template&lt;typename O &gt; </td></tr>
+<tr class="memitem:a17a3db2b7e3eb690e5b8291594634b0d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_rectangle.html#a17a3db2b7e3eb690e5b8291594634b0d">isColliding</a> (<a class="el" href="struct_g_general_1_1_rectangle.html">Rectangle</a>&lt; O &gt; &amp;other)</td></tr>
+<tr class="separator:a17a3db2b7e3eb690e5b8291594634b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa62e222ae08085acd94c545275351cd"><td class="memTemplParams" colspan="2">template&lt;typename O &gt; </td></tr>
+<tr class="memitem:afa62e222ae08085acd94c545275351cd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_rectangle.html#afa62e222ae08085acd94c545275351cd">isColliding</a> (<a class="el" href="struct_g_general_1_1_rectangle.html">Rectangle</a>&lt; O &gt; &amp;&amp;other)</td></tr>
+<tr class="separator:afa62e222ae08085acd94c545275351cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8e2e22069de068a50a697778a31f7d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_general_1_1_rectangle.html#ac8e2e22069de068a50a697778a31f7d9">toString</a> () const override</td></tr>
 <tr class="separator:ac8e2e22069de068a50a697778a31f7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -104,7 +114,7 @@ Public Attributes</h2></td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a75ef2da2966a374964cf4b902ec982c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75ef2da2966a374964cf4b902ec982c9">&#9670;&nbsp;</a></span>Rectangle()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ef2da2966a374964cf4b902ec982c9">&#9670;&nbsp;</a></span>Rectangle() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +163,167 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a98459a50fba2c76b61826ba4935847f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98459a50fba2c76b61826ba4935847f1">&#9670;&nbsp;</a></span>Rectangle() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_general_1_1_rectangle.html">GGeneral::Rectangle</a>&lt; T &gt;::<a class="el" href="struct_g_general_1_1_rectangle.html">Rectangle</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_point.html">Point</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>width</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>height</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0174e343375c91a5b98cad9ed342ea28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0174e343375c91a5b98cad9ed342ea28">&#9670;&nbsp;</a></span>Rectangle() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_general_1_1_rectangle.html">GGeneral::Rectangle</a>&lt; T &gt;::<a class="el" href="struct_g_general_1_1_rectangle.html">Rectangle</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_point.html">Point</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_dimension.html">Dimension</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa62e222ae08085acd94c545275351cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa62e222ae08085acd94c545275351cd">&#9670;&nbsp;</a></span>isColliding() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_g_general_1_1_rectangle.html">GGeneral::Rectangle</a>&lt; T &gt;::isColliding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_rectangle.html">Rectangle</a>&lt; O &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Will check if this rectangle is overlapping or touching with the other rectangle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>- The other rectangle to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true - If the two rectangles overlap </dd>
+<dd>
+false - If the two rectangles don't overlap </dd></dl>
+
+</div>
+</div>
+<a id="a17a3db2b7e3eb690e5b8291594634b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a3db2b7e3eb690e5b8291594634b0d">&#9670;&nbsp;</a></span>isColliding() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename O &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_g_general_1_1_rectangle.html">GGeneral::Rectangle</a>&lt; T &gt;::isColliding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_rectangle.html">Rectangle</a>&lt; O &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Will check if this rectangle is overlapping or touching with the other rectangle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>- The other rectangle to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true - If the two rectangles overlap </dd>
+<dd>
+false - If the two rectangles don't overlap </dd></dl>
+
+</div>
+</div>
 <a id="ac8e2e22069de068a50a697778a31f7d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8e2e22069de068a50a697778a31f7d9">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -198,6 +368,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The width and height of the rectangle </p>
 
 </div>
 </div>
@@ -214,6 +385,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The upper left coordinate of the rectangle </p>
 
 </div>
 </div>
