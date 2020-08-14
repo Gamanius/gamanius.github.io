@@ -371,6 +371,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Internal window ID </dd></dl>
 
 </div>
 </div>
@@ -468,7 +469,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a callback function that will be called even an Event happens. There is only one callback function per window. Use the <a class="el" href="namespace_g_event_wrapper.html">GEventWrapper</a> namespace for multiple functions support. List of possible events and their parameters: -If the Event is either KEY_PRESS or KEY_RELEASE the void* is an integer that should be casted into a VK enum. This also includes Mouse buttons! -If the Event is STATE the returned value will be a WindowState enum -If the Event is WINDOW_RESIZE the returned value will be a <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a> struct </p>
+<p>Add a callback function that will be called even an Event happens. There is only one callback function per window. Use the <a class="el" href="namespace_g_event_wrapper.html">GEventWrapper</a> namespace for multiple functions support. List of possible events and their parameters: -If the Event is <a class="el" href="namespace_g_window.html#a1c636e46b4634b9423247d042f85ebbbaad611457af6061ee2e1da664a161464d">WindowEvent::WINDOW_STATE</a> the returned value will be a WindowState enum -If the Event is <a class="el" href="namespace_g_window.html#a1c636e46b4634b9423247d042f85ebbba999715500a423f0bd9169c6a8af370cc">WindowEvent::WINDOW_RESIZE</a> the returned value will be a <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a> struct -If the Event is <a class="el" href="namespace_g_window.html#a1c636e46b4634b9423247d042f85ebbba793b7b04a58100cc784a9517b6c26bc9">WindowEvent::WINDOW_FOCUS</a> the returned value will be true if the window gained focus -If the Event is <a class="el" href="namespace_g_window.html#a1c636e46b4634b9423247d042f85ebbbab8cf3873a702fa463b06663b2a978a60">WindowEvent::WINDOW_MOVE</a> the returned value will be a GGeneral::Point&lt;long&gt; -If the Event is WindowEvent::either KEY_PRESS or KEY_RELEASE the void* is an integer that should be casted into a VK enum. This also includes Mouse buttons! -If the Event is <a class="el" href="namespace_g_window.html#a1c636e46b4634b9423247d042f85ebbba39b3291e13730aa8cdb221af2bdab3f3">WindowEvent::MOUSE_MOVE</a> the returned value will be GGeneral::Point&lt;int&gt; -If the Event is <a class="el" href="namespace_g_window.html#a1c636e46b4634b9423247d042f85ebbbab505fed6e98dcb74312ab9c3d93673d6">WindowEvent::WINDOW_CLOSE</a> the returned value can be ignored. This event will always be called upon receiving a close request from the window </p>
 
 </div>
 </div>

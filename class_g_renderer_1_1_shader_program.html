@@ -70,6 +70,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_g_renderer_1_1_shader_program-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GRenderer::ShaderProgram Class Reference</div>  </div>
@@ -124,10 +125,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad3b80b719695ab3a202cbe809a5fbbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1875f3891fa1b3efb7b6a30a0ccc78c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html#a1875f3891fa1b3efb7b6a30a0ccc78c3">bind</a> ()</td></tr>
 <tr class="separator:a1875f3891fa1b3efb7b6a30a0ccc78c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad944ece2aa55685ebea1b23f2456e416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html#ad944ece2aa55685ebea1b23f2456e416">unbind</a> ()</td></tr>
+<tr class="memitem:af66f75b3f8588631f8963e01ce500834"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html#af66f75b3f8588631f8963e01ce500834">getID</a> () const</td></tr>
+<tr class="separator:af66f75b3f8588631f8963e01ce500834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad944ece2aa55685ebea1b23f2456e416"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html#ad944ece2aa55685ebea1b23f2456e416">unbind</a> ()</td></tr>
 <tr class="separator:ad944ece2aa55685ebea1b23f2456e416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e7cf23e782aeb9ca5bd778bb9d4d53"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html#a97e7cf23e782aeb9ca5bd778bb9d4d53">getID</a> () const</td></tr>
-<tr class="separator:a97e7cf23e782aeb9ca5bd778bb9d4d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class wrapper for a Shader program </p>
@@ -218,8 +222,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a97e7cf23e782aeb9ca5bd778bb9d4d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97e7cf23e782aeb9ca5bd778bb9d4d53">&#9670;&nbsp;</a></span>getID()</h2>
+<a id="af66f75b3f8588631f8963e01ce500834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66f75b3f8588631f8963e01ce500834">&#9670;&nbsp;</a></span>getID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +232,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int GRenderer::ShaderProgram::getID </td>
+          <td class="memname">const unsigned int GRenderer::ShaderProgram::getID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -472,6 +476,13 @@ false - If an error occured while linking </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Will fetch the uniform location and if found will set the the uniform to the value given </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- Name of the uniform </td></tr>
+    <tr><td class="paramname">f</td><td>- The new value </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -830,6 +841,9 @@ false - If an error occured while linking </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GRenderer::ShaderProgram::unbind </td>
@@ -838,6 +852,11 @@ false - If an error occured while linking </dd></dl>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Will unbind the shader program </p>
 

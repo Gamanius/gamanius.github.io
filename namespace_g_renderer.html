@@ -81,6 +81,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_frame_buffer.html">FrameBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_renderer_1_1_shader_program.html">ShaderProgram</a></td></tr>
@@ -101,6 +103,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a83d30a4e29af95579766440789ed6c57"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a83d30a4e29af95579766440789ed6c57">init</a> ()</td></tr>
 <tr class="separator:a83d30a4e29af95579766440789ed6c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af1fe4c921fad6fa2a749d41e75d291"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a7af1fe4c921fad6fa2a749d41e75d291">getVersion</a> ()</td></tr>
+<tr class="separator:a7af1fe4c921fad6fa2a749d41e75d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944553d7fa3dfad2b8c9fbac21d2d0ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a944553d7fa3dfad2b8c9fbac21d2d0ca">getCurentOpenGLVersion</a> ()</td></tr>
 <tr class="separator:a944553d7fa3dfad2b8c9fbac21d2d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc37a002ecffc6504d75d82146f50fef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#adc37a002ecffc6504d75d82146f50fef">delta</a> ()</td></tr>
@@ -109,8 +113,10 @@ Functions</h2></td></tr>
 <tr class="separator:ab9ec9a32e2b78b2dd7a0f87750367306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceea708ec3aa549399920a5a2973dcf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#aceea708ec3aa549399920a5a2973dcf9">clear</a> (<a class="el" href="struct_g_general_1_1_color.html">GGeneral::Color</a> color)</td></tr>
 <tr class="separator:aceea708ec3aa549399920a5a2973dcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3f44d65a7c4056e4f696aef321623c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#ae3f44d65a7c4056e4f696aef321623c8">draw</a> (<a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> &amp;m)</td></tr>
-<tr class="separator:ae3f44d65a7c4056e4f696aef321623c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97afd9b6a249ce49d4b153e9bb4e409d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a97afd9b6a249ce49d4b153e9bb4e409d">setWireFrameMode</a> (bool b)</td></tr>
+<tr class="separator:a97afd9b6a249ce49d4b153e9bb4e409d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fea7faaa85079143ea1146834578b92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a6fea7faaa85079143ea1146834578b92">draw</a> (<a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> &amp;m, <a class="el" href="class_g_renderer_1_1_frame_buffer.html">FrameBuffer</a> *buffer=nullptr)</td></tr>
+<tr class="separator:a6fea7faaa85079143ea1146834578b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A namespace containing all functions to get the renderer running and rendering </p>
@@ -180,8 +186,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3f44d65a7c4056e4f696aef321623c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3f44d65a7c4056e4f696aef321623c8">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a6fea7faaa85079143ea1146834578b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fea7faaa85079143ea1146834578b92">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,14 +196,25 @@ Functions</h2></td></tr>
           <td class="memname">void GRenderer::draw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> &amp;&#160;</td>
-          <td class="paramname"><em>m</em></td><td>)</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_g_renderer_1_1_frame_buffer.html">GRenderer::FrameBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Will bind the needed VertexArrays and Textures and then render the <a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> using the currently bound shaders </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>- The <a class="el" href="struct_g_renderer_1_1_mesh.html">Mesh</a> to be drawn </td></tr>
+    <tr><td class="paramname">buffer</td><td>- Optional buffer to draw on. If nullptr the default buffer will be used (Most likely the window buffer) </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,6 +257,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7af1fe4c921fad6fa2a749d41e75d291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af1fe4c921fad6fa2a749d41e75d291">&#9670;&nbsp;</a></span>getVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> GRenderer::getVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a83d30a4e29af95579766440789ed6c57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83d30a4e29af95579766440789ed6c57">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -255,6 +289,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Will initialize the renderer </p>
+
+</div>
+</div>
+<a id="a97afd9b6a249ce49d4b153e9bb4e409d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97afd9b6a249ce49d4b153e9bb4e409d">&#9670;&nbsp;</a></span>setWireFrameMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GRenderer::setWireFrameMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
