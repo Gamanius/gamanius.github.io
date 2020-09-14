@@ -69,7 +69,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">File.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -78,12 +80,62 @@ $(function() {
 <code>#include &lt;Windows.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;<a class="el" href="lodepng_8h_source.html">lodepng.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a94dfac15a6a88c631d4ef06925b8d6a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_8cpp.html#a94dfac15a6a88c631d4ef06925b8d6a4">FORMAT_THROW</a>(msg,  error)</td></tr>
+<tr class="separator:a94dfac15a6a88c631d4ef06925b8d6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3ec2238a0cef3debd5b7c27ed0a11e0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_8cpp.html#a3ec2238a0cef3debd5b7c27ed0a11e0b">doBMP</a> (<a class="el" href="struct_g_file_1_1_file.html">GFile::File</a> *f)</td></tr>
 <tr class="separator:a3ec2238a0cef3debd5b7c27ed0a11e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a0f7f22c3c026ed7fc24bfaecb0273"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_8cpp.html#a39a0f7f22c3c026ed7fc24bfaecb0273">doPNG</a> (<a class="el" href="struct_g_file_1_1_file.html">GFile::File</a> *f)</td></tr>
+<tr class="separator:a39a0f7f22c3c026ed7fc24bfaecb0273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aefa6b843300dd09cb2d7318429bc0138"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_8cpp.html#aefa6b843300dd09cb2d7318429bc0138">BMPSig</a> [] = { 0x42, 0x4d }</td></tr>
+<tr class="separator:aefa6b843300dd09cb2d7318429bc0138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c78d312dccb4d6b00ca40108282be3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_file_8cpp.html#aa8c78d312dccb4d6b00ca40108282be3">PNGSig</a> [] = { 137, 80, 78, 71, 13, 10, 26, 10 }</td></tr>
+<tr class="separator:aa8c78d312dccb4d6b00ca40108282be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a94dfac15a6a88c631d4ef06925b8d6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94dfac15a6a88c631d4ef06925b8d6a4">&#9670;&nbsp;</a></span>FORMAT_THROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FORMAT_THROW</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">error&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{LPVOID lpMsgBuf = <span class="keyword">nullptr</span>;\</div>
+<div class="line">\</div>
+<div class="line">FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS, NULL, error, 0, (LPTSTR)&amp;lpMsgBuf, 0, NULL);\</div>
+<div class="line">THROWW(msg, (<span class="keywordtype">char</span>*)lpMsgBuf);\</div>
+<div class="line">LocalFree(lpMsgBuf);}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a3ec2238a0cef3debd5b7c27ed0a11e0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ec2238a0cef3debd5b7c27ed0a11e0b">&#9670;&nbsp;</a></span>doBMP()</h2>
@@ -99,6 +151,69 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39a0f7f22c3c026ed7fc24bfaecb0273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a0f7f22c3c026ed7fc24bfaecb0273">&#9670;&nbsp;</a></span>doPNG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a>* doPNG </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_file_1_1_file.html">GFile::File</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aefa6b843300dd09cb2d7318429bc0138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa6b843300dd09cb2d7318429bc0138">&#9670;&nbsp;</a></span>BMPSig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> BMPSig[] = { 0x42, 0x4d }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8c78d312dccb4d6b00ca40108282be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8c78d312dccb4d6b00ca40108282be3">&#9670;&nbsp;</a></span>PNGSig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> PNGSig[] = { 137, 80, 78, 71, 13, 10, 26, 10 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

@@ -92,6 +92,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a20b233444d3d648f7b90128bd13a9fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39029cb9e4ad0829098c5e4f1d13980b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_networking_1_1_server_socket.html#a39029cb9e4ad0829098c5e4f1d13980b">disconnect</a> (unsigned int socket)</td></tr>
 <tr class="separator:a39029cb9e4ad0829098c5e4f1d13980b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f74ec83ca5296386d4b48ee81a1a8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_networking_1_1_server_socket.html#a86f74ec83ca5296386d4b48ee81a1a8c">isConnected</a> (unsigned int socket)</td></tr>
+<tr class="separator:a86f74ec83ca5296386d4b48ee81a1a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2e0ddefff36cde0aa6134ce10edee45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_networking_1_1_server_socket.html#ae2e0ddefff36cde0aa6134ce10edee45">setBlockingMode</a> (bool block)</td></tr>
 <tr class="separator:ae2e0ddefff36cde0aa6134ce10edee45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7837a37b85d7f01c35bb91073e35eb6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_networking_1_1_server_socket.html#a7837a37b85d7f01c35bb91073e35eb6c">setBlockingMode</a> (bool block, unsigned int socket)</td></tr>
@@ -223,7 +225,34 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The amount of connected sockets. May be higher or lower than the real value </dd></dl>
+<p>Always call <a class="el" href="class_g_networking_1_1_server_socket.html#a12425fc7545d7715ec97b7f5442756d1">receive(unsigned int)</a> before calling this function </p><dl class="section return"><dt>Returns</dt><dd>The amount of connected sockets. May be higher or lower than the real value </dd></dl>
+
+</div>
+</div>
+<a id="a86f74ec83ca5296386d4b48ee81a1a8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f74ec83ca5296386d4b48ee81a1a8c">&#9670;&nbsp;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GNetworking::ServerSocket::isConnected </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Will check if messages can still be received or send to the socket. This function may not deliever correct results. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>- The socket to check for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true - The socket is still connected </dd>
+<dd>
+false - The socket is not connected anymore </dd></dl>
 
 </div>
 </div>

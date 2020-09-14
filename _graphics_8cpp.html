@@ -81,14 +81,22 @@ $(function() {
 Variables</h2></td></tr>
 <tr class="memitem:a8f17374982b9a45068c6308322c0fdc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_renderer_1_1_shader_program.html">GRenderer::ShaderProgram</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#a8f17374982b9a45068c6308322c0fdc7">recProgram</a></td></tr>
 <tr class="separator:a8f17374982b9a45068c6308322c0fdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0da133be108361cdd3e91c6bb18137d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_renderer_1_1_shader_program.html">GRenderer::ShaderProgram</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#ae0da133be108361cdd3e91c6bb18137d">texProgram</a></td></tr>
+<tr class="separator:ae0da133be108361cdd3e91c6bb18137d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4de3552066b208ed18972fd18370a84"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#aa4de3552066b208ed18972fd18370a84">recVertex</a> [8]</td></tr>
 <tr class="separator:aa4de3552066b208ed18972fd18370a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10951a5565a61b52380ab77ddc38aacd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#a10951a5565a61b52380ab77ddc38aacd">texVertex</a> [16]</td></tr>
+<tr class="separator:a10951a5565a61b52380ab77ddc38aacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0802ffae63ab559676d8f42ed895f4aa"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#a0802ffae63ab559676d8f42ed895f4aa">recIndex</a> []</td></tr>
 <tr class="separator:a0802ffae63ab559676d8f42ed895f4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a829a4f007f6ec477d0e936f6b01a0565"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#a829a4f007f6ec477d0e936f6b01a0565">defaultVert</a></td></tr>
 <tr class="separator:a829a4f007f6ec477d0e936f6b01a0565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a29dc274075f6434dbbada36e5a2916"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#a4a29dc274075f6434dbbada36e5a2916">defaultFrag</a></td></tr>
 <tr class="separator:a4a29dc274075f6434dbbada36e5a2916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9091d4d3114025d2cbe0c86c80c7eb8d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#a9091d4d3114025d2cbe0c86c80c7eb8d">textureVert</a></td></tr>
+<tr class="separator:a9091d4d3114025d2cbe0c86c80c7eb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7750b49e20294f782807f3372d2841a0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#a7750b49e20294f782807f3372d2841a0">textureFrag</a></td></tr>
+<tr class="separator:a7750b49e20294f782807f3372d2841a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa82548e64cf8ef18d0b596ac6035bb01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_8cpp.html#aa82548e64cf8ef18d0b596ac6035bb01">defaultViewportSize</a> = { 1280, 720 }</td></tr>
 <tr class="separator:aa82548e64cf8ef18d0b596ac6035bb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -177,8 +185,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0, 1, 2,</div>
-<div class="line">    2, 3, 0</div>
+<div class="line">   0, 1, 2,</div>
+<div class="line">   2, 3, 0</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -205,6 +213,94 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">float recVertex[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0da133be108361cdd3e91c6bb18137d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0da133be108361cdd3e91c6bb18137d">&#9670;&nbsp;</a></span>texProgram</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_renderer_1_1_shader_program.html">GRenderer::ShaderProgram</a> texProgram</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7750b49e20294f782807f3372d2841a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7750b49e20294f782807f3372d2841a0">&#9670;&nbsp;</a></span>textureFrag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* textureFrag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line"><span class="stringliteral">&quot;//#shader frag                              \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                            \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;#version 330                                \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;out vec4 fragcolor;                         \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                            \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;in vec2 o_texc;                             \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                            \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;uniform sampler2D _texture;                 \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                            \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;void main() {                               \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;   fragcolor = texture(_texture, o_texc); \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;}                                           \n&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9091d4d3114025d2cbe0c86c80c7eb8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9091d4d3114025d2cbe0c86c80c7eb8d">&#9670;&nbsp;</a></span>textureVert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* textureVert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line"><span class="stringliteral">&quot;//#shader vert                               \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;#version 330                                 \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                             \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;layout(location = 0) in vec2 vertex;         \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;layout(location = 1) in vec2 texturecoords;  \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                             \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;out vec2 o_texc;                             \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                             \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;uniform vec2 u_size;                         \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                             \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;void main() {                                \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;   vec2 o_vert;                              \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;   o_vert.x = (vertex.x / u_size.x) * 2 - 1; \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;   o_vert.y = (vertex.y / u_size.y) * 2 - 1; \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;   gl_Position = vec4(o_vert, 0, 1);         \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;                                             \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;   o_texc = texturecoords;                   \n&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;};                                           \n&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a10951a5565a61b52380ab77ddc38aacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10951a5565a61b52380ab77ddc38aacd">&#9670;&nbsp;</a></span>texVertex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float texVertex[16]</td>
         </tr>
       </table>
 </div><div class="memdoc">

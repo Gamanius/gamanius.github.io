@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['screendimension_1198',['screenDimension',['../struct_g_window_1_1_monitor_1_1_screen.html#a7e68af9a6027c271c3dd058158fad18b',1,'GWindow::Monitor::Screen']]],
-  ['screenname_1199',['screenName',['../struct_g_window_1_1_monitor_1_1_screen.html#a5a841cd6e6ffadf517fa28fdcaa27ca7',1,'GWindow::Monitor::Screen']]],
-  ['seconds_1200',['seconds',['../struct_g_general_1_1_time_1_1_time_point.html#ad03b5131a08d67f712ab8472c91ddf69',1,'GGeneral::Time::TimePoint']]],
-  ['sev_1201',['sev',['../struct_g_general_1_1_logger_1_1_message.html#a37e9c8fd16aae26ce778a2dde6fe6745',1,'GGeneral::Logger::Message']]],
-  ['severitycolors_1202',['SeverityColors',['../_logger_8cpp.html#ad64c2da3cf5ef5f3a2f7030b32279292',1,'Logger.cpp']]],
-  ['severityfilter_1203',['severityFilter',['../_logger_8cpp.html#a4797c25846dfad4c8fa6976d8034370e',1,'Logger.cpp']]],
-  ['shouldthreadterminate_1204',['shouldThreadTerminate',['../_logger_8cpp.html#aed4efe0325cf1c39a818f7dc33efaa9e',1,'Logger.cpp']]],
-  ['size_1205',['size',['../struct_g_file_1_1_file.html#a29e73171bec11689e6b758f1bb1519bf',1,'GFile::File::size()'],['../struct_g_networking_1_1_package.html#a4ae640741087ebc53ebcbd7f67b46375',1,'GNetworking::Package::size()']]],
-  ['start_1206',['start',['../struct_g_gamepad_1_1_gamepad_state.html#a73ea9a0fd45f3dfd1979d310d2c271f8',1,'GGamepad::GamepadState']]],
-  ['starttime_1207',['startTime',['../struct_g_general_1_1_time_1_1_timer.html#a641533066ebb121f2de697244dec863f',1,'GGeneral::Time::Timer']]]
+  ['palette_1745',['palette',['../struct_lode_p_n_g_color_mode.html#a54f0a793238009fcb95f081626fae308',1,'LodePNGColorMode::palette()'],['../struct_lode_p_n_g_color_stats.html#a7eda029397c945602ecf49d5277c936e',1,'LodePNGColorStats::palette()']]],
+  ['palettesize_1746',['palettesize',['../struct_lode_p_n_g_color_mode.html#a407557f056168682d9319aeb60866dcc',1,'LodePNGColorMode']]],
+  ['phys_5fdefined_1747',['phys_defined',['../struct_lode_p_n_g_info.html#a9b8e29b7e7b4908a2de0275e01a828ed',1,'LodePNGInfo']]],
+  ['phys_5funit_1748',['phys_unit',['../struct_lode_p_n_g_info.html#ad6f2171d9f87716e5010f6c5352f9855',1,'LodePNGInfo']]],
+  ['phys_5fx_1749',['phys_x',['../struct_lode_p_n_g_info.html#a1593fa6e1acc93f3b9de51c340bef94d',1,'LodePNGInfo']]],
+  ['phys_5fy_1750',['phys_y',['../struct_lode_p_n_g_info.html#a52ad7a105244d00f1e91c489eaf53f97',1,'LodePNGInfo']]],
+  ['pngsig_1751',['PNGSig',['../_file_8cpp.html#aa8c78d312dccb4d6b00ca40108282be3',1,'File.cpp']]],
+  ['position_1752',['position',['../struct_g_general_1_1_rectangle.html#a49c2e114e68589cfe9458cbe8c6e92a6',1,'GGeneral::Rectangle']]],
+  ['predefined_5ffilters_1753',['predefined_filters',['../struct_lode_p_n_g_encoder_settings.html#a4446f87b5283f25664802a1be037e76e',1,'LodePNGEncoderSettings']]],
+  ['primarymonitorindex_1754',['primaryMonitorIndex',['../_monitor_8cpp.html#ae878d43cc0b86710fe590ffeea826aac',1,'Monitor.cpp']]]
 ];

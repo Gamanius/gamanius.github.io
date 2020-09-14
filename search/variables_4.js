@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['globalmutex_1155',['globalMutex',['../_logger_8cpp.html#aba918c8e6065622cc5ba90e569eaa8bc',1,'Logger.cpp']]],
-  ['green_1156',['green',['../struct_g_general_1_1_color.html#a66d3b0ab1e147008a3247348144982a8',1,'GGeneral::Color']]]
+  ['encoder_1655',['encoder',['../struct_lode_p_n_g_state.html#ac63d91db835129d02eb83bbe81de347e',1,'LodePNGState']]],
+  ['error_1656',['error',['../struct_lode_p_n_g_state.html#a1a00a050da588cf3c2b7a6252bebb0cd',1,'LodePNGState']]]
 ];

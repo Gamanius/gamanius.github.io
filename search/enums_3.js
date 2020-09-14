@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mousebuttons_1248',['MouseButtons',['../namespace_g_event_wrapper.html#a9887b8a786d99eb9e930f528207fa0b4',1,'GEventWrapper']]]
+  ['lodepngcolortype_1859',['LodePNGColorType',['../lodepng_8h.html#a8f763b6ae712d9802dec37019dfa0102',1,'lodepng.h']]],
+  ['lodepngfilterstrategy_1860',['LodePNGFilterStrategy',['../lodepng_8h.html#ad5215c95d5bedc9103d8e6490398254f',1,'lodepng.h']]]
 ];

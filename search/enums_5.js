@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vertextypes_1251',['VertexTypes',['../namespace_g_renderer_1_1_primitives.html#ad64454cc82769ed6d889d730c4f777cf',1,'GRenderer::Primitives']]],
-  ['vk_1252',['VK',['../namespace_g_window.html#ad1ed4da6cfee5e2a8b07617754f3de00',1,'GWindow']]]
+  ['severity_1862',['Severity',['../namespace_g_general_1_1_logger.html#a9de7729ef34053379a45395c34cf84e7',1,'GGeneral::Logger']]],
+  ['shadertypes_1863',['ShaderTypes',['../namespace_g_renderer_1_1_primitives.html#a17d47154870847d73904cbc5cf4bdd9f',1,'GRenderer::Primitives']]]
 ];

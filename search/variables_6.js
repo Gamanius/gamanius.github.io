@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['indexcounter_1164',['indexCounter',['../_monitor_8cpp.html#a6eed67ade0214ce1e8c4d7e349357e3c',1,'Monitor.cpp']]],
-  ['informationfetched_1165',['informationFetched',['../_monitor_8cpp.html#a5be589df324ac042d8b7e484e9f28c7c',1,'Monitor.cpp']]],
-  ['isfree_1166',['isFree',['../struct_window_class.html#a30c55cbba4ed8a969f0aa422be7037c0',1,'WindowClass']]],
-  ['isinit_1167',['isInit',['../_logger_8cpp.html#ac4eddbd77742f6a9031c78fe7d3899f7',1,'Logger.cpp']]]
+  ['gama_5fdefined_1662',['gama_defined',['../struct_lode_p_n_g_info.html#a60d6edb00a28a423dbd1bf2a693a16b0',1,'LodePNGInfo']]],
+  ['gama_5fgamma_1663',['gama_gamma',['../struct_lode_p_n_g_info.html#afd1e6f7f1fe1c473774a64148dfed25a',1,'LodePNGInfo']]],
+  ['globalmutex_1664',['globalMutex',['../_logger_8cpp.html#aba918c8e6065622cc5ba90e569eaa8bc',1,'Logger.cpp']]],
+  ['green_1665',['green',['../struct_g_general_1_1_color.html#a66d3b0ab1e147008a3247348144982a8',1,'GGeneral::Color']]]
 ];

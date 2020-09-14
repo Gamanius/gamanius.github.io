@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertexarray_1444',['VertexArray',['../struct_g_renderer_1_1_primitives_1_1_index_buffer.html#a0670dc79d5db4c4c4414244aca37d5cf',1,'GRenderer::Primitives::IndexBuffer::VertexArray()'],['../struct_g_renderer_1_1_primitives_1_1_vertex_buffer.html#a0670dc79d5db4c4c4414244aca37d5cf',1,'GRenderer::Primitives::VertexBuffer::VertexArray()'],['../struct_g_renderer_1_1_primitives_1_1_vertex_array_1_1_vertex_array_layout.html#a0670dc79d5db4c4c4414244aca37d5cf',1,'GRenderer::Primitives::VertexArray::VertexArrayLayout::VertexArray()']]]
+  ['operator_2b_2091',['operator+',['../class_g_general_1_1_string.html#a7f2fa49a0bc3e44a05e564818f49c09a',1,'GGeneral::String::operator+()'],['../class_g_general_1_1_string.html#aba6929b31d571ef74898be6358b65ec2',1,'GGeneral::String::operator+()'],['../class_g_general_1_1_string.html#a2d5b67a0e0b887ba3360863ac996624c',1,'GGeneral::String::operator+()']]]
 ];
