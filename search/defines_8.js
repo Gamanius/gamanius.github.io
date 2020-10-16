@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['max_5fnet_5fbuffer_5fsize_2262',['MAX_NET_BUFFER_SIZE',['../_g_renderer_8h.html#a00cb174ad6dd7b86cdc74619515efd41',1,'GRenderer.h']]],
-  ['msvc_5fbug_2263',['MSVC_BUG',['../_g_renderer_8h.html#a3c54cb7b284e3ce7171117dcf9625d3c',1,'GRenderer.h']]]
+  ['num_5fcode_5flength_5fcodes_2253',['NUM_CODE_LENGTH_CODES',['../lodepng_8cpp.html#a22ed04d49e008cb4295a8b366c4f2f3b',1,'lodepng.cpp']]],
+  ['num_5fdeflate_5fcode_5fsymbols_2254',['NUM_DEFLATE_CODE_SYMBOLS',['../lodepng_8cpp.html#a58feace6a0d109fc6bb2161504a3011e',1,'lodepng.cpp']]],
+  ['num_5fdistance_5fsymbols_2255',['NUM_DISTANCE_SYMBOLS',['../lodepng_8cpp.html#a5b48becc8f2653ba2bb90858d38fc9ec',1,'lodepng.cpp']]]
 ];

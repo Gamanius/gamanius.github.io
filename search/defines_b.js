@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['return_5farg_5fcount_2268',['RETURN_ARG_COUNT',['../_g_renderer_8h.html#a47b61e6c83a2d6d4417e17ea5c4a6b13',1,'GRenderer.h']]]
+  ['string_5falphabet_5fhigh_2258',['STRING_ALPHABET_HIGH',['../_g_renderer_8h.html#a13330890546f7075e954f661c381cbd6',1,'GRenderer.h']]],
+  ['string_5falphabet_5flow_2259',['STRING_ALPHABET_LOW',['../_g_renderer_8h.html#ab58cfa3dc34a0cde7fea1f07e4866c16',1,'GRenderer.h']]],
+  ['string_5fnumbers_2260',['STRING_NUMBERS',['../_g_renderer_8h.html#ab303eee9d6a2a08fafb6687a49aeba1b',1,'GRenderer.h']]]
 ];

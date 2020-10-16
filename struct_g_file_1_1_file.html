@@ -84,8 +84,9 @@ Inheritance diagram for GFile::File:</div>
  <div class="center">
   <img src="struct_g_file_1_1_file.png" usemap="#GFile::File_map" alt=""/>
   <map id="GFile::File_map" name="GFile::File_map">
-<area href="struct_g_general_1_1_base_object.html" alt="GGeneral::BaseObject" shape="rect" coords="0,0,138,24"/>
-<area href="struct_g_file_1_1_graphics_1_1_image.html" alt="GFile::Graphics::Image" shape="rect" coords="0,112,138,136"/>
+<area href="struct_g_general_1_1_base_object.html" alt="GGeneral::BaseObject" shape="rect" coords="0,0,144,24"/>
+<area href="struct_g_file_1_1_graphics_1_1_image.html" alt="GFile::Graphics::Image" shape="rect" coords="0,112,144,136"/>
+<area href="struct_g_file_1_1_graphics_1_1_cursor.html" alt="GFile::Graphics::Cursor" shape="rect" coords="0,168,144,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -108,6 +109,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae2939976b521f67cbc0ec7b2581f16d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e73171bec11689e6b758f1bb1519bf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#a29e73171bec11689e6b758f1bb1519bf">size</a> = 0</td></tr>
 <tr class="separator:a29e73171bec11689e6b758f1bb1519bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06b6d4c49bc20e470be1d96010ce818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#ae06b6d4c49bc20e470be1d96010ce818">filepath</a></td></tr>
+<tr class="separator:ae06b6d4c49bc20e470be1d96010ce818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct containing the most important information about a file. All classes that are loading in files should derive from it </p>
@@ -259,7 +262,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="struct_g_general_1_1_base_object.html#abff4b59cee60360d537635db290b2d64">GGeneral::BaseObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html#a5a1f8f8920c739ae3dc50e4613b1e167">GFile::Graphics::Image</a>.</p>
+<p>Reimplemented in <a class="el" href="struct_g_file_1_1_graphics_1_1_cursor.html#a52decdf746409f02ce8f0a3f6e196eab">GFile::Graphics::Cursor</a>, and <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html#a5a1f8f8920c739ae3dc50e4613b1e167">GFile::Graphics::Image</a>.</p>
 
 </div>
 </div>
@@ -276,6 +279,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The data of the file </p>
+
+</div>
+</div>
+<a id="ae06b6d4c49bc20e470be1d96010ce818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae06b6d4c49bc20e470be1d96010ce818">&#9670;&nbsp;</a></span>filepath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> GFile::File::filepath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The filepath of this file </p>
 
 </div>
 </div>

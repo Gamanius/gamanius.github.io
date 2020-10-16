@@ -79,6 +79,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_graphics_1_1_cursor.html">Cursor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">Image</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -86,7 +88,8 @@ Classes</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a2ab5f7f66e498c4a00f4c27b776329de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#a2ab5f7f66e498c4a00f4c27b776329de">ImageType</a> { <a class="el" href="namespace_g_file_1_1_graphics.html#a2ab5f7f66e498c4a00f4c27b776329dea696b031073e74bf2cb98e5ef201d4aa3">ImageType::UNKNOWN</a>, 
 <a class="el" href="namespace_g_file_1_1_graphics.html#a2ab5f7f66e498c4a00f4c27b776329dea75948fda661fec9a2342cec45646e544">ImageType::BITMAP</a>, 
-<a class="el" href="namespace_g_file_1_1_graphics.html#a2ab5f7f66e498c4a00f4c27b776329dea36f270d634ec4d71114e64c7163b5593">ImageType::PORTABLE_NETWORK_GRAPHICS</a>
+<a class="el" href="namespace_g_file_1_1_graphics.html#a2ab5f7f66e498c4a00f4c27b776329dea36f270d634ec4d71114e64c7163b5593">ImageType::PORTABLE_NETWORK_GRAPHICS</a>, 
+<a class="el" href="namespace_g_file_1_1_graphics.html#a2ab5f7f66e498c4a00f4c27b776329deab463a0d9beb14bdcecd3a50d70655963">ImageType::CURSOR</a>
  }</td></tr>
 <tr class="separator:a2ab5f7f66e498c4a00f4c27b776329de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -98,6 +101,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0aff11e0fee0fd92829542243d852325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5f69a5457bdcff5c7a487f38559b5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#a0f5f69a5457bdcff5c7a487f38559b5a">loadImage</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> filepath)</td></tr>
 <tr class="separator:a0f5f69a5457bdcff5c7a487f38559b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab276e9b8f74ab0ccc73134ed7048a32f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_graphics_1_1_cursor.html">Cursor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#ab276e9b8f74ab0ccc73134ed7048a32f">loadCursor</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> filepath)</td></tr>
+<tr class="separator:ab276e9b8f74ab0ccc73134ed7048a32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This namespace contains all functions to load in images </p>
@@ -125,6 +130,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2ab5f7f66e498c4a00f4c27b776329dea696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2ab5f7f66e498c4a00f4c27b776329dea75948fda661fec9a2342cec45646e544"></a>BITMAP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2ab5f7f66e498c4a00f4c27b776329dea36f270d634ec4d71114e64c7163b5593"></a>PORTABLE_NETWORK_GRAPHICS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2ab5f7f66e498c4a00f4c27b776329deab463a0d9beb14bdcecd3a50d70655963"></a>CURSOR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -169,6 +175,24 @@ false - An error occurred and/or the image cannot be parsed </dd></dl>
 <p>Check if there is an implementation to load the image. Will return false if an error occurs </p><dl class="section return"><dt>Returns</dt><dd>true - The image can be parsed </dd>
 <dd>
 false - An error occurred and/or the image cannot be parsed </dd></dl>
+
+</div>
+</div>
+<a id="ab276e9b8f74ab0ccc73134ed7048a32f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab276e9b8f74ab0ccc73134ed7048a32f">&#9670;&nbsp;</a></span>loadCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_file_1_1_graphics_1_1_cursor.html">GFile::Graphics::Cursor</a> * GFile::Graphics::loadCursor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
