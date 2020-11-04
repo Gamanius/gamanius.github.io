@@ -92,10 +92,18 @@ Inheritance diagram for GFile::File:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab72ba21c2090164d2f19733e01d452d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#ab72ba21c2090164d2f19733e01d452d7">File</a> ()</td></tr>
-<tr class="separator:ab72ba21c2090164d2f19733e01d452d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b1fca59170041806bdf57072cecbcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#a30b1fca59170041806bdf57072cecbcc">File</a> (<a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> *<a class="el" href="struct_g_file_1_1_file.html#ae2939976b521f67cbc0ec7b2581f16d7">data</a>, unsigned int <a class="el" href="struct_g_file_1_1_file.html#a29e73171bec11689e6b758f1bb1519bf">size</a>)</td></tr>
 <tr class="separator:a30b1fca59170041806bdf57072cecbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1955f99ff82ed49c80dbf0d562384aef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#a1955f99ff82ed49c80dbf0d562384aef">File</a> ()=default</td></tr>
+<tr class="separator:a1955f99ff82ed49c80dbf0d562384aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1ff19d75a8a884c7559a67757bc256"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#a7f1ff19d75a8a884c7559a67757bc256">File</a> (const <a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;other)=default</td></tr>
+<tr class="separator:a7f1ff19d75a8a884c7559a67757bc256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e830ffb04a0a95b38abaa3f769ab61e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#a4e830ffb04a0a95b38abaa3f769ab61e">File</a> (<a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&amp;other) noexcept=default</td></tr>
+<tr class="separator:a4e830ffb04a0a95b38abaa3f769ab61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb7ffcdb0c8d8afbb8b05e3c0eb60a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#acdb7ffcdb0c8d8afbb8b05e3c0eb60a9">operator=</a> (const <a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;other)=default</td></tr>
+<tr class="separator:acdb7ffcdb0c8d8afbb8b05e3c0eb60a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87aa39344eaf262439330e105179bb77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#a87aa39344eaf262439330e105179bb77">operator=</a> (<a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&amp;other) noexcept=default</td></tr>
+<tr class="separator:a87aa39344eaf262439330e105179bb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab61ed19c385c5bc32ba8b90039b6c3f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#ab61ed19c385c5bc32ba8b90039b6c3f2">operator[]</a> (unsigned int i)</td></tr>
 <tr class="separator:ab61ed19c385c5bc32ba8b90039b6c3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af11f1d1d9b46ce563567dc47c31ae402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_file_1_1_file.html#af11f1d1d9b46ce563567dc47c31ae402">toString</a> () const override</td></tr>
@@ -115,34 +123,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct containing the most important information about a file. All classes that are loading in files should derive from it </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab72ba21c2090164d2f19733e01d452d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab72ba21c2090164d2f19733e01d452d7">&#9670;&nbsp;</a></span>File() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GFile::File::File </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Default constructor </p>
-
-</div>
-</div>
 <a id="a30b1fca59170041806bdf57072cecbcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30b1fca59170041806bdf57072cecbcc">&#9670;&nbsp;</a></span>File() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b1fca59170041806bdf57072cecbcc">&#9670;&nbsp;</a></span>File() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +159,84 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1955f99ff82ed49c80dbf0d562384aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1955f99ff82ed49c80dbf0d562384aef">&#9670;&nbsp;</a></span>File() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFile::File::File </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default constructor </p>
+
+</div>
+</div>
+<a id="a7f1ff19d75a8a884c7559a67757bc256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1ff19d75a8a884c7559a67757bc256">&#9670;&nbsp;</a></span>File() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFile::File::File </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e830ffb04a0a95b38abaa3f769ab61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e830ffb04a0a95b38abaa3f769ab61e">&#9670;&nbsp;</a></span>File() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFile::File::File </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a82efb434d2a12a86d11afcf3acd5a9e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82efb434d2a12a86d11afcf3acd5a9e2">&#9670;&nbsp;</a></span>~File()</h2>
 
@@ -204,6 +264,58 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acdb7ffcdb0c8d8afbb8b05e3c0eb60a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb7ffcdb0c8d8afbb8b05e3c0eb60a9">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_file_1_1_file.html">File</a>&amp; GFile::File::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87aa39344eaf262439330e105179bb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87aa39344eaf262439330e105179bb77">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_file_1_1_file.html">File</a>&amp; GFile::File::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_file_1_1_file.html">File</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab61ed19c385c5bc32ba8b90039b6c3f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab61ed19c385c5bc32ba8b90039b6c3f2">&#9670;&nbsp;</a></span>operator[]()</h2>
 

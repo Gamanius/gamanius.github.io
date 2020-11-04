@@ -78,29 +78,44 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af58352992547a5bbeae01d26d563b1b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_f_interpreter_8cpp.html#af58352992547a5bbeae01d26d563b1b9">FETCH</a>()</td></tr>
-<tr class="separator:af58352992547a5bbeae01d26d563b1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308d9e05bc51bc0a6860229d887c1f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_f_interpreter_8cpp.html#a308d9e05bc51bc0a6860229d887c1f16">throw_debug_error</a>(interpreter,  tok,  error)</td></tr>
+<tr class="separator:a308d9e05bc51bc0a6860229d887c1f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="af58352992547a5bbeae01d26d563b1b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af58352992547a5bbeae01d26d563b1b9">&#9670;&nbsp;</a></span>FETCH</h2>
+<a id="a308d9e05bc51bc0a6860229d887c1f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308d9e05bc51bc0a6860229d887c1f16">&#9670;&nbsp;</a></span>throw_debug_error</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FETCH</td>
+          <td class="memname">#define throw_debug_error</td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">interpreter, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tok, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">error&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (position &gt;= amountTokens) {\</div>
-<div class="line">    THROW(<span class="stringliteral">&quot;Unexpectedly reached end of file&quot;</span>);\</div>
-<div class="line">    return <span class="keyword">false</span>;\</div>
-<div class="line">} else \</div>
-<div class="line">currentToken = &amp;(instance-&gt;tokens-&gt;operator[](position));\</div>
+<b>Value:</b><div class="fragment"><div class="line">{ interpreter-&gt;d_error = <span class="keyword">true</span>;\</div>
+<div class="line">THROW(<span class="stringliteral">&quot;[Line: &quot;</span>, tok-&gt;line, <span class="stringliteral">&quot;]: &quot;</span>, error);\</div>
+<div class="line">return;}\</div>
 </div><!-- fragment -->
 </div>
 </div>

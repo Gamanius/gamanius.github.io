@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hash_1822',['Hash',['../lodepng_8cpp.html#abe8fc99d29c0275271cbacd81d67ee07',1,'lodepng.cpp']]],
-  ['huffmantree_1823',['HuffmanTree',['../lodepng_8cpp.html#a3bcdfe56aa79c67e8f745020ecd3bbf8',1,'lodepng.cpp']]]
+  ['wglcreatecontextattribsarb_5ftype_1384',['wglCreateContextAttribsARB_type',['../_window_8cpp.html#a8833923d34c926ffb19dda579473783c',1,'Window.cpp']]]
 ];

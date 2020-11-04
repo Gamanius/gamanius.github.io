@@ -99,6 +99,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0662a9b6a24bdcbb66664163fa8fa2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aff11e0fee0fd92829542243d852325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_file_1_1_graphics.html#a2ab5f7f66e498c4a00f4c27b776329de">ImageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#a0aff11e0fee0fd92829542243d852325">isParseble</a> (<a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> *data)</td></tr>
 <tr class="separator:a0aff11e0fee0fd92829542243d852325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8503ce3e57eef7798c8cdec6393d56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#aeb8503ce3e57eef7798c8cdec6393d56">resizeImage</a> (const <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">Image</a> &amp;i, <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt; newSize)</td></tr>
+<tr class="separator:aeb8503ce3e57eef7798c8cdec6393d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5f69a5457bdcff5c7a487f38559b5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#a0f5f69a5457bdcff5c7a487f38559b5a">loadImage</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> filepath)</td></tr>
 <tr class="separator:a0f5f69a5457bdcff5c7a487f38559b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab276e9b8f74ab0ccc73134ed7048a32f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_file_1_1_graphics_1_1_cursor.html">Cursor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#ab276e9b8f74ab0ccc73134ed7048a32f">loadCursor</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> filepath)</td></tr>
@@ -212,6 +214,34 @@ false - An error occurred and/or the image cannot be parsed </dd></dl>
       </table>
 </div><div class="memdoc">
 <p>Will check if the image can be parsed. If the image can be parse it will load in the image, parse it and return a pointer to a created image struct with all information about the image </p><dl class="section return"><dt>Returns</dt><dd>If successful a image struct </dd></dl>
+
+</div>
+</div>
+<a id="aeb8503ce3e57eef7798c8cdec6393d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8503ce3e57eef7798c8cdec6393d56">&#9670;&nbsp;</a></span>resizeImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> * GFile::Graphics::resizeImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>newSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

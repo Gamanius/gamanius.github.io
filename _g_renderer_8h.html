@@ -766,7 +766,7 @@ Macros</h2></td></tr>
 <tr class="separator:a13330890546f7075e954f661c381cbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab303eee9d6a2a08fafb6687a49aeba1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#ab303eee9d6a2a08fafb6687a49aeba1b">STRING_NUMBERS</a>&#160;&#160;&#160;&quot;1234567890&quot;</td></tr>
 <tr class="separator:ab303eee9d6a2a08fafb6687a49aeba1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a9bbba0b55399336acc2fc3f9b9583e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a3a9bbba0b55399336acc2fc3f9b9583e">G_RENDERER_VERSION</a>&#160;&#160;&#160;&quot;early Alpha Build Version 0.0.5.10.20&quot;</td></tr>
+<tr class="memitem:a3a9bbba0b55399336acc2fc3f9b9583e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a3a9bbba0b55399336acc2fc3f9b9583e">G_RENDERER_VERSION</a>&#160;&#160;&#160;&quot;early Alpha Build Version 0.0.6.11.20GFS0.1&quot;</td></tr>
 <tr class="separator:a3a9bbba0b55399336acc2fc3f9b9583e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2493363d8e5668f8dfef7d6f35cd8fa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a2493363d8e5668f8dfef7d6f35cd8fa2">G_RENDERER</a></td></tr>
 <tr class="separator:a2493363d8e5668f8dfef7d6f35cd8fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1082,23 +1082,37 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa7a3e7732920f029630ac1bc251dfa771">GFScript::TokenID::NUM_IDENTIFIER</a>, 
 <a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa638a0e948b569725e6294a9848d24b22">GFScript::TokenID::STRING_IDENTIFIER</a>, 
-<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa402d3b7c42010b241d713c432cdcc46b">GFScript::TokenID::FUNCTION_PRINT</a>, 
-<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa4a800947d2b23619e1319cda76627db5">GFScript::TokenID::OP_PLUS</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa494e9b376693094ed43540c4261a9e2e">GFScript::TokenID::NUMARRAY_IDENTIFIER</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa6b59dcd91cb7e76cc85d62474f0729b0">GFScript::TokenID::STRINGARRAY_IDENTIFIER</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9faa544b61e556a06c27a6869f05671a4e3">GFScript::TokenID::OP_MINUS</a>, 
-<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9faaeceb42ade16241e38ee0bb92b8e2368">GFScript::TokenID::OP_MULTIPLY</a>, 
+&#160;&#160;<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa402d3b7c42010b241d713c432cdcc46b">GFScript::TokenID::FUNCTION_PRINT</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa7608ea832ef069b4c4ac3b5a66f68315">GFScript::TokenID::FUNCTION_RANDOM</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa73ee547a48220263670a24ef60ef288e">GFScript::TokenID::FUNCTION_SETARRAY</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa307a4933f8c9a4908526a2c8275ce6ef">GFScript::TokenID::FUNCTION_ADDARRAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fae54f720cbfc8cdb9d68bcd7732963de5">GFScript::TokenID::FUNCTION_GETARRAY</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa07c8876741bac738b683a67abf7dce5d">GFScript::TokenID::FUNCTION_SIZEARRAY</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa4a800947d2b23619e1319cda76627db5">GFScript::TokenID::OP_PLUS</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9faa544b61e556a06c27a6869f05671a4e3">GFScript::TokenID::OP_MINUS</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9faaeceb42ade16241e38ee0bb92b8e2368">GFScript::TokenID::OP_MULTIPLY</a>, 
 <a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa8ccf2a35e9a489b9c254fa6a647f015c">GFScript::TokenID::OP_DIVIDE</a>, 
 <a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa6837aeca94b8f55801166eb031e26a5a">GFScript::TokenID::EQUALS</a>, 
+<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa83fc2e5b7aae8950e66d86e04e481777">GFScript::TokenID::LPARAN</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa83fc2e5b7aae8950e66d86e04e481777">GFScript::TokenID::LPARAN</a>, 
-<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9faa41255fe2ed40f61315fc8709d43a28d">GFScript::TokenID::RPARAN</a>, 
+&#160;&#160;<a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9faa41255fe2ed40f61315fc8709d43a28d">GFScript::TokenID::RPARAN</a>, 
 <a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9fa14d6a3e0201f58bfe7c01e775973e80e">GFScript::TokenID::BREAK</a>
 <br />
  }</td></tr>
 <tr class="separator:ac95e6e6ed010d186ff91c326c2197d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf9449f2fae2168ac026ce7882de565d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565d">GFScript::VarType</a> { <a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565daccc0377a8afbf50e7094f5c23a8af223">GFScript::VarType::INVALID</a>, 
+<tr class="memitem:adf9449f2fae2168ac026ce7882de565d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565d">GFScript::VarType</a> { <br />
+&#160;&#160;<a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565daccc0377a8afbf50e7094f5c23a8af223">GFScript::VarType::INVALID</a>, 
 <a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565da44119bf3bae5d40a8d0766b91c304aac">GFScript::VarType::NUM</a>, 
-<a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565da63b588d5559f64f89a416e656880b949">GFScript::VarType::STRING</a>
+<a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565da7a73e2feee37701f863b40f8340605c2">GFScript::VarType::NUMARRAY</a>, 
+<a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565da63b588d5559f64f89a416e656880b949">GFScript::VarType::STRING</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565da532a05bd0e754730fc5d0b2c4b6c4b54">GFScript::VarType::STRINGARRAY</a>
+<br />
  }</td></tr>
 <tr class="separator:adf9449f2fae2168ac026ce7882de565d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1197,6 +1211,8 @@ Functions</h2></td></tr>
 <tr class="separator:a0662a9b6a24bdcbb66664163fa8fa2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aff11e0fee0fd92829542243d852325"><td class="memItemLeft" align="right" valign="top">ImageType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#a0aff11e0fee0fd92829542243d852325">GFile::Graphics::isParseble</a> (<a class="el" href="_g_renderer_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> *data)</td></tr>
 <tr class="separator:a0aff11e0fee0fd92829542243d852325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8503ce3e57eef7798c8cdec6393d56"><td class="memItemLeft" align="right" valign="top">Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#aeb8503ce3e57eef7798c8cdec6393d56">GFile::Graphics::resizeImage</a> (const Image &amp;i, <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt; newSize)</td></tr>
+<tr class="separator:aeb8503ce3e57eef7798c8cdec6393d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5f69a5457bdcff5c7a487f38559b5a"><td class="memItemLeft" align="right" valign="top">Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#a0f5f69a5457bdcff5c7a487f38559b5a">GFile::Graphics::loadImage</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> filepath)</td></tr>
 <tr class="separator:a0f5f69a5457bdcff5c7a487f38559b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab276e9b8f74ab0ccc73134ed7048a32f"><td class="memItemLeft" align="right" valign="top">Cursor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_file_1_1_graphics.html#ab276e9b8f74ab0ccc73134ed7048a32f">GFile::Graphics::loadCursor</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> filepath)</td></tr>
@@ -1229,8 +1245,12 @@ Functions</h2></td></tr>
 <tr class="separator:a7af1fe4c921fad6fa2a749d41e75d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944553d7fa3dfad2b8c9fbac21d2d0ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a944553d7fa3dfad2b8c9fbac21d2d0ca">GRenderer::getCurentOpenGLVersion</a> ()</td></tr>
 <tr class="separator:a944553d7fa3dfad2b8c9fbac21d2d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84179d32d84da55570bb897882a3569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#ae84179d32d84da55570bb897882a3569">GRenderer::enableBlend</a> ()</td></tr>
+<tr class="separator:ae84179d32d84da55570bb897882a3569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc37a002ecffc6504d75d82146f50fef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#adc37a002ecffc6504d75d82146f50fef">GRenderer::delta</a> ()</td></tr>
 <tr class="separator:adc37a002ecffc6504d75d82146f50fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e47ab5efca042585c304d49ed5e8936"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#a1e47ab5efca042585c304d49ed5e8936">GRenderer::ddelta</a> ()</td></tr>
+<tr class="separator:a1e47ab5efca042585c304d49ed5e8936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ec9a32e2b78b2dd7a0f87750367306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#ab9ec9a32e2b78b2dd7a0f87750367306">GRenderer::getGLString</a> (GLString s)</td></tr>
 <tr class="separator:ab9ec9a32e2b78b2dd7a0f87750367306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceea708ec3aa549399920a5a2973dcf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_renderer.html#aceea708ec3aa549399920a5a2973dcf9">GRenderer::clear</a> (<a class="el" href="struct_g_general_1_1_color.html">GGeneral::Color</a> color)</td></tr>
@@ -1247,10 +1267,10 @@ Functions</h2></td></tr>
 <tr class="separator:a83a43594522e0bf7a1d6eb8b82f5e23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0adf59153d2e83e7ac808a57275d505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#ab0adf59153d2e83e7ac808a57275d505">GGraphics::drawRect</a> (<a class="el" href="struct_g_general_1_1_rectangle.html">GGeneral::Rectangle</a>&lt; int &gt; r)</td></tr>
 <tr class="separator:ab0adf59153d2e83e7ac808a57275d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d57f923d46c2ddb8d95b046b1d8cae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#a3d57f923d46c2ddb8d95b046b1d8cae8">GGraphics::drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, const <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> &amp;img)</td></tr>
-<tr class="separator:a3d57f923d46c2ddb8d95b046b1d8cae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca1ed76a5ea3e5b5a5170cfd1f777ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#a8ca1ed76a5ea3e5b5a5170cfd1f777ec">GGraphics::drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, <a class="el" href="class_g_renderer_1_1_texture.html">GRenderer::Texture</a> &amp;tex)</td></tr>
-<tr class="separator:a8ca1ed76a5ea3e5b5a5170cfd1f777ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798468271afa183ec7cb49e6f932d662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#a798468271afa183ec7cb49e6f932d662">GGraphics::drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, const <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> &amp;img, <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt; dim={0, 0})</td></tr>
+<tr class="separator:a798468271afa183ec7cb49e6f932d662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae493ea016e020c0ef7c978065766f4d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#ae493ea016e020c0ef7c978065766f4d3">GGraphics::drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, <a class="el" href="class_g_renderer_1_1_texture.html">GRenderer::Texture</a> &amp;tex, <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt; dim={0, 0})</td></tr>
+<tr class="separator:ae493ea016e020c0ef7c978065766f4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6a3e5d5fe2712c337088a34144c1d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a4a6a3e5d5fe2712c337088a34144c1d7">operator&lt;&lt;</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;s, <a class="el" href="namespace_g_f_script.html#adf9449f2fae2168ac026ce7882de565d">GFScript::VarType</a> tok)</td></tr>
 <tr class="separator:a4a6a3e5d5fe2712c337088a34144c1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db8371cfa1e958d7640bf63e15162aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_renderer_8h.html#a6db8371cfa1e958d7640bf63e15162aa">operator&lt;&lt;</a> (<a class="el" href="class_g_general_1_1_string.html">GGeneral::String</a> &amp;s, <a class="el" href="namespace_g_f_script.html#ac95e6e6ed010d186ff91c326c2197d9f">GFScript::TokenID</a> tok)</td></tr>
@@ -3629,7 +3649,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define G_RENDERER_VERSION&#160;&#160;&#160;&quot;early Alpha Build Version 0.0.5.10.20&quot;</td>
+          <td class="memname">#define G_RENDERER_VERSION&#160;&#160;&#160;&quot;early Alpha Build Version 0.0.6.11.20GFS0.1&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

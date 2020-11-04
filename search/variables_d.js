@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['palette_1734',['palette',['../struct_lode_p_n_g_color_mode.html#a54f0a793238009fcb95f081626fae308',1,'LodePNGColorMode::palette()'],['../struct_lode_p_n_g_color_stats.html#a7eda029397c945602ecf49d5277c936e',1,'LodePNGColorStats::palette()']]],
-  ['palettesize_1735',['palettesize',['../struct_lode_p_n_g_color_mode.html#a407557f056168682d9319aeb60866dcc',1,'LodePNGColorMode']]],
-  ['phys_5fdefined_1736',['phys_defined',['../struct_lode_p_n_g_info.html#a9b8e29b7e7b4908a2de0275e01a828ed',1,'LodePNGInfo']]],
-  ['phys_5funit_1737',['phys_unit',['../struct_lode_p_n_g_info.html#ad6f2171d9f87716e5010f6c5352f9855',1,'LodePNGInfo']]],
-  ['phys_5fx_1738',['phys_x',['../struct_lode_p_n_g_info.html#a1593fa6e1acc93f3b9de51c340bef94d',1,'LodePNGInfo']]],
-  ['phys_5fy_1739',['phys_y',['../struct_lode_p_n_g_info.html#a52ad7a105244d00f1e91c489eaf53f97',1,'LodePNGInfo']]],
-  ['pngsig_1740',['PNGSig',['../_file_8cpp.html#aa8c78d312dccb4d6b00ca40108282be3',1,'File.cpp']]],
-  ['position_1741',['position',['../struct_g_general_1_1_rectangle.html#a49c2e114e68589cfe9458cbe8c6e92a6',1,'GGeneral::Rectangle']]],
-  ['predefined_5ffilters_1742',['predefined_filters',['../struct_lode_p_n_g_encoder_settings.html#a4446f87b5283f25664802a1be037e76e',1,'LodePNGEncoderSettings']]],
-  ['primarymonitorindex_1743',['primaryMonitorIndex',['../_monitor_8cpp.html#ae878d43cc0b86710fe590ffeea826aac',1,'Monitor.cpp']]]
+  ['recindex_1327',['recIndex',['../_graphics_8cpp.html#a0802ffae63ab559676d8f42ed895f4aa',1,'Graphics.cpp']]],
+  ['recprogram_1328',['recProgram',['../_graphics_8cpp.html#a8f17374982b9a45068c6308322c0fdc7',1,'Graphics.cpp']]],
+  ['recvertex_1329',['recVertex',['../_graphics_8cpp.html#aa4de3552066b208ed18972fd18370a84',1,'Graphics.cpp']]],
+  ['red_1330',['red',['../struct_g_general_1_1_color.html#a4aa12c7958aac3bddb4b082154866ee8',1,'GGeneral::Color']]],
+  ['right_5fthumbstick_1331',['right_thumbstick',['../struct_g_gamepad_1_1_gamepad_state.html#a2605629cdcbbbc7f29b915470aca374c',1,'GGamepad::GamepadState']]],
+  ['right_5ftrigger_1332',['right_trigger',['../struct_g_gamepad_1_1_gamepad_state.html#a121e02a5b978e787a2aaad24dd040dbd',1,'GGamepad::GamepadState']]]
 ];

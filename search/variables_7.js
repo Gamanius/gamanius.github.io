@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['hasalpha_1657',['hasAlpha',['../struct_g_file_1_1_graphics_1_1_image.html#aaaf87720f2d7053f9bdc9424191076e3',1,'GFile::Graphics::Image']]],
-  ['hdc_1658',['hdc',['../struct_window_class.html#ad32fda95d1e899510ec7108c35a12f8d',1,'WindowClass']]],
-  ['head_1659',['head',['../struct_hash.html#a0977cf12b1d8e6bbc784b5e0877926f5',1,'Hash']]],
-  ['headz_1660',['headz',['../struct_hash.html#a3ed8f51297a858686e11a1a295a3a39c',1,'Hash']]],
-  ['height_1661',['height',['../struct_g_general_1_1_dimension.html#a3ba673fcea13dcbc22163cab66fd5bbd',1,'GGeneral::Dimension']]],
-  ['hglrc_1662',['hglrc',['../_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59',1,'Window.cpp']]],
-  ['hinstance_1663',['hInstance',['../_window_8cpp.html#a74029128723095e7bf00a71d46af8b24',1,'Window.cpp']]],
-  ['hour_1664',['hour',['../struct_g_general_1_1_time_1_1_time_point.html#a1e7c95a5e1bf1ef66cb4764e21545321',1,'GGeneral::Time::TimePoint::hour()'],['../struct_lode_p_n_g_time.html#ac99cb7f3ce16a85f9f505b7f5f6e0aa7',1,'LodePNGTime::hour()']]],
-  ['hwnd_1665',['hWnd',['../struct_window_class.html#ac9e2c681455f66f10dc6300933a5875f',1,'WindowClass']]]
+  ['indexcounter_1294',['indexCounter',['../_monitor_8cpp.html#a6eed67ade0214ce1e8c4d7e349357e3c',1,'Monitor.cpp']]],
+  ['informationfetched_1295',['informationFetched',['../_monitor_8cpp.html#a5be589df324ac042d8b7e484e9f28c7c',1,'Monitor.cpp']]],
+  ['instance_1296',['instance',['../struct_g_file_1_1_graphics_1_1_cursor.html#a77615ddd4a1800f16a5385e1213c56f8',1,'GFile::Graphics::Cursor']]],
+  ['isfree_1297',['isFree',['../struct_window_class.html#a30c55cbba4ed8a969f0aa422be7037c0',1,'WindowClass']]],
+  ['isinit_1298',['isInit',['../_logger_8cpp.html#ac4eddbd77742f6a9031c78fe7d3899f7',1,'Logger.cpp']]]
 ];

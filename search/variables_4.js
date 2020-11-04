@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['encoder_1645',['encoder',['../struct_lode_p_n_g_state.html#ac63d91db835129d02eb83bbe81de347e',1,'LodePNGState']]],
-  ['error_1646',['error',['../struct_lode_p_n_g_state.html#a1a00a050da588cf3c2b7a6252bebb0cd',1,'LodePNGState']]]
+  ['filepath_1284',['filepath',['../struct_g_file_1_1_file.html#ae06b6d4c49bc20e470be1d96010ce818',1,'GFile::File']]]
 ];

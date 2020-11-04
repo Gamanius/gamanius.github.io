@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['gama_5fdefined_1653',['gama_defined',['../struct_lode_p_n_g_info.html#a60d6edb00a28a423dbd1bf2a693a16b0',1,'LodePNGInfo']]],
-  ['gama_5fgamma_1654',['gama_gamma',['../struct_lode_p_n_g_info.html#afd1e6f7f1fe1c473774a64148dfed25a',1,'LodePNGInfo']]],
-  ['globalmutex_1655',['globalMutex',['../_logger_8cpp.html#aba918c8e6065622cc5ba90e569eaa8bc',1,'Logger.cpp']]],
-  ['green_1656',['green',['../struct_g_general_1_1_color.html#a66d3b0ab1e147008a3247348144982a8',1,'GGeneral::Color']]]
+  ['hasalpha_1287',['hasAlpha',['../struct_g_file_1_1_graphics_1_1_image.html#aaaf87720f2d7053f9bdc9424191076e3',1,'GFile::Graphics::Image']]],
+  ['hdc_1288',['hdc',['../struct_window_class.html#ad32fda95d1e899510ec7108c35a12f8d',1,'WindowClass']]],
+  ['height_1289',['height',['../struct_g_general_1_1_dimension.html#a3ba673fcea13dcbc22163cab66fd5bbd',1,'GGeneral::Dimension']]],
+  ['hglrc_1290',['hglrc',['../_window_8cpp.html#ae6ee506075353e87329edd8c16ebde59',1,'Window.cpp']]],
+  ['hinstance_1291',['hInstance',['../_window_8cpp.html#a74029128723095e7bf00a71d46af8b24',1,'Window.cpp']]],
+  ['hour_1292',['hour',['../struct_g_general_1_1_time_1_1_time_point.html#a1e7c95a5e1bf1ef66cb4764e21545321',1,'GGeneral::Time::TimePoint']]],
+  ['hwnd_1293',['hWnd',['../struct_window_class.html#ac9e2c681455f66f10dc6300933a5875f',1,'WindowClass']]]
 ];

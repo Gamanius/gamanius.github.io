@@ -81,14 +81,14 @@ Functions</h2></td></tr>
 <tr class="separator:a83a43594522e0bf7a1d6eb8b82f5e23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0adf59153d2e83e7ac808a57275d505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#ab0adf59153d2e83e7ac808a57275d505">drawRect</a> (<a class="el" href="struct_g_general_1_1_rectangle.html">GGeneral::Rectangle</a>&lt; int &gt; r)</td></tr>
 <tr class="separator:ab0adf59153d2e83e7ac808a57275d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d57f923d46c2ddb8d95b046b1d8cae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#a3d57f923d46c2ddb8d95b046b1d8cae8">drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, const <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> &amp;img)</td></tr>
-<tr class="separator:a3d57f923d46c2ddb8d95b046b1d8cae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca1ed76a5ea3e5b5a5170cfd1f777ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#a8ca1ed76a5ea3e5b5a5170cfd1f777ec">drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, <a class="el" href="class_g_renderer_1_1_texture.html">GRenderer::Texture</a> &amp;tex)</td></tr>
-<tr class="separator:a8ca1ed76a5ea3e5b5a5170cfd1f777ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798468271afa183ec7cb49e6f932d662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#a798468271afa183ec7cb49e6f932d662">drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, const <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> &amp;img, <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt; dim={0, 0})</td></tr>
+<tr class="separator:a798468271afa183ec7cb49e6f932d662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae493ea016e020c0ef7c978065766f4d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_g_graphics.html#ae493ea016e020c0ef7c978065766f4d3">drawImg</a> (<a class="el" href="struct_g_general_1_1_point.html">GGeneral::Point</a>&lt; int &gt; pos, <a class="el" href="class_g_renderer_1_1_texture.html">GRenderer::Texture</a> &amp;tex, <a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt; dim={0, 0})</td></tr>
+<tr class="separator:ae493ea016e020c0ef7c978065766f4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3d57f923d46c2ddb8d95b046b1d8cae8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d57f923d46c2ddb8d95b046b1d8cae8">&#9670;&nbsp;</a></span>drawImg() <span class="overload">[1/2]</span></h2>
+<a id="a798468271afa183ec7cb49e6f932d662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a798468271afa183ec7cb49e6f932d662">&#9670;&nbsp;</a></span>drawImg() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,7 +103,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_g_file_1_1_graphics_1_1_image.html">GFile::Graphics::Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>img</em>&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>dim</em> = <code>{0,0}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -122,8 +128,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ca1ed76a5ea3e5b5a5170cfd1f777ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ca1ed76a5ea3e5b5a5170cfd1f777ec">&#9670;&nbsp;</a></span>drawImg() <span class="overload">[2/2]</span></h2>
+<a id="ae493ea016e020c0ef7c978065766f4d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae493ea016e020c0ef7c978065766f4d3">&#9670;&nbsp;</a></span>drawImg() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +144,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_g_renderer_1_1_texture.html">GRenderer::Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>tex</em>&#160;</td>
+          <td class="paramname"><em>tex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_g_general_1_1_dimension.html">GGeneral::Dimension</a>&lt; unsigned int &gt;&#160;</td>
+          <td class="paramname"><em>dim</em> = <code>{0,0}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
